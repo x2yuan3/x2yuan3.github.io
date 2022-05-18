@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91%E5%A4%96%E9%93%BE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -174,7 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91%E5%A4%96%E9%93%BE/" class="post-title-link" itemprop="url">文章插入视频外链</a>
+            <a href="/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/" class="post-title-link" itemprop="url">更改菜单栏顶部显示</a>
         </h2>
 
         <div class="post-meta">
@@ -209,11 +209,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-获取视频外链"><a href="#1-获取视频外链" class="headerlink" title="1. 获取视频外链"></a><strong>1. 获取视频外链</strong></h2><blockquote>
-<p>这里通过贝贝解析，解析地址：<a target="_blank" rel="noopener" href="https://xbeibeix.com/api/bilibili/">https://xbeibeix.com/api/bilibili/</a><br>解析完成，右键检查视频代码，直接扒hhh<br>然后在原代码添加 controls = “true” （启用显示所有控件）<br>最后去掉 autoplay 属性就可以直接上了</p>
+          <h2 id="1-无题"><a href="#1-无题" class="headerlink" title="1. 无题"></a><strong>1. 无题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
 </blockquote>
-<h2 id="2-完整外链可直接插入"><a href="#2-完整外链可直接插入" class="headerlink" title="2. 完整外链可直接插入"></a><strong>2. 完整外链可直接插入</strong></h2><blockquote>
-<p>如bilibili视频分享嵌入代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.site-brand-container &#123;</span><br><span class="line"> background:url(images\caidan.png);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>url可替换修改成颜色，如 background: #222;</p>
+</blockquote>
+<h2 id="2-吐槽"><a href="#2-吐槽" class="headerlink" title="2. 吐槽"></a><strong>2. 吐槽</strong></h2><blockquote>
+<p>我tm真的是吐了，为了这个菜单栏顶部自定义显示，至少tmd查了半个多小时，试着修改了半个多小时，关键词搜索结果全tm解决不了，，，裂开了woc<br>最后在博客页面通过f12开发工具，找到了位置，再翻到了负责显示菜单栏顶部的代码，本想着试试做个修改添加到styles.styl，啊啊啊啊啊啊tmd总算搞定了艹<br>对了对了，把顶部加载条也给改了吧，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.headband &#123;</span><br><span class="line"> height: 0px;</span><br><span class="line"> background: #000;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这下全局边框圆角总算能看了，（话说全局阴影我是怎么整的，，，）</p>
 </blockquote>
 
       
