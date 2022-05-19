@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91%E5%A4%96%E9%93%BE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E5%85%B3%E9%97%AD%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0%E4%BA%8E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -174,7 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91%E5%A4%96%E9%93%BE/" class="post-title-link" itemprop="url">文章插入视频外链</a>
+            <a href="/2022/01/30/next%E5%85%B3%E9%97%AD%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0%E4%BA%8E/" class="post-title-link" itemprop="url">关闭文章"更新于"</a>
         </h2>
 
         <div class="post-meta">
@@ -209,11 +209,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-获取视频外链"><a href="#1-获取视频外链" class="headerlink" title="1. 获取视频外链"></a><strong>1. 获取视频外链</strong></h2><blockquote>
-<p>这里通过贝贝解析，解析地址：<a target="_blank" rel="noopener" href="https://xbeibeix.com/api/bilibili/">https://xbeibeix.com/api/bilibili/</a><br>解析完成，右键检查视频代码，直接扒hhh<br>然后在原代码添加 controls = “true” （启用显示所有控件）<br>最后去掉 autoplay 属性就可以直接上了</p>
-</blockquote>
-<h2 id="2-完整外链可直接插入"><a href="#2-完整外链可直接插入" class="headerlink" title="2. 完整外链可直接插入"></a><strong>2. 完整外链可直接插入</strong></h2><blockquote>
-<p>如bilibili视频分享嵌入代码</p>
+          <h2 id="1-修改next配置文件"><a href="#1-修改next配置文件" class="headerlink" title="1. 修改next配置文件"></a><strong>1. 修改next配置文件</strong></h2><blockquote>
+<p>打开blog\themes\next_config.yml<br>查找post_meta:<br>将updated_at下的enable: true修改为false，如下<br><code>post_meta:</code><br><code>  item_text: true</code><br><code>  created_at: true</code><br><code>  updated_at:</code><br><code>    enable: false</code><br><code>    another_day: true</code><br><code>  categories: true</code></p>
 </blockquote>
 
       
@@ -233,7 +230,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -301,7 +298,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
