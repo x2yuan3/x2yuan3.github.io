@@ -248,12 +248,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/" rel="prev" title="添加网易云音乐插件">
-      <i class="fa fa-chevron-left"></i> 添加网易云音乐插件
+    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/" rel="prev" title="添加文章版权信息">
+      <i class="fa fa-chevron-left"></i> 添加文章版权信息
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/" rel="next" title="更改菜单栏顶部显示">
-      更改菜单栏顶部显示 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/" rel="next" title="添加彩色滚动变换字体">
+      添加彩色滚动变换字体 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -329,7 +329,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -347,9 +347,55 @@
 
 
 
+
+
+<div id="binft"></div>
+  <script>
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }  
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = "",
+      o = ["我认识的死神爱吃苹果", "错的不是我，是这个世界","", "","","","",""].map(function (r) {
+      return r + ""
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+      c = {
+        text: "",
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: "forward",
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById('binft'));
+  </script>
       </div>
 
+
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=492390949&auto=0&height=66"></iframe>
+
 
     </div>
   </aside>
@@ -490,5 +536,5 @@ window.addEventListener('pjax:success', () => {
   
 
     </div>
-</body>
+<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.valley.model.json"},"display":{"position":"right","width":300,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
 </html>
