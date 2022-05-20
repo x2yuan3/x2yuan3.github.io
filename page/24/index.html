@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/10/01/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/" class="post-title-link" itemprop="url">将本地hexo博客部署到github</a>
+            <a href="/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/" class="post-title-link" itemprop="url">设置next主题</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">博客更新日志</span></a>
+                  <a href="/categories/next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">next主题</span></a>
                 </span>
             </span>
 
@@ -214,26 +214,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-创建github账号"><a href="#1-创建github账号" class="headerlink" title="1. 创建github账号"></a><strong>1. 创建github账号</strong></h2><h2 id="2-new个仓库"><a href="#2-new个仓库" class="headerlink" title="2. new个仓库"></a><strong>2. new个仓库</strong></h2><blockquote>
-<p>仓库名称格式为”你的用户名.GitHub.io”</p>
+          <h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
+<p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
 </blockquote>
-<h2 id="3-修改博客根目录站点配置文件"><a href="#3-修改博客根目录站点配置文件" class="headerlink" title="3. 修改博客根目录站点配置文件"></a><strong>3. 修改博客根目录站点配置文件</strong></h2><blockquote>
-<p>根据自己仓库地址修改，如下：</p>
+<h2 id="2-设置next"><a href="#2-设置next" class="headerlink" title="2. 设置next"></a><strong>2. 设置next</strong></h2><blockquote>
+<p>修改根目录下的_config.yml(称为站点配置文件)<br><code># Site</code><br><code>title: </code>#标题<br><code>subtitle: </code>#副标题<br><code>description: </code>#备注<br><code>keywords: </code><br><code>author: </code>#作者<br><code>language: zh-CN</code> #主题语言 （主题语言在themes/next/language)<br><code>timezone: </code>#时区</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/xyuan23/xyuan23.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-安装Git部署插件"><a href="#4-安装Git部署插件" class="headerlink" title="4. 安装Git部署插件"></a><strong>4. 安装Git部署插件</strong></h2><blockquote>
-<p>在博客根目录打开 Git Bash （建议以管理员身份运行）<br>输入：</p>
+<blockquote>
+<p><code># Extensions</code><br><code>## Plugins: https://hexo.io/plugins/</code><br><code>## Themes: https://hexo.io/themes/</code><br><code>theme: next</code> #修改主题</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
-</blockquote>
-<h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;">&#x79;&#x6f;&#117;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#99;&#111;&#109;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
-</blockquote>
-<h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
-<p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
+<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
+<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除<br><code># Schemes</code><br><code>#scheme: Muse</code><br><code>#scheme: Mist</code><br><code>scheme: Pisces</code><br><code>#scheme: Gemini</code></p>
 </blockquote>
 
       
