@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/" class="post-title-link" itemprop="url">添加live2d角色</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">添加文章版权信息</a>
         </h2>
 
         <div class="post-meta">
@@ -214,18 +214,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
-<p>在blog根目录打开 git bash 输入如下代码</p>
+          <h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
+<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>镜像 <a target="_blank" rel="noopener" href="https://gitcode.net/mirrors/summerscar/live2ddemo?utm_source=csdn_github_accelerator">https://gitcode.net/mirrors/summerscar/live2ddemo?utm_source=csdn_github_accelerator</a><br>预览模型地址 <a target="_blank" rel="noopener" href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
-</blockquote>
-<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
-<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">##自定义看板娘动画</span><br><span class="line">live2d: </span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local ##主目录</span><br><span class="line">  pluginRootPath: live2d_models/ ##模型目录</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: 33.2017.valley ##对应的模型名称</span><br><span class="line">  display:</span><br><span class="line">    position: right ##居右</span><br><span class="line">    width: 300 ##宽度</span><br><span class="line">    height: 300 ##高度</span><br><span class="line">  mobile:</span><br><span class="line">    show: true ##移动端是否显示</span><br><span class="line">  react:</span><br><span class="line">    opacity: 1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -272,7 +264,6 @@
     });
   }
 </script>
-
         </div>
           
   
@@ -516,7 +507,6 @@ window.addEventListener('pjax:success', () => {
   
 
   
-
 
     </div>
 <script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.valley.model.json"},"display":{"position":"right","width":290,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>

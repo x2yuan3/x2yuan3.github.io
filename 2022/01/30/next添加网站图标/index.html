@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null,"activeClass":"livere"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="1. 添加网站图标 将网站图标复制到blog&#x2F;themes&#x2F;next&#x2F;source&#x2F;images然后配置主题文件即blog&#x2F;themes&#x2F;next&#x2F;_config.yml，查找favicon如下favicon:small: &#x2F;images&#x2F;xiaoheimiaoio-16x16.pngmedium: &#x2F;images&#x2F;xiaoheimiaoio-32x32.pngapple_touch_icon:">
@@ -253,12 +253,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/" rel="prev" title="添加网易云音乐插件">
-      <i class="fa fa-chevron-left"></i> 添加网易云音乐插件
+    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%8F%8A%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E/" rel="prev" title="添加背景，全局透明，全局边框圆角">
+      <i class="fa fa-chevron-left"></i> 添加背景，全局透明，全局边框圆角
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/" rel="next" title="添加文章版权信息">
-      添加文章版权信息 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/" rel="next" title="添加网易云音乐插件">
+      添加网易云音乐插件 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -272,11 +272,6 @@
 
           </div>
           
-    
-  <div class="comments">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81NjQ2MS8zMjkyNA=="></div>
-  </div>
-  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -299,7 +294,6 @@
     });
   }
 </script>
-
         </div>
           
   
@@ -544,22 +538,6 @@ window.addEventListener('pjax:success', () => {
   
 
   
-
-<script>
-NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
-  window.livereOptions = {
-    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-});
-</script>
 
     </div>
 <script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.valley.model.json"},"display":{"position":"right","width":290,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
