@@ -22,13 +22,13 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="这是一个奇怪的地方，，，">
-<meta property="og:url" content="http://example.com/page/15/index.html">
+<meta property="og:url" content="http://example.com/page/26/index.html">
 <meta property="og:site_name" content="这是一个奇怪的地方，，，">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="xyuan">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/page/15/">
+<link rel="canonical" href="http://example.com/page/26/">
 
 
 <script id="page-configurations">
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/" class="post-title-link" itemprop="url">添加彩色滚动变换字体</a>
+            <a href="/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/" class="post-title-link" itemprop="url">设置next主题</a>
         </h2>
 
         <div class="post-meta">
@@ -191,7 +191,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-01-30 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-30T00:00:00+08:00">2022-01-30</time>
+              <time title="创建时间：2021-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-01T00:00:00+08:00">2021-10-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -199,7 +199,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">博客更新日志</span></a>
+                  <a href="/categories/next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">next主题</span></a>
                 </span>
             </span>
 
@@ -214,12 +214,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
+          <h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
+<p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;我认识的死神爱吃苹果&quot;, &quot;错的不是我，是这个世界&quot;,&quot;&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="2-设置next"><a href="#2-设置next" class="headerlink" title="2. 设置next"></a><strong>2. 设置next</strong></h2><blockquote>
+<p>修改根目录下的_config.yml(称为站点配置文件)<br><code># Site</code><br><code>title: </code>#标题<br><code>subtitle: </code>#副标题<br><code>description: </code>#备注<br><code>keywords: </code><br><code>author: </code>#作者<br><code>language: zh-CN</code> #主题语言 （主题语言在themes/next/language)<br><code>timezone: </code>#时区</p>
+</blockquote>
 <blockquote>
-<p>具体内容自行修改即可</p>
+<p><code># Extensions</code><br><code>## Plugins: https://hexo.io/plugins/</code><br><code>## Themes: https://hexo.io/themes/</code><br><code>theme: next</code> #修改主题</p>
+</blockquote>
+<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
+<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除<br><code># Schemes</code><br><code>#scheme: Muse</code><br><code>#scheme: Mist</code><br><code>scheme: Pisces</code><br><code>#scheme: Gemini</code></p>
 </blockquote>
 
       
@@ -239,7 +244,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/14/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/16/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/25/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><span class="page-number current">26</span>
   </nav>
 
 
