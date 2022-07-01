@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/20/next%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/" class="post-title-link" itemprop="url">添加留言板页面</a>
+            <a href="/2022/05/20/next%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">添加评论系统（无法正常使用）</a>
         </h2>
 
         <div class="post-meta">
@@ -214,22 +214,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
-<p>在blog根目录，打开 git bash 运行命令如下</p>
+          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>地址 <a target="_blank" rel="noopener" href="https://www.livere.com/">https://www.livere.com/</a><br>点击安装选择免费的版本，然后在管理页面查看代码，复制其中的data-uid字段，如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page guestbook</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data-uid=&quot;MTxxxxxxxxxx==&quot;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>编辑留言板页面文件，guestbook\index.md<br>如下</p>
+<p>然后编辑文件next/_config.yml，启用livere评论系统，如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2022-05-20 20:00:00</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">做个留言板0v0</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
-<p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下<br>menu:<br>  home: / || fa fa-home<br>  categories: /categories/ || fa fa-th<br>  tags: /tags/ || fa fa-tags<br>  archives: /archives/ || fa fa-archive<br>  guestbook: /guestbook/ || fa fa-comment<br>  about: /about/ || fa fa-user</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">comments:</span><br><span class="line">  # Available values: tabs | buttons</span><br><span class="line">  style: tabs</span><br><span class="line">  # Choose a comment system to be displayed by default.</span><br><span class="line">  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine</span><br><span class="line">  active: livere</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>然后定位到livere_uid字段，粘贴刚刚复制的UID，如下</p>
 </blockquote>
-<h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
-<p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下<br>menu:<br>  home: 首页<br>  archives: 归档<br>  categories: 分类<br>  tags: 标签<br>  about: 关于<br>  search: 搜索<br>  schedule: 日程表<br>  sitemap: 站点地图<br>  commonweal: 公益 404<br>  guestbook: 留言<br>  即可，本地运行看看吧</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># LiveRe comments system</span><br><span class="line"># You can get your uid from https://livere.com/insight/myCode (General web site)</span><br><span class="line">livere_uid: MTxxxxxxxxxx==</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>然后本地先运行看看<br>具体功能可以在livere管理页面查看<br>其他的评论系统没试过，这个不用实名，而且使用还算方便</p>
 </blockquote>
-
+<h2 id="2-关闭某页面评论系统"><a href="#2-关闭某页面评论系统" class="headerlink" title="2. 关闭某页面评论系统"></a><strong>2. 关闭某页面评论系统</strong></h2><blockquote>
+<p>在编辑页面或者写文章的时候加上 comments: false<br>如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2022-01-01 00:00:00</span><br><span class="line">type: categories</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -519,5 +522,5 @@ window.addEventListener('pjax:success', () => {
   
 
     </div>
-<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"33.2017.tomo-bukatsu.high"},"display":{"position":"right","width":290,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
+</body>
 </html>
