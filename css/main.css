@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ec9cff;
+  background: #59ed95;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2577,6 +2577,15 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 100%;
+}
+@media only screen and (max-width: 1080px) {
+  body {
+    background: url("https://cloud.06dn.com/api/v3/file/thumb/qgJQNSj");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+  }
 }
 .site-brand-container {
   background: url("imagescaidan.png");
