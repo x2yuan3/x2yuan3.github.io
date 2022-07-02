@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #59ed95;
+  background: #29184a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2580,7 +2580,7 @@ body {
 }
 @media only screen and (max-width: 1080px) {
   body {
-    background: url("https://cloud.06dn.com/api/v3/file/thumb/qgJQNSj");
+    background: url("https://i-s2.328888.xyz/2022/07/02/62bf8f6dd6433.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
