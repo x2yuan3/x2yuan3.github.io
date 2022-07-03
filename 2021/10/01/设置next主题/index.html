@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1. 下载next 管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹&#x2F;themesgit clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next  2. 设置next 修改根目录下的_config.yml(称为站点配置文件)# Sitetitle: #标题sub">
+  <meta name="description" content="1. 下载next 管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹&#x2F;themesgit clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next  2. 设置next 修改根目录下的_config.yml(称为站点配置文件)  12345678910111213">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设置next主题">
 <meta property="og:url" content="http://example.com/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/index.html">
 <meta property="og:site_name" content="这是一个奇怪的地方，，，">
-<meta property="og:description" content="1. 下载next 管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹&#x2F;themesgit clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next  2. 设置next 修改根目录下的_config.yml(称为站点配置文件)# Sitetitle: #标题sub">
+<meta property="og:description" content="1. 下载next 管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹&#x2F;themesgit clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next  2. 设置next 修改根目录下的_config.yml(称为站点配置文件)  12345678910111213">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-09-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-01-30T10:33:24.718Z">
+<meta property="article:modified_time" content="2022-07-03T01:52:42.027Z">
 <meta property="article:author" content="xyuan">
 <meta name="twitter:card" content="summary">
 
@@ -222,15 +222,14 @@
 <p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
 </blockquote>
 <h2 id="2-设置next"><a href="#2-设置next" class="headerlink" title="2. 设置next"></a><strong>2. 设置next</strong></h2><blockquote>
-<p>修改根目录下的_config.yml(称为站点配置文件)<br><code># Site</code><br><code>title: </code>#标题<br><code>subtitle: </code>#副标题<br><code>description: </code>#备注<br><code>keywords: </code><br><code>author: </code>#作者<br><code>language: zh-CN</code> #主题语言 （主题语言在themes/next/language)<br><code>timezone: </code>#时区</p>
+<p>修改根目录下的_config.yml(称为站点配置文件)</p>
 </blockquote>
-<blockquote>
-<p><code># Extensions</code><br><code>## Plugins: https://hexo.io/plugins/</code><br><code>## Themes: https://hexo.io/themes/</code><br><code>theme: next</code> #修改主题</p>
-</blockquote>
-<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
-<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除<br><code># Schemes</code><br><code>#scheme: Muse</code><br><code>#scheme: Mist</code><br><code>scheme: Pisces</code><br><code>#scheme: Gemini</code></p>
-</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt; # Site</span><br><span class="line">title: #标题</span><br><span class="line">subtitle: #副标题</span><br><span class="line">description: #备注</span><br><span class="line">keywords: </span><br><span class="line">author: #作者</span><br><span class="line">language: zh-CN #主题语言（主题语言在themes/next/language)</span><br><span class="line">timezone: #时区</span><br><span class="line"></span><br><span class="line">&gt; # Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next #修改主题</span><br></pre></td></tr></table></figure>
 
+<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
+<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; # Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
     </div>
 
     
