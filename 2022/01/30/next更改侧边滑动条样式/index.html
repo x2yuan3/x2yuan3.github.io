@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1. 如题 打开blog\source_data\styles.styl，添加如下代码  12345678910111213::-webkit-scrollbar-thumb &amp;#123;    background-color: #FFDAB9;    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%">
+  <meta name="description" content="1. 如题 打开blog\source_data\styles.styl，添加如下代码  12345678910111213::-webkit-scrollbar-thumb &amp;#123;    background-color: #6e6bc9;    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%">
 <meta property="og:type" content="article">
 <meta property="og:title" content="更改侧边滑动条样式">
 <meta property="og:url" content="http://example.com/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/index.html">
 <meta property="og:site_name" content="这是一个奇怪的地方，，，">
-<meta property="og:description" content="1. 如题 打开blog\source_data\styles.styl，添加如下代码  12345678910111213::-webkit-scrollbar-thumb &amp;#123;    background-color: #FFDAB9;    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%">
+<meta property="og:description" content="1. 如题 打开blog\source_data\styles.styl，添加如下代码  12345678910111213::-webkit-scrollbar-thumb &amp;#123;    background-color: #6e6bc9;    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-19T09:24:36.909Z">
+<meta property="article:modified_time" content="2022-07-03T10:05:55.489Z">
 <meta property="article:author" content="xyuan">
 <meta name="twitter:card" content="summary">
 
@@ -221,7 +221,7 @@
         <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
 <p>打开blog\source_data\styles.styl，添加如下代码</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #FFDAB9;</span><br><span class="line">    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #FFFAFA;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 10px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #6e6bc9;</span><br><span class="line">    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 3em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #121249;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>emmm具体颜色，样式什么的自己看着改吧</p>
 </blockquote>
@@ -257,12 +257,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/" rel="prev" title="添加头像">
-      <i class="fa fa-chevron-left"></i> 添加头像
+    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/" rel="prev" title="添加分类，标签，关于">
+      <i class="fa fa-chevron-left"></i> 添加分类，标签，关于
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/" rel="next" title="添加彩色滚动变换字体">
-      添加彩色滚动变换字体 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/01/30/next%E5%85%B3%E9%97%AD%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0%E4%BA%8E/" rel="next" title="关闭文章"更新于"">
+      关闭文章"更新于" <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
