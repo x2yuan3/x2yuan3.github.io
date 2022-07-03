@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/Windows%E9%80%9A%E8%BF%87%E6%95%B0%E6%8D%AE%E7%BA%BF%E6%8E%A7%E5%88%B6Android%E6%89%8B%E6%9C%BA/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/Windows%E9%80%9A%E8%BF%87%E6%95%B0%E6%8D%AE%E7%BA%BF%E6%8E%A7%E5%88%B6Android%E6%89%8B%E6%9C%BA/" class="post-title-link" itemprop="url">Windows通过数据线控制Android手机</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/" class="post-title-link" itemprop="url">添加live2d角色</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">博客更新日志</span></a>
                 </span>
             </span>
 
@@ -214,12 +214,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-使用scrcpy"><a href="#1-使用scrcpy" class="headerlink" title="1. 使用scrcpy"></a><strong>1. 使用scrcpy</strong></h2><blockquote>
-<p>下载地址<a target="_blank" rel="noopener" href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a><br>手机打开开发者模式，打开usb调试<br>通过数据线连接电脑<br>把文件解压出来，在文件夹里打开cmd（可在文件路径输入cmd快捷打开）<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrcpy</span><br></pre></td></tr></table></figure>
-<p>手机端会弹出是否信任设备窗口，点击始终信任<br>其余可在官方文档查看<br>官方文档<a target="_blank" rel="noopener" href="https://github.com/Genymobile/scrcpy#translations">https://github.com/Genymobile/scrcpy#translations</a></p>
+          <h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
+<p>在blog根目录打开 git bash 输入如下代码</p>
 </blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
 
+<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a target="_blank" rel="noopener" href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
+</blockquote>
+<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
+<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">##自定义看板娘动画</span><br><span class="line">live2d: </span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local ##主目录</span><br><span class="line">  pluginRootPath: live2d_models/ ##模型目录</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: 33.2017.valley ##对应的模型名称</span><br><span class="line">  display:</span><br><span class="line">    position: right ##居右</span><br><span class="line">    width: 300 ##宽度</span><br><span class="line">    height: 300 ##高度</span><br><span class="line">  mobile:</span><br><span class="line">    show: true ##移动端是否显示</span><br><span class="line">  react:</span><br><span class="line">    opacity: 1</span><br></pre></td></tr></table></figure>
       
     </div>
 
