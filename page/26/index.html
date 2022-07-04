@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/" class="post-title-link" itemprop="url">设置next主题</a>
+            <a href="/2021/10/01/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">hexo报错问题解决</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +199,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/next%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">next主题</span></a>
+                  <a href="/categories/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" itemprop="url" rel="index"><span itemprop="name">hexo报错问题解决</span></a>
                 </span>
             </span>
 
@@ -214,18 +214,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
-<p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
+          <h2 id="1-解决-bash-hexo-command-not-found"><a href="#1-解决-bash-hexo-command-not-found" class="headerlink" title="1. 解决 bash: hexo: command not found"></a><strong>1. 解决 bash: hexo: command not found</strong></h2><blockquote>
+<p>在系统变量Path，将自己hexo博客文件下 node_modules 的 .bin 文件路径添加到 Path 里面即可</p>
 </blockquote>
-<h2 id="2-设置next"><a href="#2-设置next" class="headerlink" title="2. 设置next"></a><strong>2. 设置next</strong></h2><blockquote>
-<p>修改根目录下的_config.yml(称为站点配置文件)</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt; # Site</span><br><span class="line">title: #标题</span><br><span class="line">subtitle: #副标题</span><br><span class="line">description: #备注</span><br><span class="line">keywords: </span><br><span class="line">author: #作者</span><br><span class="line">language: zh-CN #主题语言（主题语言在themes/next/language)</span><br><span class="line">timezone: #时区</span><br><span class="line"></span><br><span class="line">&gt; # Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next #修改主题</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
-<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; # Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -243,7 +235,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/25/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><span class="page-number current">26</span>
+    <a class="extend prev" rel="prev" href="/page/25/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><span class="page-number current">26</span><a class="page-number" href="/page/27/">27</a><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/27/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -310,7 +302,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -399,8 +391,12 @@
   </span>
   <span class="author" itemprop="copyrightHolder">xyuan</span>
 </div>
+
+<!--
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
+
+-->
 
         
 
@@ -515,5 +511,5 @@ window.addEventListener('pjax:success', () => {
   
 
     </div>
-<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.tomo-bukatsu.high.model.json"},"display":{"position":"right","width":285,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
+<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.tomo-bukatsu.high.model.json"},"display":{"position":"right","width":285,"height":300},"mobile":{"show":false},"react":{"opacity":1},"log":false});</script></body>
 </html>

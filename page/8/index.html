@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/20/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/" class="post-title-link" itemprop="url">更改菜单栏顶部显示</a>
+            <a href="/2022/05/20/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/" class="post-title-link" itemprop="url">将本地hexo博客部署到github</a>
         </h2>
 
         <div class="post-meta">
@@ -191,7 +191,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-01-30 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-30T00:00:00+08:00">2022-01-30</time>
+              <time title="创建时间：2022-05-20 00:00:00" itemprop="dateCreated datePublished" datetime="2022-05-20T00:00:00+08:00">2022-05-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -214,20 +214,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+          <h2 id="1-创建github账号"><a href="#1-创建github账号" class="headerlink" title="1. 创建github账号"></a><strong>1. 创建github账号</strong></h2><h2 id="2-new个仓库"><a href="#2-new个仓库" class="headerlink" title="2. new个仓库"></a><strong>2. new个仓库</strong></h2><blockquote>
+<p>仓库名称格式为”你的用户名.GitHub.io”</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.site-brand-container &#123;</span><br><span class="line"> background:url(images\caidan.png);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-修改博客根目录站点配置文件"><a href="#3-修改博客根目录站点配置文件" class="headerlink" title="3. 修改博客根目录站点配置文件"></a><strong>3. 修改博客根目录站点配置文件</strong></h2><blockquote>
+<p>根据自己仓库地址修改，如下：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/xyuan23/xyuan23.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>url可替换修改成颜色，如 background: #222;</p>
+<h2 id="4-安装Git部署插件"><a href="#4-安装Git部署插件" class="headerlink" title="4. 安装Git部署插件"></a><strong>4. 安装Git部署插件</strong></h2><blockquote>
+<p>在博客根目录打开 Git Bash （建议以管理员身份运行）<br>输入：</p>
 </blockquote>
-<h2 id="2-吐槽"><a href="#2-吐槽" class="headerlink" title="2. 吐槽"></a><strong>2. 吐槽</strong></h2><blockquote>
-<p>我tm真的是吐了，为了这个菜单栏顶部自定义显示，至少查了半个多小时，试着修改了半个多小时，关键词搜索结果全tm解决不了，，，裂开了woc<br>最后在博客页面通过f12开发工具，找到了位置，再翻到了负责显示菜单栏顶部的代码，本想着试试做个修改添加到styles.styl，啊啊啊啊啊啊总算搞定了艹<br>对了对了，把顶部加载条也给改了吧，如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.headband &#123;</span><br><span class="line"> height: 0px;</span><br><span class="line"> background: #000;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>这下全局边框圆角总算能看了，（话说全局阴影，，，）</p>
+<h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#x6f;&#x75;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;">&#x79;&#x6f;&#x75;&#x40;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#109;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+</blockquote>
+<h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
+<p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
 </blockquote>
 
       
@@ -247,7 +253,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -314,7 +320,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">26</span>
+          <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -403,8 +409,12 @@
   </span>
   <span class="author" itemprop="copyrightHolder">xyuan</span>
 </div>
+
+<!--
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
+
+-->
 
         
 
@@ -519,5 +529,5 @@ window.addEventListener('pjax:success', () => {
   
 
     </div>
-<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.tomo-bukatsu.high.model.json"},"display":{"position":"right","width":285,"height":300},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
+<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/33.2017.tomo-bukatsu.high.model.json"},"display":{"position":"right","width":285,"height":300},"mobile":{"show":false},"react":{"opacity":1},"log":false});</script></body>
 </html>
