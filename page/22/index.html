@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -99,6 +99,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -138,11 +139,38 @@
     <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -165,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%8F%8A%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">使用MarkdownPad 2写文章</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%8F%8A%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E/" class="post-title-link" itemprop="url">添加背景，全局透明，全局边框圆角</a>
         </h2>
 
         <div class="post-meta">
@@ -199,7 +227,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MarkdownPad-2/" itemprop="url" rel="index"><span itemprop="name">MarkdownPad 2</span></a>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">博客更新日志</span></a>
                 </span>
             </span>
 
@@ -214,15 +242,105 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
-<p>下载地址:  <a target="_blank" rel="noopener" href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
+          <h2 id="1-设置背景"><a href="#1-设置背景" class="headerlink" title="1. 设置背景"></a><strong>1. 设置背景</strong></h2><blockquote>
+<p>将你的背景图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找styles.styl,去掉#后保存，如下</p>
 </blockquote>
-<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#111;&#97;&#114;&#x33;&#54;&#x30;&#64;&#108;&#x69;&#118;&#x65;&#46;&#99;&#111;&#109;">&#x53;&#111;&#97;&#114;&#x33;&#54;&#x30;&#64;&#108;&#x69;&#118;&#x65;&#46;&#99;&#111;&#109;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<pre><code>custom_file_path:
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
+</code></pre>
+<blockquote>
+<p> 新建路径和文件blog/source/_data/styles.styl<br> 打开styles.styl输入以下代码</p>
 </blockquote>
-<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
-<p>下载地址:  <a target="_blank" rel="noopener" href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
+<pre><code>body &#123;
+    background:url(/images/black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+&#125;
+</code></pre>
+<h2 id="1-1-设置手机端背景"><a href="#1-1-设置手机端背景" class="headerlink" title="1-1. 设置手机端背景"></a><strong>1-1. 设置手机端背景</strong></h2><pre><code>@media only screen and (max-width: 1080px) &#123;
+  body &#123;
+    background:url(/images/black.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+  &#125;
+&#125;
+</code></pre>
+<h2 id="2-设置透明"><a href="#2-设置透明" class="headerlink" title="2. 设置透明"></a><strong>2. 设置透明</strong></h2><blockquote>
+<p>同上在styles.styl输入以下代码</p>
 </blockquote>
+<pre><code>//文章内容的透明度设置
+.content-wrap &#123;
+ opacity: 1;
+&#125;
+.post-block &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//侧边框的透明度设置
+.sidebar-inner &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//菜单栏的透明度设置
+.header-inner &#123;
+ background: rgba(255,255,255,0.8);
+&#125;
+
+//搜索框的透明度设置
+.popup &#123;
+ opacity: 1;
+&#125;
+</code></pre>
+<h2 id="2-1-全局透明调整"><a href="#2-1-全局透明调整" class="headerlink" title="2-1. 全局透明调整"></a><strong>2-1. 全局透明调整</strong></h2><pre><code>//文章内容的透明度设置
+.content-wrap &#123;
+ opacity: 1;
+&#125;
+.post-block &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//侧边框的透明度设置
+.sidebar-inner &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//菜单栏的透明度设置
+.header-inner &#123;
+ background: rgba(255,255,255,0.8);
+&#125;
+
+//搜索框的透明度设置
+.popup &#123;
+ opacity: 1;
+&#125;
+</code></pre>
+<h2 id="3-全局边框圆角"><a href="#3-全局边框圆角" class="headerlink" title="3. 全局边框圆角"></a><strong>3. 全局边框圆角</strong></h2><blockquote>
+<p>打开blog/themes/next/source/css/_variables/Pisces.styl（你的主题是哪个就打开哪个，我这里设置的主题是Pisces）<br>搜索$border-radius-inner<br>修改如下</p>
+</blockquote>
+<pre><code>$border-radius-inner              = 20px;
+$border-radius                    = 20px;
+</code></pre>
+<blockquote>
+<p>这时候头像侧边栏的四个边角存在背景色，需要继续优化<br>打开blog/source/_data/styles.styl<br>添加如下代码</p>
+</blockquote>
+<pre><code>// 头像侧边栏的四个边角背景色优化
+.sidebar&#123;
+    background-color:transparent;
+&#125;
+</code></pre>
 
       
     </div>
@@ -241,7 +359,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/21/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/23/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/21/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" href="/page/23/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -308,7 +426,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -498,6 +616,10 @@ window.addEventListener('pjax:success', () => {
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 

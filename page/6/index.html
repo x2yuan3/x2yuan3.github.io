@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -99,6 +99,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -138,11 +139,38 @@
     <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -165,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -179,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/" class="post-title-link" itemprop="url">添加留言板页面</a>
+            <a href="/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/" class="post-title-link" itemprop="url">office安装和激活</a>
         </h2>
 
         <div class="post-meta">
@@ -191,7 +219,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-05-20 00:00:00" itemprop="dateCreated datePublished" datetime="2022-05-20T00:00:00+08:00">2022-05-20</time>
+              <time title="创建时间：2022-06-10 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-10T00:00:00+08:00">2022-06-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -199,7 +227,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">博客更新日志</span></a>
+                  <a href="/categories/office/" itemprop="url" rel="index"><span itemprop="name">office</span></a>
                 </span>
             </span>
 
@@ -214,26 +242,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
-<p>在blog根目录，打开 git bash 运行命令如下</p>
+          <h2 id="1-下载安装office-tool-plus"><a href="#1-下载安装office-tool-plus" class="headerlink" title="1.下载安装office tool plus"></a><strong>1.下载安装office tool plus</strong></h2><blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://otp.landian.vip/">https://otp.landian.vip/</a></p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page guestbook</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>编辑留言板页面文件，guestbook\index.md<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2022-05-20 20:00:00</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">做个留言板0v0</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
-<p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; menu:</span><br><span class="line">&gt;   home: / || fa fa-home</span><br><span class="line">&gt;   categories: /categories/ || fa fa-th</span><br><span class="line">&gt;   tags: /tags/ || fa fa-tags</span><br><span class="line">&gt;   archives: /archives/ || fa fa-archive</span><br><span class="line">&gt;   guestbook: /guestbook/ || fa fa-comment</span><br><span class="line">&gt;   about: /about/ || fa fa-user</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
-<p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; menu:</span><br><span class="line">&gt;   home: 首页</span><br><span class="line">&gt;   archives: 归档</span><br><span class="line">&gt;   categories: 分类</span><br><span class="line">&gt;   tags: 标签</span><br><span class="line">&gt;   about: 关于</span><br><span class="line">&gt;   search: 搜索</span><br><span class="line">&gt;   schedule: 日程表</span><br><span class="line">&gt;   sitemap: 站点地图</span><br><span class="line">&gt;   commonweal: 公益 404</span><br><span class="line">&gt;   guestbook: 留言</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>  即可，本地运行看看吧</p>
+<h2 id="2-office-tool-plus激活功能"><a href="#2-office-tool-plus激活功能" class="headerlink" title="2.office tool plus激活功能"></a><strong>2.office tool plus激活功能</strong></h2><blockquote>
+<p>kms激活：<a target="_blank" rel="noopener" href="http://kms.03k.org/">http://kms.03k.org</a></p>
 </blockquote>
 
       
@@ -253,7 +266,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -320,7 +333,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -510,6 +523,10 @@ window.addEventListener('pjax:success', () => {
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
