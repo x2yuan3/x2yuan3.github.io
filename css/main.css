@@ -1143,6 +1143,12 @@ pre .javascript .function {
   padding: 2px;
   border-radius: 50%;
 }
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
+}
 .site-author-name {
   color: var(--text-color);
   font-weight: 600;
@@ -1169,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #406b2a;
+  background: #16f2ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2670,6 +2676,20 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.category-all-page .category-list-count {
+  color: #000;
+}
+.posts-collapse .collection-header small {
+  color: #000;
+  margin-left: 5px;
+}
+body {
+  background: var(--body-bg-color);
+  color: #000;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
 }
 .brand {
   border-bottom: none;

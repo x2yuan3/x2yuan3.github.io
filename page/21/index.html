@@ -244,12 +244,19 @@
       
           <h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
 <p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
-<p><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</code></p>
-<p><code>    &lt;/div&gt;</code><br><code>  &lt;/aside&gt;</code><br><code>  &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;</code><br><code>&#123;% endmacro %&#125;</code></p>
 </blockquote>
+<pre><code> &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+ 
+     &lt;/div&gt;
+   &lt;/aside&gt;
+   &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;
+ &#123;% endmacro %&#125;
+</code></pre>
 <h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
-<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下<br><code>pjax: true</code></p>
+<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
 </blockquote>
+<pre><code>pjax: true
+</code></pre>
 
       
     </div>
