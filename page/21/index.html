@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%8F%8A%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%8F%8A%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E/" class="post-title-link" itemprop="url">添加背景，全局透明，全局边框圆角</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/" class="post-title-link" itemprop="url">添加网易云音乐插件</a>
         </h2>
 
         <div class="post-meta">
@@ -242,105 +242,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-设置背景"><a href="#1-设置背景" class="headerlink" title="1. 设置背景"></a><strong>1. 设置背景</strong></h2><blockquote>
-<p>将你的背景图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找styles.styl,去掉#后保存，如下</p>
+          <h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
+<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
+<p><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</code></p>
+<p><code>    &lt;/div&gt;</code><br><code>  &lt;/aside&gt;</code><br><code>  &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;</code><br><code>&#123;% endmacro %&#125;</code></p>
 </blockquote>
-<pre><code>custom_file_path:
-  #head: source/_data/head.swig
-  #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
-  #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
-  #footer: source/_data/footer.swig
-  #bodyEnd: source/_data/body-end.swig
-  #variable: source/_data/variables.styl
-  #mixin: source/_data/mixins.styl
-  style: source/_data/styles.styl
-</code></pre>
-<blockquote>
-<p> 新建路径和文件blog/source/_data/styles.styl<br> 打开styles.styl输入以下代码</p>
+<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
+<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下<br><code>pjax: true</code></p>
 </blockquote>
-<pre><code>body &#123;
-    background:url(/images/black.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-&#125;
-</code></pre>
-<h2 id="1-1-设置手机端背景"><a href="#1-1-设置手机端背景" class="headerlink" title="1-1. 设置手机端背景"></a><strong>1-1. 设置手机端背景</strong></h2><pre><code>@media only screen and (max-width: 1080px) &#123;
-  body &#123;
-    background:url(/images/black.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-  &#125;
-&#125;
-</code></pre>
-<h2 id="2-设置透明"><a href="#2-设置透明" class="headerlink" title="2. 设置透明"></a><strong>2. 设置透明</strong></h2><blockquote>
-<p>同上在styles.styl输入以下代码</p>
-</blockquote>
-<pre><code>//文章内容的透明度设置
-.content-wrap &#123;
- opacity: 1;
-&#125;
-.post-block &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//侧边框的透明度设置
-.sidebar-inner &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//菜单栏的透明度设置
-.header-inner &#123;
- background: rgba(255,255,255,0.8);
-&#125;
-
-//搜索框的透明度设置
-.popup &#123;
- opacity: 1;
-&#125;
-</code></pre>
-<h2 id="2-1-全局透明调整"><a href="#2-1-全局透明调整" class="headerlink" title="2-1. 全局透明调整"></a><strong>2-1. 全局透明调整</strong></h2><pre><code>//文章内容的透明度设置
-.content-wrap &#123;
- opacity: 1;
-&#125;
-.post-block &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//侧边框的透明度设置
-.sidebar-inner &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//菜单栏的透明度设置
-.header-inner &#123;
- background: rgba(255,255,255,0.8);
-&#125;
-
-//搜索框的透明度设置
-.popup &#123;
- opacity: 1;
-&#125;
-</code></pre>
-<h2 id="3-全局边框圆角"><a href="#3-全局边框圆角" class="headerlink" title="3. 全局边框圆角"></a><strong>3. 全局边框圆角</strong></h2><blockquote>
-<p>打开blog/themes/next/source/css/_variables/Pisces.styl（你的主题是哪个就打开哪个，我这里设置的主题是Pisces）<br>搜索$border-radius-inner<br>修改如下</p>
-</blockquote>
-<pre><code>$border-radius-inner              = 20px;
-$border-radius                    = 20px;
-</code></pre>
-<blockquote>
-<p>这时候头像侧边栏的四个边角存在背景色，需要继续优化<br>打开blog/source/_data/styles.styl<br>添加如下代码</p>
-</blockquote>
-<pre><code>// 头像侧边栏的四个边角背景色优化
-.sidebar&#123;
-    background-color:transparent;
-&#125;
-</code></pre>
 
       
     </div>
