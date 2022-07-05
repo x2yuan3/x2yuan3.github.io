@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/" class="post-title-link" itemprop="url">添加网站图标</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/" class="post-title-link" itemprop="url">添加live2d角色</a>
         </h2>
 
         <div class="post-meta">
@@ -242,9 +242,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下<br><code>favicon:</code><br><code>small: /images/xiaoheimiaoio-16x16.png</code><br><code>medium: /images/xiaoheimiaoio-32x32.png</code><br><code>apple_touch_icon: /images/apple-touch-icon-next.png</code><br><code>safari_pinned_tab: /images/logo.svg</code><br><code>#android_manifest: /images/manifest.json</code><br><code>#ms_browserconfig: /images/browserconfig.xml</code><br>修改small和medium为你的图标路径</p>
+          <h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
+<p>在blog根目录打开 git bash 输入如下代码</p>
 </blockquote>
+<pre><code>npm install --save hexo-helper-live2d
+</code></pre>
+<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a target="_blank" rel="noopener" href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
+</blockquote>
+<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
+<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
+</blockquote>
+<pre><code>##自定义看板娘动画
+live2d: 
+  enable: true
+  scriptFrom: local ##主目录
+  pluginRootPath: live2d_models/ ##模型目录
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: 33.2017.valley ##对应的模型名称
+  display:
+    position: right ##居右
+    width: 300 ##宽度
+    height: 300 ##高度
+  mobile:
+    show: true ##移动端是否显示
+  react:
+    opacity: 1
+</code></pre>
 
       
     </div>

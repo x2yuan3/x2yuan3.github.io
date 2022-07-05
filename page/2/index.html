@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E4%BF%AE%E6%94%B9%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/04/next%E4%BF%AE%E6%94%B9%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F/" class="post-title-link" itemprop="url">修改字体样式</a>
+            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">开启搜索功能</a>
         </h2>
 
         <div class="post-meta">
@@ -243,54 +243,21 @@
 
       
           <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开Hexo _config.yml<br>在底部添加如下设置</p>
 </blockquote>
-<pre><code>//伪全局字体颜色
-* &#123;
-  color: #000000;
-&#125;
-
-//首页标题颜色
-.posts-expand .post-title-link &#123;
-    border-bottom: none;
-    color: #000;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-&#125;
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 </code></pre>
-<pre><code>// 鼠标移动至文章标题时的下横线效果
-.posts-expand .post-title-link::before &#123;
-    content: &quot;&quot;;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: 000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    transform: scaleX(0);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-&#125;
-</code></pre>
-<pre><code>//文章段落间隔横线
-.post-body h1, .post-body h2 &#123;
-    border-bottom: 0px solid #000;
-&#125;
-
-//文章段落间隔竖线
-blockquote &#123;
-    border-left: 4px solid #000;
-    color: var(--blockquote-color);
-    margin: 0;
-    padding: 0 15px;
-&#125;
+<blockquote>
+<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+</blockquote>
+<pre><code># Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
 </code></pre>
 
       
