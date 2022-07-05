@@ -21,9 +21,9 @@
   </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="这是一个奇怪的地方，，，">
+<meta property="og:title" content="这里是标题">
 <meta property="og:url" content="http://example.com/page/2/index.html">
-<meta property="og:site_name" content="这是一个奇怪的地方，，，">
+<meta property="og:site_name" content="这里是标题">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="xyuan">
 <meta name="twitter:card" content="summary">
@@ -41,7 +41,7 @@
   };
 </script>
 
-  <title>这是一个奇怪的地方，，，</title>
+  <title>这里是标题</title>
   
 
 
@@ -92,7 +92,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">这是一个奇怪的地方，，，</h1>
+      <h1 class="site-title">这里是标题</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -202,12 +202,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是一个奇怪的地方，，，">
+      <meta itemprop="name" content="这里是标题">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">小细节修改合集</a>
+            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">开启搜索功能</a>
         </h2>
 
         <div class="post-meta">
@@ -243,20 +243,21 @@
 
       
           <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开Hexo _config.yml<br>在底部添加如下设置</p>
 </blockquote>
-<pre><code>//文章段落间隔横线
-.post-body h1, .post-body h2 &#123;
-    border-bottom: 0px solid #000;
-&#125;
-
-//文章段落间隔竖线
-blockquote &#123;
-    border-left: 4px solid #000;
-    color: var(--blockquote-color);
-    margin: 0;
-    padding: 0 15px;
-&#125;
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<blockquote>
+<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+</blockquote>
+<pre><code># Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
 </code></pre>
 
       
