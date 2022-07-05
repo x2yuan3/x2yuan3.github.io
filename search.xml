@@ -395,10 +395,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#64;&#101;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x79;&#111;&#x75;&#64;&#101;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;">&#x79;&#111;&#x75;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#111;&#109;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -436,6 +436,34 @@ deploy:
 &gt;     another_day: true
 &gt;   categories: true
 </code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>更改侧边滑动条样式</title>
+    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl，添加如下代码</p>
+</blockquote>
+<pre><code>::-webkit-scrollbar-thumb &#123;
+    background-color: #6e6bc9;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+&#125;
+::-webkit-scrollbar-track &#123;
+    background-color: #121249;
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar &#123;
+    width: 10px;
+    height: 0px;
+&#125;
+</code></pre>
+<blockquote>
+<p>emmm具体颜色，样式什么的自己看着改吧</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -504,34 +532,6 @@ live2d:
   react:
     opacity: 1
 </code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>更改侧边滑动条样式</title>
-    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl，添加如下代码</p>
-</blockquote>
-<pre><code>::-webkit-scrollbar-thumb &#123;
-    background-color: #6e6bc9;
-    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
-    border-radius: 3em;
-&#125;
-::-webkit-scrollbar-track &#123;
-    background-color: #121249;
-    border-radius: 0em;
-&#125;
-::-webkit-scrollbar &#123;
-    width: 10px;
-    height: 0px;
-&#125;
-</code></pre>
-<blockquote>
-<p>emmm具体颜色，样式什么的自己看着改吧</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -685,17 +685,6 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下<br><code>favicon:</code><br><code>small: /images/xiaoheimiaoio-16x16.png</code><br><code>medium: /images/xiaoheimiaoio-32x32.png</code><br><code>apple_touch_icon: /images/apple-touch-icon-next.png</code><br><code>safari_pinned_tab: /images/logo.svg</code><br><code>#android_manifest: /images/manifest.json</code><br><code>#ms_browserconfig: /images/browserconfig.xml</code><br>修改small和medium为你的图标路径</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加背景，全局透明，全局边框圆角</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%8F%8A%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E/</url>
     <content><![CDATA[<h2 id="1-设置背景"><a href="#1-设置背景" class="headerlink" title="1. 设置背景"></a><strong>1. 设置背景</strong></h2><blockquote>
@@ -780,13 +769,24 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下<br><code>favicon:</code><br><code>small: /images/xiaoheimiaoio-16x16.png</code><br><code>medium: /images/xiaoheimiaoio-32x32.png</code><br><code>apple_touch_icon: /images/apple-touch-icon-next.png</code><br><code>safari_pinned_tab: /images/logo.svg</code><br><code>#android_manifest: /images/manifest.json</code><br><code>#ms_browserconfig: /images/browserconfig.xml</code><br>修改small和medium为你的图标路径</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>使用MarkdownPad 2写文章</title>
     <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#83;&#111;&#97;&#114;&#51;&#x36;&#48;&#x40;&#x6c;&#x69;&#118;&#101;&#46;&#99;&#x6f;&#x6d;">&#83;&#111;&#97;&#114;&#51;&#x36;&#48;&#x40;&#x6c;&#x69;&#118;&#101;&#46;&#99;&#x6f;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#x61;&#x72;&#51;&#54;&#x30;&#x40;&#x6c;&#x69;&#118;&#x65;&#46;&#99;&#x6f;&#109;">&#x53;&#x6f;&#x61;&#x72;&#51;&#54;&#x30;&#x40;&#x6c;&#x69;&#118;&#x65;&#46;&#99;&#x6f;&#109;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
