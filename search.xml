@@ -10,31 +10,6 @@
       </categories>
   </entry>
   <entry>
-    <title>开启搜索功能</title>
-    <url>/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开Hexo _config.yml<br>在底部添加如下设置</p>
-</blockquote>
-<pre><code>search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-</code></pre>
-<blockquote>
-<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
-</blockquote>
-<pre><code># Local Search
-# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
-local_search:
-  enable: true
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>小细节修改合集</title>
     <url>/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
@@ -209,6 +184,31 @@ blockquote &#123;
 </blockquote>
 <pre><code># Dark Mode
 darkmode: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开启搜索功能</title>
+    <url>/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开Hexo _config.yml<br>在底部添加如下设置</p>
+</blockquote>
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<blockquote>
+<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+</blockquote>
+<pre><code># Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
 </code></pre>
 ]]></content>
       <categories>
@@ -415,10 +415,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#x6f;&#x75;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#111;&#117;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;">&#121;&#111;&#117;&#x40;&#101;&#120;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -455,6 +455,45 @@ deploy:
 &gt;     enable: false
 &gt;     another_day: true
 &gt;   categories: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加live2d角色</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/</url>
+    <content><![CDATA[<h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
+<p>在blog根目录打开 git bash 输入如下代码</p>
+</blockquote>
+<pre><code>npm install --save hexo-helper-live2d
+</code></pre>
+<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
+<p><a href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
+</blockquote>
+<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
+<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
+</blockquote>
+<pre><code>##自定义看板娘动画
+live2d: 
+  enable: true
+  scriptFrom: local ##主目录
+  pluginRootPath: live2d_models/ ##模型目录
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: 33.2017.valley ##对应的模型名称
+  display:
+    position: right ##居右
+    width: 300 ##宽度
+    height: 300 ##高度
+  mobile:
+    show: true ##移动端是否显示
+  react:
+    opacity: 1
 </code></pre>
 ]]></content>
       <categories>
@@ -519,82 +558,6 @@ deploy:
       </categories>
   </entry>
   <entry>
-    <title>添加live2d角色</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/</url>
-    <content><![CDATA[<h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
-<p>在blog根目录打开 git bash 输入如下代码</p>
-</blockquote>
-<pre><code>npm install --save hexo-helper-live2d
-</code></pre>
-<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
-<p><a href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
-</blockquote>
-<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
-<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
-</blockquote>
-<pre><code>##自定义看板娘动画
-live2d: 
-  enable: true
-  scriptFrom: local ##主目录
-  pluginRootPath: live2d_models/ ##模型目录
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  debug: false
-  model:
-    use: 33.2017.valley ##对应的模型名称
-  display:
-    position: right ##居右
-    width: 300 ##宽度
-    height: 300 ##高度
-  mobile:
-    show: true ##移动端是否显示
-  react:
-    opacity: 1
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加分类，标签，关于</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
-    <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
-<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page categories<br>成功后会提示：<br>进入blog/source\categories，打开 index.md 添加 type: categories<br>如下<br><code>---</code><br><code>title: 文章分类</code><br><code>date: 2022-01-01</code><br><code>type: categories</code><br><code>---</code><br>保存并关闭文件</p>
-</blockquote>
-<h2 id="2-给文章添加categories-分类-属性"><a href="#2-给文章添加categories-分类-属性" class="headerlink" title="2. 给文章添加categories(分类)属性"></a><strong>2. 给文章添加categories(分类)属性</strong></h2><blockquote>
-<p>格式如下<br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br>至此，成功给文章添加分类，点击首页的【分类】可以看到该分类下的所有文章</p>
-</blockquote>
-<h2 id="3-创建【标签】选项"><a href="#3-创建【标签】选项" class="headerlink" title="3. 创建【标签】选项"></a><strong>3. 创建【标签】选项</strong></h2><blockquote>
-<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page tags<br>成功后会提示：<br>进入blog/source/tags，打开 index.md 添加type: tags<br>如下<br><code>---</code><br><code>title: 标签</code><br><code>date: 2022-01-01</code><br><code>type: tags</code><br><code>---</code><br>保存并关闭文件</p>
-</blockquote>
-<h2 id="4-给文章添加tags-标签-属性"><a href="#4-给文章添加tags-标签-属性" class="headerlink" title="4. 给文章添加tags(标签)属性"></a><strong>4. 给文章添加tags(标签)属性</strong></h2><blockquote>
-<p>格式如下<br><code>---</code><br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br><code>tags: </code><br><code>- 标签</code><br><code>---</code></p>
-</blockquote>
-<h2 id="5-创建【关于】选项"><a href="#5-创建【关于】选项" class="headerlink" title="5. 创建【关于】选项"></a><strong>5. 创建【关于】选项</strong></h2><blockquote>
-<p>hexo new page about<br><code>---</code><br><code>title: 关于</code><br><code>date: 2022-01-01</code><br><code>type: about</code><br><code>---</code></p>
-</blockquote>
-<blockquote>
-<p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加头像</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
-    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下<br><code># Sidebar Avatar</code><br><code>avatar:</code><br>  <code># Replace the default image and set the url here.</code><br>  <code>url: /images/xiaoheimiaoio.png</code>（头像位置）<br>  <code># If true, the avatar will be dispalyed in circle.</code><br>  <code>rounded: true</code>（设置圆形头像）<br>  <code># If true, the avatar will be rotated with the cursor.</code><br>  <code>rotated: false</code>（头像随鼠标旋转）</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加彩色滚动变换字体</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
@@ -652,17 +615,37 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加文章版权信息</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+    <title>添加分类，标签，关于</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
+    <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
+<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page categories<br>成功后会提示：<br>进入blog/source\categories，打开 index.md 添加 type: categories<br>如下<br><code>---</code><br><code>title: 文章分类</code><br><code>date: 2022-01-01</code><br><code>type: categories</code><br><code>---</code><br>保存并关闭文件</p>
 </blockquote>
-<pre><code>creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language:
-</code></pre>
+<h2 id="2-给文章添加categories-分类-属性"><a href="#2-给文章添加categories-分类-属性" class="headerlink" title="2. 给文章添加categories(分类)属性"></a><strong>2. 给文章添加categories(分类)属性</strong></h2><blockquote>
+<p>格式如下<br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br>至此，成功给文章添加分类，点击首页的【分类】可以看到该分类下的所有文章</p>
+</blockquote>
+<h2 id="3-创建【标签】选项"><a href="#3-创建【标签】选项" class="headerlink" title="3. 创建【标签】选项"></a><strong>3. 创建【标签】选项</strong></h2><blockquote>
+<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page tags<br>成功后会提示：<br>进入blog/source/tags，打开 index.md 添加type: tags<br>如下<br><code>---</code><br><code>title: 标签</code><br><code>date: 2022-01-01</code><br><code>type: tags</code><br><code>---</code><br>保存并关闭文件</p>
+</blockquote>
+<h2 id="4-给文章添加tags-标签-属性"><a href="#4-给文章添加tags-标签-属性" class="headerlink" title="4. 给文章添加tags(标签)属性"></a><strong>4. 给文章添加tags(标签)属性</strong></h2><blockquote>
+<p>格式如下<br><code>---</code><br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br><code>tags: </code><br><code>- 标签</code><br><code>---</code></p>
+</blockquote>
+<h2 id="5-创建【关于】选项"><a href="#5-创建【关于】选项" class="headerlink" title="5. 创建【关于】选项"></a><strong>5. 创建【关于】选项</strong></h2><blockquote>
+<p>hexo new page about<br><code>---</code><br><code>title: 关于</code><br><code>date: 2022-01-01</code><br><code>type: about</code><br><code>---</code></p>
+</blockquote>
+<blockquote>
+<p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加头像</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
+    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
+<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下<br><code># Sidebar Avatar</code><br><code>avatar:</code><br>  <code># Replace the default image and set the url here.</code><br>  <code>url: /images/xiaoheimiaoio.png</code>（头像位置）<br>  <code># If true, the avatar will be dispalyed in circle.</code><br>  <code>rounded: true</code>（设置圆形头像）<br>  <code># If true, the avatar will be rotated with the cursor.</code><br>  <code>rotated: false</code>（头像随鼠标旋转）</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -689,22 +672,16 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加网易云音乐插件</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
-<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
+    <title>添加文章版权信息</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
+<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
 </blockquote>
-<pre><code> &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
- 
-     &lt;/div&gt;
-   &lt;/aside&gt;
-   &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;
- &#123;% endmacro %&#125;
-</code></pre>
-<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
-<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
-</blockquote>
-<pre><code>pjax: true
+<pre><code>creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language:
 </code></pre>
 ]]></content>
       <categories>
@@ -728,6 +705,29 @@ live2d:
 <blockquote>
 <p>修改small和medium为你的图标路径</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加网易云音乐插件</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
+<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
+</blockquote>
+<pre><code> &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+ 
+     &lt;/div&gt;
+   &lt;/aside&gt;
+   &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;
+ &#123;% endmacro %&#125;
+</code></pre>
+<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
+<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
+</blockquote>
+<pre><code>pjax: true
+</code></pre>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -824,7 +824,7 @@ $border-radius                    = 20px;
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#97;&#x72;&#51;&#54;&#48;&#x40;&#x6c;&#x69;&#118;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x53;&#x6f;&#97;&#x72;&#51;&#54;&#48;&#x40;&#x6c;&#x69;&#118;&#x65;&#x2e;&#x63;&#111;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#x72;&#51;&#54;&#48;&#x40;&#108;&#105;&#x76;&#x65;&#46;&#x63;&#111;&#x6d;">&#83;&#x6f;&#x61;&#x72;&#51;&#54;&#48;&#x40;&#108;&#105;&#x76;&#x65;&#46;&#x63;&#111;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
@@ -894,41 +894,6 @@ pagination_dir: page
       </categories>
   </entry>
   <entry>
-    <title>在本地搭建hexo博客</title>
-    <url>/2021/10/01/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
-<p>安装 Git  <a href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
-</blockquote>
-<blockquote>
-<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
-</blockquote>
-<blockquote>
-<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br>报错！2022-06-09<br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
-</blockquote>
-<blockquote>
-<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
-</blockquote>
-<blockquote>
-<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
-</blockquote>
-<blockquote>
-<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
-</blockquote>
-<blockquote>
-<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
-</blockquote>
-<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
-<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
-</blockquote>
-<blockquote>
-<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo博客框架</category>
-      </categories>
-  </entry>
-  <entry>
     <title>设置next主题</title>
     <url>/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
@@ -963,6 +928,41 @@ scheme: Pisces
 ]]></content>
       <categories>
         <category>next主题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在本地搭建hexo博客</title>
+    <url>/2021/10/01/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
+<p>安装 Git  <a href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
+</blockquote>
+<blockquote>
+<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
+</blockquote>
+<blockquote>
+<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br>报错！2022-06-09<br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
+</blockquote>
+<blockquote>
+<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
+</blockquote>
+<blockquote>
+<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
+</blockquote>
+<blockquote>
+<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
+</blockquote>
+<blockquote>
+<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
+</blockquote>
+<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
+<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
+</blockquote>
+<blockquote>
+<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>hexo博客框架</category>
       </categories>
   </entry>
 </search>
