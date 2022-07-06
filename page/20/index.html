@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">添加文章版权信息</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/" class="post-title-link" itemprop="url">添加网站图标</a>
         </h2>
 
         <div class="post-meta">
@@ -242,15 +242,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+          <h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
 </blockquote>
-<pre><code>creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language:
+<pre><code> favicon:
+ small: /images/xiaoheimiaoio-16x16.png
+ medium: /images/xiaoheimiaoio-32x32.png
+ apple_touch_icon: /images/apple-touch-icon-next.png
+ safari_pinned_tab: /images/logo.svg
+ #android_manifest: /images/manifest.json
+ #ms_browserconfig: /images/browserconfig.xml
 </code></pre>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
 
       
     </div>
