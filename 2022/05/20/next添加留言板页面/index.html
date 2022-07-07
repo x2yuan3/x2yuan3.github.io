@@ -28,7 +28,7 @@
 <meta property="og:description" content="1. 添加页面 在blog根目录，打开 git bash 运行命令如下  hexo new page guestbook   编辑留言板页面文件，guestbook\index.md如下  --- title: 留言板 date: 2022-05-20 20:00:00 ---  做个留言板0v0  2. 编辑next主题文件 编辑next_config.yml，查找 menu:添加 guestb">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-03T02:00:22.408Z">
+<meta property="article:modified_time" content="2022-07-07T14:23:31.511Z">
 <meta property="article:author" content="xyuan">
 <meta name="twitter:card" content="summary">
 
@@ -264,28 +264,28 @@ date: 2022-05-20 20:00:00
 <h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
 <p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下</p>
 </blockquote>
-<pre><code>&gt; menu:
-&gt;   home: / || fa fa-home
-&gt;   categories: /categories/ || fa fa-th
-&gt;   tags: /tags/ || fa fa-tags
-&gt;   archives: /archives/ || fa fa-archive
-&gt;   guestbook: /guestbook/ || fa fa-comment
-&gt;   about: /about/ || fa fa-user
+<pre><code>menu:
+  home: / || fa fa-home
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  archives: /archives/ || fa fa-archive
+  guestbook: /guestbook/ || fa fa-comment
+  about: /about/ || fa fa-user
 </code></pre>
 <h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
 <p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下</p>
 </blockquote>
-<pre><code>&gt; menu:
-&gt;   home: 首页
-&gt;   archives: 归档
-&gt;   categories: 分类
-&gt;   tags: 标签
-&gt;   about: 关于
-&gt;   search: 搜索
-&gt;   schedule: 日程表
-&gt;   sitemap: 站点地图
-&gt;   commonweal: 公益 404
-&gt;   guestbook: 留言
+<pre><code>menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  search: 搜索
+  schedule: 日程表
+  sitemap: 站点地图
+  commonweal: 公益 404
+  guestbook: 留言
 </code></pre>
 <blockquote>
 <p>  即可，本地运行看看吧</p>

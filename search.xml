@@ -54,7 +54,8 @@ darkmode: true
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
 <p>打开blog\source_data\styles.styl<br>添加如下代码</p>
 </blockquote>
-<pre><code>//分类括号颜色
+<pre><code>
+//分类括号颜色
 .category-all-page .category-list-count &#123;
     color: #000;
 &#125;
@@ -116,12 +117,12 @@ body &#123;
     font-size: 0.8125em;
 &#125;
 
-//文字底部翻页栏
+//翻页栏
 .pagination &#123;
     background: rgba(255,255,255,0.8);
     border-radius: initial;
     border-top: initial;
-    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
     margin: 10px 0 0;
     padding: 10px 0 10px;
 &#125;
@@ -181,7 +182,7 @@ blockquote &#123;
     padding: 0 15px;
 &#125;
 
-//鼠标移动至文章标题时的效果
+// 鼠标移动至文章标题时的效果
 .posts-expand .post-title-link::before &#123;
     content: &quot;&quot;;
     position: absolute;
@@ -319,28 +320,28 @@ date: 2022-05-20 20:00:00
 <h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
 <p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下</p>
 </blockquote>
-<pre><code>&gt; menu:
-&gt;   home: / || fa fa-home
-&gt;   categories: /categories/ || fa fa-th
-&gt;   tags: /tags/ || fa fa-tags
-&gt;   archives: /archives/ || fa fa-archive
-&gt;   guestbook: /guestbook/ || fa fa-comment
-&gt;   about: /about/ || fa fa-user
+<pre><code>menu:
+  home: / || fa fa-home
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  archives: /archives/ || fa fa-archive
+  guestbook: /guestbook/ || fa fa-comment
+  about: /about/ || fa fa-user
 </code></pre>
 <h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
 <p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下</p>
 </blockquote>
-<pre><code>&gt; menu:
-&gt;   home: 首页
-&gt;   archives: 归档
-&gt;   categories: 分类
-&gt;   tags: 标签
-&gt;   about: 关于
-&gt;   search: 搜索
-&gt;   schedule: 日程表
-&gt;   sitemap: 站点地图
-&gt;   commonweal: 公益 404
-&gt;   guestbook: 留言
+<pre><code>menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  about: 关于
+  search: 搜索
+  schedule: 日程表
+  sitemap: 站点地图
+  commonweal: 公益 404
+  guestbook: 留言
 </code></pre>
 <blockquote>
 <p>  即可，本地运行看看吧</p>
@@ -415,10 +416,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#99;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#111;&#117;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#121;&#111;&#117;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#x6f;&#117;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;">&#121;&#x6f;&#117;&#64;&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -448,43 +449,14 @@ deploy:
     <content><![CDATA[<h2 id="1-修改next配置文件"><a href="#1-修改next配置文件" class="headerlink" title="1. 修改next配置文件"></a><strong>1. 修改next配置文件</strong></h2><blockquote>
 <p>打开blog\themes\next_config.yml<br>查找post_meta:<br>将updated_at下的enable: true修改为false，如下</p>
 </blockquote>
-<pre><code>&gt; post_meta:
-&gt;   item_text: true
-&gt;   created_at: true
-&gt;   updated_at:
-&gt;     enable: false
-&gt;     another_day: true
-&gt;   categories: true
+<pre><code>post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+  enable: false
+  another_day: true
+  categories: true
 </code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>更改菜单栏顶部显示</title>
-    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
-</blockquote>
-<pre><code>.site-brand-container &#123;
- background:url(images\caidan.png);
-&#125;
-</code></pre>
-<blockquote>
-<p>url可替换修改成颜色，如 background: #222;</p>
-</blockquote>
-<h2 id="2-吐槽"><a href="#2-吐槽" class="headerlink" title="2. 吐槽"></a><strong>2. 吐槽</strong></h2><blockquote>
-<p>我tm真的是吐了，为了这个菜单栏顶部自定义显示，至少查了半个多小时，试着修改了半个多小时，关键词搜索结果全tm解决不了，，，裂开了woc<br>最后在博客页面通过f12开发工具，找到了位置，再翻到了负责显示菜单栏顶部的代码，本想着试试做个修改添加到styles.styl，啊啊啊啊啊啊总算搞定了艹<br>对了对了，把顶部加载条也给改了吧，如下</p>
-</blockquote>
-<pre><code>.headband &#123;
- height: 0px;
- background: #000;
-&#125;
-</code></pre>
-<blockquote>
-<p>这下全局边框圆角总算能看了，（话说全局阴影，，，）</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -542,16 +514,45 @@ live2d:
   tagMode: false
   debug: false
   model:
-    use: 33.2017.valley ##对应的模型名称
+    use: 33.2017.tomo-bukatsu.high ##对应的模型名称
   display:
     position: right ##居右
-    width: 300 ##宽度
+    width: 285 ##宽度
     height: 300 ##高度
   mobile:
-    show: true ##移动端是否显示
+    show: false ##移动端是否显示
   react:
     opacity: 1
 </code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>更改菜单栏顶部显示</title>
+    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+</blockquote>
+<pre><code>.site-brand-container &#123;
+ background:url(images\caidan.png);
+&#125;
+</code></pre>
+<blockquote>
+<p>url可替换修改成颜色，如 background: #222;</p>
+</blockquote>
+<h2 id="2-吐槽"><a href="#2-吐槽" class="headerlink" title="2. 吐槽"></a><strong>2. 吐槽</strong></h2><blockquote>
+<p>我tm真的是吐了，为了这个菜单栏顶部自定义显示，至少查了半个多小时，试着修改了半个多小时，关键词搜索结果全tm解决不了，，，裂开了woc<br>最后在博客页面通过f12开发工具，找到了位置，再翻到了负责显示菜单栏顶部的代码，本想着试试做个修改添加到styles.styl，啊啊啊啊啊啊总算搞定了艹<br>对了对了，把顶部加载条也给改了吧，如下</p>
+</blockquote>
+<pre><code>.headband &#123;
+ height: 0px;
+ background: #000;
+&#125;
+</code></pre>
+<blockquote>
+<p>这下全局边框圆角总算能看了，（话说全局阴影，，，）</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -669,42 +670,29 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
-</blockquote>
-<pre><code> favicon:
- small: /images/xiaoheimiaoio-16x16.png
- medium: /images/xiaoheimiaoio-32x32.png
- apple_touch_icon: /images/apple-touch-icon-next.png
- safari_pinned_tab: /images/logo.svg
- #android_manifest: /images/manifest.json
- #ms_browserconfig: /images/browserconfig.xml
-</code></pre>
-<blockquote>
-<p>修改small和medium为你的图标路径</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加文章置顶</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
     <content><![CDATA[<h2 id="1-添加文章置顶"><a href="#1-添加文章置顶" class="headerlink" title="1. 添加文章置顶"></a><strong>1. 添加文章置顶</strong></h2><blockquote>
-<p>打开Git Bash输入<br><code>npm uninstall hexo-generator-index --save</code><br><code>npm install hexo-generator-index-pin-top --save</code><br>之后在需要置顶的文章添加top，如<br><code>---</code><br><code>title: 添加文章置顶</code><br><code>date:  2022-01-30</code><br><code>top：1</code><br><code>categories: </code><br><code>- next更新日志</code><br><code>tags: </code><br><code>---</code></p>
+<p>打开Git Bash输入<br><code>npm uninstall hexo-generator-index --save</code><br><code>npm install hexo-generator-index-pin-top --save</code><br>之后在需要置顶的文章添加top，如</p>
 </blockquote>
+<pre><code>---
+title: 添加文章置顶
+date:  2022-01-30
+top：1
+categories: 
+- next更新日志
+tags: 
+---
+</code></pre>
 <h2 id="2-添加置顶标志"><a href="#2-添加置顶标志" class="headerlink" title="2. 添加置顶标志"></a><strong>2. 添加置顶标志</strong></h2><blockquote>
 <p>打开bolg/themes/next/layout/_macro/post.swig<br>查找<code>&lt;div class=&quot;post-meta&quot;&gt;</code><br>添加如下代码</p>
-<pre><code>
+</blockquote>
+<pre><code>&#123;% if post.top %&#125;
+    <i class="fa fa-thumb-tack"></i>
+    <font color=red>置顶</font>
+    <span class="post-meta-divider">|</span>
+&#123;% endif %&#125;
 </code></pre>
-</blockquote>
-
-<blockquote>
-<p>```</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -728,6 +716,28 @@ live2d:
 </blockquote>
 <pre><code>pjax: true
 </code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+</blockquote>
+<pre><code> favicon:
+ small: /images/xiaoheimiaoio-16x16.png
+ medium: /images/xiaoheimiaoio-32x32.png
+ apple_touch_icon: /images/apple-touch-icon-next.png
+ safari_pinned_tab: /images/logo.svg
+ #android_manifest: /images/manifest.json
+ #ms_browserconfig: /images/browserconfig.xml
+</code></pre>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -824,7 +834,7 @@ $border-radius                    = 20px;
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#114;&#51;&#x36;&#48;&#64;&#108;&#105;&#118;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#83;&#x6f;&#x61;&#114;&#51;&#x36;&#48;&#64;&#108;&#105;&#118;&#x65;&#x2e;&#x63;&#x6f;&#109;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#83;&#111;&#x61;&#114;&#x33;&#x36;&#x30;&#64;&#108;&#x69;&#118;&#101;&#x2e;&#x63;&#111;&#x6d;">&#83;&#111;&#x61;&#114;&#x33;&#x36;&#x30;&#64;&#108;&#x69;&#118;&#101;&#x2e;&#x63;&#111;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
