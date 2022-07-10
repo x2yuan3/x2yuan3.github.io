@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">小细节修改合集</a>
+            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">开启搜索功能</a>
         </h2>
 
         <div class="post-meta">
@@ -243,164 +243,21 @@
 
       
           <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开Hexo _config.yml<br>在底部添加如下设置</p>
 </blockquote>
-<pre><code>
-//分类括号颜色
-.category-all-page .category-list-count &#123;
-    color: #000;
-&#125;
-
-//分类二级页面分类字体颜色
-.posts-collapse .collection-header small &#123;
-    color: #000;
-    margin-left: 5px;
-&#125;
-
-//分类二级页面字体颜色
-body &#123;
-    background: var(--body-bg-color);
-    color: #000;
-    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
-    font-size: 1em;
-    line-height: 2;
-&#125;
-
-//标题颜色和选中颜色
-.brand &#123;
-    border-bottom: none;
-    color: #000;
-    display: inline-block;
-    line-height: 1.375em;
-    padding: 0 40px;
-    position: relative;
-&#125;
-.brand:hover &#123;
-    color: #000;
-&#125;
-
-//发表于
-.posts-expand .post-meta &#123;
-    color: #000;
-    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
-    font-size: 0.75em;
-    margin: 3px 0 60px 0;
-    text-align: center;
-&#125;
-
-//归档列表字体颜色
-.posts-collapse .post-title a, .posts-collapse .post-title span.exturl &#123;
-    border-bottom: none;
-    color: #000;
-&#125;
-
-//
-.site-author-name &#123;
-    color: #000;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-&#125;
-
-//
-.site-state-item-name &#123;
-    color: #000;
-    font-size: 0.8125em;
-&#125;
-
-//翻页栏
-.pagination &#123;
-    background: rgba(255,255,255,0.8);
-    border-radius: initial;
-    border-top: initial;
-//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
-    margin: 10px 0 0;
-    padding: 10px 0 10px;
-&#125;
-
-//菜单字体颜色
-a, span.exturl &#123;
-    border-bottom: 1px solid #000;
-    color: #000;
-    outline: 0;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    cursor: pointer;
-&#125;
-
-//隐私申明背景颜色
-.post-copyright &#123;
-    background: #ffffff;
-    border-left: 3px solid #ff2a2a;
-    list-style: none;
-    margin: 2em 0 0;
-    padding: 0.5em 1em;
-&#125;
-
-//代码区域字体颜色
-pre code &#123;
-    background: none;
-    color: #000000;
-    font-size: 0.875em;
-    padding: 0;
-    text-shadow: none;
-&#125;
-
-//代码区域背景颜色
-.highlight, pre &#123;
-    background: #ffffff;
-    color: #4d4d4c;
-    line-height: 1.6;
-    margin: 0 auto 20px;
-&#125;
-
-//菜单列表选中颜色
-.menu-item-active a, .menu .menu-item a:hover, .menu .menu-item span.exturl:hover &#123;
-    background: #fff;
-&#125;
-
-//文章段落间隔横线
-.post-body h1, .post-body h2 &#123;
-    border-bottom: 0px solid #000;
-&#125;
-
-//文章段落间隔竖线
-blockquote &#123;
-    border-left: 4px solid #000;
-    color: #000;
-    margin: 0;
-    padding: 0 15px;
-&#125;
-
-// 鼠标移动至文章标题时的效果
-.posts-expand .post-title-link::before &#123;
-    content: &quot;&quot;;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    transform: scaleX(0);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-&#125;
-
-//首页标题颜色
-.posts-expand .post-title-link &#123;
-    border-bottom: none;
-    color: #000;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-&#125;
+<pre><code>search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+</code></pre>
+<blockquote>
+<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+</blockquote>
+<pre><code># Local Search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
+local_search:
+  enable: true
 </code></pre>
 
       

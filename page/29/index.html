@@ -249,7 +249,7 @@
 <p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
 </blockquote>
 <blockquote>
-<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br>报错！2022-06-09<br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
+<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br><font color=#FF0000>报错！2022-06-09</font><br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
 </blockquote>
 <blockquote>
 <p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
