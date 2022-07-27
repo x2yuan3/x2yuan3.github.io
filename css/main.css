@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #aaff5e;
+  background: #612fff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2804,7 +2804,7 @@ blockquote {
   vertical-align: top;
 }
 body {
-  background: url("https://i-s2.328888.xyz/2022/07/01/62be9446bd6a2.jpg");
+  background: url("https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2812,7 +2812,7 @@ body {
 }
 @media only screen and (max-width: 1080px) {
   body {
-    background: url("https://i-s2.328888.xyz/2022/07/02/62bf8f6dd6433.jpg");
+    background: url("https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -2845,12 +2845,12 @@ body {
   background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #6e6bc9;
+  background-color: #000;
   background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
   border-radius: 3em;
 }
 ::-webkit-scrollbar-track {
-  background-color: #121249;
+  background-color: #000;
   border-radius: 0em;
 }
 ::-webkit-scrollbar {
