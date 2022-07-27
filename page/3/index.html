@@ -21,9 +21,9 @@
   </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="这里是标题">
+<meta property="og:title" content="emmmmmmmmm">
 <meta property="og:url" content="http://example.com/page/3/index.html">
-<meta property="og:site_name" content="这里是标题">
+<meta property="og:site_name" content="emmmmmmmmm">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="xyuan">
 <meta name="twitter:card" content="summary">
@@ -41,7 +41,7 @@
   };
 </script>
 
-  <title>这里是标题</title>
+  <title>emmmmmmmmm</title>
   
 
 
@@ -92,7 +92,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">这里是标题</h1>
+      <h1 class="site-title">emmmmmmmmm</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -202,12 +202,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这里是标题">
+      <meta itemprop="name" content="emmmmmmmmm">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">开启黑暗模式</a>
+            <a href="/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">小细节修改合集</a>
         </h2>
 
         <div class="post-meta">
@@ -242,11 +242,166 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
 </blockquote>
-<pre><code># Dark Mode
-darkmode: true
+<pre><code>
+//分类括号颜色
+.category-all-page .category-list-count &#123;
+    color: #000;
+&#125;
+
+//分类二级页面分类字体颜色
+.posts-collapse .collection-header small &#123;
+    color: #000;
+    margin-left: 5px;
+&#125;
+
+//分类二级页面字体颜色
+body &#123;
+    background: var(--body-bg-color);
+    color: #000;
+    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 1em;
+    line-height: 2;
+&#125;
+
+//标题颜色和选中颜色
+.brand &#123;
+    border-bottom: none;
+    color: #000;
+    display: inline-block;
+    line-height: 1.375em;
+    padding: 0 40px;
+    position: relative;
+&#125;
+.brand:hover &#123;
+    color: #000;
+&#125;
+
+//发表于
+.posts-expand .post-meta &#123;
+    color: #000;
+    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 0.75em;
+    margin: 3px 0 60px 0;
+    text-align: center;
+&#125;
+
+//归档列表字体颜色
+.posts-collapse .post-title a, .posts-collapse .post-title span.exturl &#123;
+    border-bottom: none;
+    color: #000;
+&#125;
+
+//
+.site-author-name &#123;
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+&#125;
+
+//
+.site-state-item-name &#123;
+    color: #000;
+    font-size: 0.8125em;
+&#125;
+
+//翻页栏
+.pagination &#123;
+    background: rgba(255,255,255,0.8);
+    border-radius: initial;
+    border-top: initial;
+//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+    margin: 10px 0 0;
+    padding: 10px 0 10px;
+    border-radius: 20px;
+&#125;
+
+//菜单字体颜色
+a, span.exturl &#123;
+    border-bottom: 1px solid #000;
+    color: #000;
+    outline: 0;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    cursor: pointer;
+&#125;
+
+//隐私申明背景颜色
+.post-copyright &#123;
+    background: #ffffff;
+    border-left: 3px solid #ff2a2a;
+    list-style: none;
+    margin: 2em 0 0;
+    padding: 0.5em 1em;
+&#125;
+
+//代码区域字体颜色
+pre code &#123;
+    background: none;
+    color: #000000;
+    font-size: 0.875em;
+    padding: 0;
+    text-shadow: none;
+&#125;
+
+//代码区域背景颜色
+.highlight, pre &#123;
+    background: #ffffff;
+    color: #4d4d4c;
+    line-height: 1.6;
+    margin: 0 auto 20px;
+&#125;
+
+//菜单列表选中颜色
+.menu-item-active a, .menu .menu-item a:hover, .menu .menu-item span.exturl:hover &#123;
+    background: #fff;
+&#125;
+
+//文章段落间隔横线
+.post-body h1, .post-body h2 &#123;
+    border-bottom: 0px solid #000;
+&#125;
+
+//文章段落间隔竖线
+blockquote &#123;
+    border-left: 4px solid #000;
+    color: #000;
+    margin: 0;
+    padding: 0 15px;
+&#125;
+
+//鼠标移动至文章标题时的效果
+.posts-expand .post-title-link::before &#123;
+    content: &quot;&quot;;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+&#125;
+
+//首页标题颜色
+.posts-expand .post-title-link &#123;
+    border-bottom: none;
+    color: #000;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+&#125;
 </code></pre>
 
       
