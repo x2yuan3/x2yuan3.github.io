@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/%E5%8E%9F%E7%A5%9E%E7%A7%81%E6%9C%8D%E6%90%AD%E5%BB%BA%EF%BC%88windows%E7%AF%87%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/06/01/%E5%8E%9F%E7%A5%9E%E7%A7%81%E6%9C%8D%E6%90%AD%E5%BB%BA%EF%BC%88windows%E7%AF%87%EF%BC%89/" class="post-title-link" itemprop="url">原神私服搭建（windows篇）</a>
+            <a href="/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/" class="post-title-link" itemprop="url">office安装和激活</a>
         </h2>
 
         <div class="post-meta">
@@ -219,7 +219,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-06-01 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-01T00:00:00+08:00">2022-06-01</time>
+              <time title="创建时间：2022-06-10 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-10T00:00:00+08:00">2022-06-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -227,11 +227,25 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8E%9F%E7%A5%9E/" itemprop="url" rel="index"><span itemprop="name">原神</span></a>
+                  <a href="/categories/office/" itemprop="url" rel="index"><span itemprop="name">office</span></a>
                 </span>
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -242,35 +256,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-下载所有文件"><a href="#1-下载所有文件" class="headerlink" title="1.下载所有文件"></a><strong>1.下载所有文件</strong></h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://cloud.rainkavik.com/s/vkbup?password=v6mh4v">https://cloud.rainkavik.com/s/vkbup?password=v6mh4v</a><br>全部打包下载</p>
+          <h2 id="1-下载安装office-tool-plus"><a href="#1-下载安装office-tool-plus" class="headerlink" title="1.下载安装office tool plus"></a><strong>1.下载安装office tool plus</strong></h2><blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://otp.landian.vip/">https://otp.landian.vip/</a></p>
 </blockquote>
-<h2 id="2-安装环境"><a href="#2-安装环境" class="headerlink" title="2.安装环境"></a><strong>2.安装环境</strong></h2><blockquote>
-<p>打开./服务端/环境及工具<br>安装MongoDB，Python，Mitmproxy，java<br>注意：MongoDB安装时建议不勾选 Install MongoDB Compass（当然你也可以选择安装它，可能需要更久的安装时间）</p>
-</blockquote>
-<h2 id="3-运行服务器"><a href="#3-运行服务器" class="headerlink" title="3.运行服务器"></a><strong>3.运行服务器</strong></h2><blockquote>
-<p>解压./服务端/完整包：full-grasscutter-dev-#xxx_RainKavik.zip<br>解压密码：rainkavik.com<br>并进入该文件夹，如果您按照此教程部署，直接双击 run.bat 即可运行服务端；如果安装了其他版本的 java 或者修改了安装位置，请自行修改此bat文件后再启动，启动前请确保 MongoDB 在运行中。<br>如果启动后控制台无任何报错，且最后输出 Game Server started on port 22102 字样即为启动成功</p>
-</blockquote>
-<h2 id="4-启动代理"><a href="#4-启动代理" class="headerlink" title="4.启动代理"></a><strong>4.启动代理</strong></h2><blockquote>
-<p>双击运行 proxy.bat ，如果您不希望其他主机连接到服务端，删除此脚本中的 –set block_global=false即可；如果希望在其他端口运行代理，右键编辑此文件修改 23333 为你期望的端口即可，如果删除此参数则默认监听 8080 端口，不要使用常见端口避免被攻击，此端口即为客户端系统代理所用端口。<br>出现 Proxy server listening at http://*:23333 即为启动成功</p>
-</blockquote>
-<h2 id="5-连接服务器"><a href="#5-连接服务器" class="headerlink" title="5.连接服务器"></a><strong>5.连接服务器</strong></h2><blockquote>
-<p>如服务端与客户端分开在两台机子，则还需确保服务端端口 UDP22102 TCP443 TCP54321 均开启且未被其他程序占用（在进行连接的时候，请在config.json中更改 accessAddress为服务器/电脑IP）<br>Windows10/11：设置-网络和Internet-代理，地址本机搭建填写 127.0.0.1，连接服务器则填写 服务器公网IP 端口23333。<br>iOS/iPad OS：设置-无线局域网-详情（连接Wi-Fi右侧蓝色“i”）-HTTP代理，选择 手动,服务器填写 电脑/服务器IP。<br>安卓方法与iOS相似，在此不多重复。</p>
-</blockquote>
-<h2 id="6-下载证书"><a href="#6-下载证书" class="headerlink" title="6.下载证书"></a><strong>6.下载证书</strong></h2><blockquote>
-<p>挂好代理以后用系统自带浏览器打开 <a target="_blank" rel="noopener" href="http://mitm.it/">http://mitm.it</a> ，选择你系统的证书进行下载<br>注意：服务器 IP 更换后需要重新下载安装证书！<br>如果提示：”If you can see this, traffic is not passing through mitmproxy.” 则说明代理没有成功挂上。<br>注意：如连接服务器代理，中国内地区域服务器会因为备案问题没法访问。需要在服务器先下载证书，再拷贝到其他设备上。</p>
-</blockquote>
-<h2 id="7-证书安装及信任"><a href="#7-证书安装及信任" class="headerlink" title="7.证书安装及信任"></a><strong>7.证书安装及信任</strong></h2><blockquote>
-<p>Windows：<br>双击打开相应服务器的证书 -&gt; 安装证书 -&gt; 本地计算机 -&gt; 将所有的证书都放入下列储存-&gt; 浏览 -&gt; 受信任的根证书颁发机构 -&gt; 完成<br>如要求密码直接留空白即可！<br>Android：<br>ROOT方法：下载 pem 格式证书，root 并解锁 system 分区后手动复制到 /system/etc/security/cacerts 并重命名为 c8750f0d.0 即可 (如果安装多个私服的证书，依次把文件命名为 c8750f0d.1 c8750f0d.2 … 即可)；如果不能解锁系统分区可参照网盘中我的私服专用的模块制作自己私服的 CA 证书模块，或者安装信任用户证书的模块后直接在 Android 系统设置中安装为用户证书即可<br>免ROOT方法：尝接下载安装用户证书 (分别安装 CA 和 WLAN 证书)， 使用网盘版本游戏客户端（./genshin-impact-patched.apk）。注意:首次进入游戏先注册一个国际服账号，把资源下好了，再进行开代理连接服务器。<br>iOS：</p>
-</blockquote>
-<h2 id="8-创建原神私服账号"><a href="#8-创建原神私服账号" class="headerlink" title="8.创建原神私服账号"></a><strong>8.创建原神私服账号</strong></h2><blockquote>
-<p>account 指令在控制台创建账号才可以登录，当然你也可以根据下节更改配置从而允许不存在的账号自动注册。创建方法如下：<br>语法：account create [name] [uid]<br>例如：account create xyuan 10000</p>
-</blockquote>
-<h2 id="9-开始游戏"><a href="#9-开始游戏" class="headerlink" title="9.开始游戏"></a><strong>9.开始游戏</strong></h2><blockquote>
-<p>更新游戏<br>开启代理再运行游戏便进入私服，不开启代理运行游戏就是官服</p>
-</blockquote>
-<h2 id="10-文档"><a href="#10-文档" class="headerlink" title="10.文档"></a><strong>10.文档</strong></h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/Grasscutters/Grasscutter">https://github.com/Grasscutters/Grasscutter</a></p>
+<h2 id="2-office-tool-plus激活功能"><a href="#2-office-tool-plus激活功能" class="headerlink" title="2.office tool plus激活功能"></a><strong>2.office tool plus激活功能</strong></h2><blockquote>
+<p>kms激活：<a target="_blank" rel="noopener" href="http://kms.03k.org/">http://kms.03k.org</a></p>
 </blockquote>
 
       
@@ -290,7 +280,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/30/">30</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -357,7 +347,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -369,6 +359,14 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xyuan23" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xyuan23" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:xyuan0023@gmail.com" title="E-Mail → mailto:xyuan0023@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
   <div class="cc-license motion-element" itemprop="license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
@@ -420,6 +418,21 @@
       binft(document.getElementById('binft'));
   </script>
       </div>
+
+<div id="he-plugin-standard"></div>
+<script>
+WIDGET = {
+  "CONFIG": {
+    "layout": "2",
+    "width": 220,
+    "height": 280,
+    "background": "5",
+    "dataColor": "000000",
+    "key": "d7f0675deef74d88a37bf2b868564674"
+  }
+}
+</script>
+<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=422419563&auto=0&height=66"></iframe>
 
@@ -569,6 +582,35 @@ window.addEventListener('pjax:success', () => {
 
   
 
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'wKnEhdT4kGfb4xPn8WpqzMOn-MdYXbMMI',
+      appKey     : 'kx1yK32zAfIp4tp9NjcdVIij',
+      placeholder: "阿巴阿巴阿巴，，，",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
     </div>
-<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/xiaomai.model.json"},"display":{"position":"right","width":200,"height":390},"mobile":{"show":false},"react":{"opacity":1},"log":false});</script></body>
+<script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/xiaomai.model.json"},"display":{"position":"right","width":200,"height":390},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
 </html>

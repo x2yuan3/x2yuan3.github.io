@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #93ffff;
+  background: #5ede37;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2677,6 +2677,24 @@ ul.breadcrumb li + li:last-child {
     margin: 8px 0 0;
   }
 }
+.comments {
+  background: rgba(255,255,255,0.8);
+}
+.sidebar-inner.affix {
+  position: static;
+  top: 10px;
+}
+.footer {
+  color: #fff;
+  font-size: 0.875em;
+  padding: 20px 0;
+}
+.links-of-author-item .fa,
+.links-of-author-item .fab,
+.links-of-author-item .far,
+.links-of-author-item .fas {
+  margin-right: 4px;
+}
 .category-all-page .category-list-count {
   color: #000;
 }
@@ -2744,7 +2762,7 @@ span.exturl {
   cursor: pointer;
 }
 .post-copyright {
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   border-left: 3px solid #ff2a2a;
   list-style: none;
   margin: 2em 0 0;
@@ -2759,7 +2777,7 @@ pre code {
 }
 .highlight,
 pre {
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   color: #4d4d4c;
   line-height: 1.6;
   margin: 0 auto 20px;
@@ -2846,12 +2864,11 @@ body {
   background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
-  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.4) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.4) 75%, transparent 75%, transparent);
-  border-radius: 3em;
+  background-color: #ef8858;
+  border-radius: 0em;
 }
 ::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: #f9cbaa;
   border-radius: 0em;
 }
 ::-webkit-scrollbar {
