@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">开启搜索功能</a>
+            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">开启黑暗模式</a>
         </h2>
 
         <div class="post-meta">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,22 +256,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开Hexo _config.yml<br>在底部添加如下设置</p>
+          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
 </blockquote>
-<pre><code>search:
-  path: search.xml
-  field: post
-  content: true
-  format: html
-</code></pre>
-<blockquote>
-<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
-</blockquote>
-<pre><code># Local Search
-# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
-local_search:
-  enable: true
+<pre><code># Dark Mode
+darkmode: true
 </code></pre>
 
       
@@ -605,7 +594,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : false,
-      notify     : false,
+      notify     : true,
       appId      : 'wKnEhdT4kGfb4xPn8WpqzMOn-MdYXbMMI',
       appKey     : 'kx1yK32zAfIp4tp9NjcdVIij',
       placeholder: "阿巴阿巴阿巴，，，",

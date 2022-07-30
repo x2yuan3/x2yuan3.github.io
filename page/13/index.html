@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/" class="post-title-link" itemprop="url">添加live2d角色</a>
+            <a href="/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/" class="post-title-link" itemprop="url">更改侧边滑动条样式</a>
         </h2>
 
         <div class="post-meta">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,37 +256,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
-<p>在blog根目录打开 git bash 输入如下代码</p>
+          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl，添加如下代码</p>
 </blockquote>
-<pre><code>npm install --save hexo-helper-live2d
+<pre><code>::-webkit-scrollbar-thumb &#123;
+    background-color: #6e6bc9;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+&#125;
+::-webkit-scrollbar-track &#123;
+    background-color: #121249;
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar &#123;
+    width: 10px;
+    height: 0px;
+&#125;
 </code></pre>
-<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a target="_blank" rel="noopener" href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
+<blockquote>
+<p>emmm具体颜色，样式什么的自己看着改吧</p>
 </blockquote>
-<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
-<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
-</blockquote>
-<pre><code>##自定义看板娘动画
-live2d: 
-  enable: true
-  scriptFrom: local ##主目录
-  pluginRootPath: live2d_models/ ##模型目录
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  debug: false
-  model:
-    use: 33.2017.tomo-bukatsu.high ##对应的模型名称
-  display:
-    position: right ##居右
-    width: 285 ##宽度
-    height: 300 ##高度
-  mobile:
-    show: false ##移动端是否显示
-  react:
-    opacity: 1
-</code></pre>
 
       
     </div>
@@ -619,7 +608,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : false,
-      notify     : false,
+      notify     : true,
       appId      : 'wKnEhdT4kGfb4xPn8WpqzMOn-MdYXbMMI',
       appKey     : 'kx1yK32zAfIp4tp9NjcdVIij',
       placeholder: "阿巴阿巴阿巴，，，",
