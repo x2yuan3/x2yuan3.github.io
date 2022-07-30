@@ -459,10 +459,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#64;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#x6f;&#x75;&#64;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#111;&#117;&#64;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#117;&#64;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#x2e;&#99;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -886,6 +886,23 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
+    <title>使用MarkdownPad 2写文章</title>
+    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
+<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
+</blockquote>
+<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
+<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#97;&#x72;&#51;&#x36;&#x30;&#x40;&#108;&#x69;&#x76;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x53;&#x6f;&#97;&#x72;&#51;&#x36;&#x30;&#x40;&#108;&#x69;&#x76;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+</blockquote>
+<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
+<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkdownPad 2</category>
+      </categories>
+  </entry>
+  <entry>
     <title>关于csdn登录后复制问题</title>
     <url>/2022/01/30/%E5%85%B3%E4%BA%8Ecsdn%E7%99%BB%E5%BD%95%E5%90%8E%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1"><a href="#1" class="headerlink" title="1."></a><strong>1.</strong></h2><font size=5>
@@ -899,34 +916,6 @@ $border-radius                    = 20px;
 ]]></content>
       <categories>
         <category>csdn</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>使用MarkdownPad 2写文章</title>
-    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
-<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
-</blockquote>
-<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#83;&#111;&#97;&#114;&#x33;&#54;&#48;&#64;&#108;&#105;&#118;&#x65;&#46;&#99;&#x6f;&#x6d;">&#83;&#111;&#97;&#114;&#x33;&#54;&#48;&#64;&#108;&#105;&#118;&#x65;&#46;&#99;&#x6f;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
-</blockquote>
-<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
-<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>MarkdownPad 2</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在线下载网易云音乐</title>
-    <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
-    <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
-<p>打开你喜欢的歌页面，比如<a href="https://music.163.com/#/song?id=28878559">https://music.163.com/#/song?id=28878559</a><br>链接里的/#/song?id替换成/song/media/outer/url?id确认即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网易云音乐</category>
       </categories>
   </entry>
   <entry>
@@ -948,6 +937,17 @@ pagination_dir: page
 ]]></content>
       <categories>
         <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在线下载网易云音乐</title>
+    <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
+    <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
+<p>打开你喜欢的歌页面，比如<a href="https://music.163.com/#/song?id=28878559">https://music.163.com/#/song?id=28878559</a><br>链接里的/#/song?id替换成/song/media/outer/url?id确认即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网易云音乐</category>
       </categories>
   </entry>
   <entry>
