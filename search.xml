@@ -459,10 +459,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#117;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#64;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#x6f;&#x75;&#64;&#x65;&#x78;&#97;&#109;&#112;&#108;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -602,6 +602,26 @@ live2d:
       </categories>
   </entry>
   <entry>
+    <title>添加头像</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
+    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
+<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
+</blockquote>
+<pre><code># Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/xiaoheimiaoio.png
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加分类，标签，关于</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
     <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
@@ -622,26 +642,6 @@ live2d:
 <blockquote>
 <p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
 </blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加头像</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
-    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
-</blockquote>
-<pre><code># Sidebar Avatar
-avatar:
-  # Replace the default image and set the url here.
-  url: /images/xiaoheimiaoio.png
-  # If true, the avatar will be dispalyed in circle.
-  rounded: true
-  # If true, the avatar will be rotated with the cursor.
-  rotated: true
-</code></pre>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -754,6 +754,28 @@ tags:
       </categories>
   </entry>
   <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+</blockquote>
+<pre><code> favicon:
+ small: /images/xiaoheimiaoio-16x16.png
+ medium: /images/xiaoheimiaoio-32x32.png
+ apple_touch_icon: /images/apple-touch-icon-next.png
+ safari_pinned_tab: /images/logo.svg
+ #android_manifest: /images/manifest.json
+ #ms_browserconfig: /images/browserconfig.xml
+</code></pre>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加网易云音乐插件</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
@@ -771,28 +793,6 @@ tags:
 </blockquote>
 <pre><code>pjax: true
 </code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
-</blockquote>
-<pre><code> favicon:
- small: /images/xiaoheimiaoio-16x16.png
- medium: /images/xiaoheimiaoio-32x32.png
- apple_touch_icon: /images/apple-touch-icon-next.png
- safari_pinned_tab: /images/logo.svg
- #android_manifest: /images/manifest.json
- #ms_browserconfig: /images/browserconfig.xml
-</code></pre>
-<blockquote>
-<p>修改small和medium为你的图标路径</p>
-</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -886,23 +886,6 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
-    <title>使用MarkdownPad 2写文章</title>
-    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
-<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
-</blockquote>
-<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#97;&#x72;&#51;&#54;&#48;&#x40;&#108;&#105;&#x76;&#x65;&#x2e;&#99;&#x6f;&#109;">&#x53;&#x6f;&#97;&#x72;&#51;&#54;&#48;&#x40;&#108;&#105;&#x76;&#x65;&#x2e;&#99;&#x6f;&#109;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
-</blockquote>
-<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
-<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>MarkdownPad 2</category>
-      </categories>
-  </entry>
-  <entry>
     <title>关于csdn登录后复制问题</title>
     <url>/2022/01/30/%E5%85%B3%E4%BA%8Ecsdn%E7%99%BB%E5%BD%95%E5%90%8E%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1"><a href="#1" class="headerlink" title="1."></a><strong>1.</strong></h2><font size=5>
@@ -916,6 +899,23 @@ $border-radius                    = 20px;
 ]]></content>
       <categories>
         <category>csdn</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>使用MarkdownPad 2写文章</title>
+    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
+<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
+</blockquote>
+<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
+<p>邮箱:  <a href="mailto:&#83;&#111;&#97;&#114;&#x33;&#54;&#48;&#64;&#108;&#105;&#118;&#x65;&#46;&#99;&#x6f;&#x6d;">&#83;&#111;&#97;&#114;&#x33;&#54;&#48;&#64;&#108;&#105;&#118;&#x65;&#46;&#99;&#x6f;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+</blockquote>
+<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
+<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkdownPad 2</category>
       </categories>
   </entry>
   <entry>
@@ -962,6 +962,41 @@ pagination_dir: page
       </categories>
   </entry>
   <entry>
+    <title>在本地搭建hexo博客</title>
+    <url>/2021/10/01/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
+<p>安装 Git  <a href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
+</blockquote>
+<blockquote>
+<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
+</blockquote>
+<blockquote>
+<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br><font color=#FF0000>报错！2022-06-09</font><br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
+</blockquote>
+<blockquote>
+<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
+</blockquote>
+<blockquote>
+<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
+</blockquote>
+<blockquote>
+<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
+</blockquote>
+<blockquote>
+<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
+</blockquote>
+<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
+<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
+</blockquote>
+<blockquote>
+<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>hexo博客框架</category>
+      </categories>
+  </entry>
+  <entry>
     <title>设置next主题</title>
     <url>/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
@@ -996,41 +1031,6 @@ scheme: Pisces
 ]]></content>
       <categories>
         <category>next主题</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在本地搭建hexo博客</title>
-    <url>/2021/10/01/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
-<p>安装 Git  <a href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
-</blockquote>
-<blockquote>
-<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
-</blockquote>
-<blockquote>
-<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br><font color=#FF0000>报错！2022-06-09</font><br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
-</blockquote>
-<blockquote>
-<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
-</blockquote>
-<blockquote>
-<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
-</blockquote>
-<blockquote>
-<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
-</blockquote>
-<blockquote>
-<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
-</blockquote>
-<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
-<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
-</blockquote>
-<blockquote>
-<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo博客框架</category>
       </categories>
   </entry>
 </search>
