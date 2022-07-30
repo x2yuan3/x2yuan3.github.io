@@ -265,6 +265,20 @@ blockquote &#123;
       </categories>
   </entry>
   <entry>
+    <title>开启黑暗模式</title>
+    <url>/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+</blockquote>
+<pre><code># Dark Mode
+darkmode: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>开启搜索功能</title>
     <url>/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
@@ -283,20 +297,6 @@ blockquote &#123;
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>开启黑暗模式</title>
-    <url>/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
-</blockquote>
-<pre><code># Dark Mode
-darkmode: true
 </code></pre>
 ]]></content>
       <categories>
@@ -400,43 +400,6 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加头像</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
-    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
-</blockquote>
-<pre><code># Sidebar Avatar
-avatar:
-  # Replace the default image and set the url here.
-  url: /images/xiaoheimiaoio.png
-  # If true, the avatar will be dispalyed in circle.
-  rounded: true
-  # If true, the avatar will be rotated with the cursor.
-  rotated: true
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加文章版权信息</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
-</blockquote>
-<pre><code>creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language:
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加分类，标签，关于</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
     <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
@@ -457,6 +420,26 @@ avatar:
 <blockquote>
 <p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加头像</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
+    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
+<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
+</blockquote>
+<pre><code># Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/xiaoheimiaoio.png
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: true
+</code></pre>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -520,6 +503,55 @@ avatar:
       </categories>
   </entry>
   <entry>
+    <title>添加文章置顶</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<h2 id="1-添加文章置顶"><a href="#1-添加文章置顶" class="headerlink" title="1. 添加文章置顶"></a><strong>1. 添加文章置顶</strong></h2><blockquote>
+<p>打开Git Bash输入<br><code>npm uninstall hexo-generator-index --save</code><br><code>npm install hexo-generator-index-pin-top --save</code><br>之后在需要置顶的文章添加top，如</p>
+</blockquote>
+<pre><code>---
+title: 添加文章置顶
+date:  2022-01-30
+top：1
+categories: 
+- next更新日志
+tags: 
+---
+</code></pre>
+<h2 id="2-添加置顶标志"><a href="#2-添加置顶标志" class="headerlink" title="2. 添加置顶标志"></a><strong>2. 添加置顶标志</strong></h2><blockquote>
+<p>打开bolg/themes/next/layout/_macro/post.swig<br>查找<code>&lt;div class=&quot;post-meta&quot;&gt;</code><br>添加如下代码</p>
+</blockquote>
+<pre><code>&#123;% if post.top %&#125;
+    <i class="fa fa-thumb-tack"></i>
+    <font color=red>置顶</font>
+    <span class="post-meta-divider">|</span>
+&#123;% endif %&#125;
+</code></pre>
+<blockquote>
+<p>（emmm设置为代码区怎么还是，，，）</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加文章版权信息</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
+<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+</blockquote>
+<pre><code>creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language:
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加留言板页面</title>
     <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/</url>
     <content><![CDATA[<h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
@@ -572,31 +604,21 @@ date: 2022-05-20 20:00:00
       </categories>
   </entry>
   <entry>
-    <title>添加文章置顶</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<h2 id="1-添加文章置顶"><a href="#1-添加文章置顶" class="headerlink" title="1. 添加文章置顶"></a><strong>1. 添加文章置顶</strong></h2><blockquote>
-<p>打开Git Bash输入<br><code>npm uninstall hexo-generator-index --save</code><br><code>npm install hexo-generator-index-pin-top --save</code><br>之后在需要置顶的文章添加top，如</p>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
 </blockquote>
-<pre><code>---
-title: 添加文章置顶
-date:  2022-01-30
-top：1
-categories: 
-- next更新日志
-tags: 
----
-</code></pre>
-<h2 id="2-添加置顶标志"><a href="#2-添加置顶标志" class="headerlink" title="2. 添加置顶标志"></a><strong>2. 添加置顶标志</strong></h2><blockquote>
-<p>打开bolg/themes/next/layout/_macro/post.swig<br>查找<code>&lt;div class=&quot;post-meta&quot;&gt;</code><br>添加如下代码</p>
-</blockquote>
-<pre><code>&#123;% if post.top %&#125;
-    <i class="fa fa-thumb-tack"></i>
-    <font color=red>置顶</font>
-    <span class="post-meta-divider">|</span>
-&#123;% endif %&#125;
+<pre><code> favicon:
+ small: /images/xiaoheimiaoio-16x16.png
+ medium: /images/xiaoheimiaoio-32x32.png
+ apple_touch_icon: /images/apple-touch-icon-next.png
+ safari_pinned_tab: /images/logo.svg
+ #android_manifest: /images/manifest.json
+ #ms_browserconfig: /images/browserconfig.xml
 </code></pre>
 <blockquote>
-<p>（emmm设置为代码区怎么还是，，，）</p>
+<p>修改small和medium为你的图标路径</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -627,22 +649,74 @@ tags:
       </categories>
   </entry>
   <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+    <title>隐藏页面底部强力驱动字样</title>
+    <url>/2022/07/04/next%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%AD%97%E6%A0%B7/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下\layout_partials\footer.swig<br>利用 <code>&lt;!--</code> 和 <code>--&gt;</code> 隐藏代码，如下</p>
 </blockquote>
-<pre><code> favicon:
- small: /images/xiaoheimiaoio-16x16.png
- medium: /images/xiaoheimiaoio-32x32.png
- apple_touch_icon: /images/apple-touch-icon-next.png
- safari_pinned_tab: /images/logo.svg
- #android_manifest: /images/manifest.json
- #ms_browserconfig: /images/browserconfig.xml
+<pre><code>&lt;!--
+
+&#123;%- if theme.footer.powered %&#125;
+  &lt;div class=&quot;powered-by&quot;&gt;
+    &#123;%- set next_site = 'https://theme-next.org' %&#125;
+    &#123;%- if theme.scheme !== 'Gemini' %&#125;
+      &#123;%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %&#125;
+    &#123;%- endif %&#125;
+    &#123;&#123;- __('footer.powered', next_url('https://hexo.io', 'Hexo', &#123;class: 'theme-link'&#125;) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, &#123;class: 'theme-link'&#125;)) &#125;&#125;
+  &lt;/div&gt;
+&#123;%- endif %&#125;
+
+&#123;%- if theme.add_this_id %&#125;
+  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;
+    &lt;script src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=&#123;&#123; theme.add_this_id &#125;&#125;&quot; async=&quot;async&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&#123;%- endif %&#125;
+
+--&gt;
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加评论系统（无法正常使用）</title>
+    <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>地址 <a href="https://www.livere.com/">https://www.livere.com/</a><br>点击安装选择免费的版本，然后在管理页面查看代码，复制其中的data-uid字段，如下</p>
+</blockquote>
+<pre><code>data-uid=&quot;MTxxxxxxxxxx==&quot;
 </code></pre>
 <blockquote>
-<p>修改small和medium为你的图标路径</p>
+<p>然后编辑文件next/_config.yml，启用livere评论系统，如下</p>
 </blockquote>
+<pre><code>comments:
+  # Available values: tabs | buttons
+  style: tabs
+  # Choose a comment system to be displayed by default.
+  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+  active: livere
+</code></pre>
+<blockquote>
+<p>然后定位到livere_uid字段，粘贴刚刚复制的UID，如下</p>
+</blockquote>
+<pre><code># LiveRe comments system
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+livere_uid: MTxxxxxxxxxx==
+</code></pre>
+<blockquote>
+<p>然后本地先运行看看<br>具体功能可以在livere管理页面查看<br>其他的评论系统没试过，这个不用实名，而且使用还算方便</p>
+</blockquote>
+<h2 id="2-关闭某页面评论系统"><a href="#2-关闭某页面评论系统" class="headerlink" title="2. 关闭某页面评论系统"></a><strong>2. 关闭某页面评论系统</strong></h2><blockquote>
+<p>在编辑页面或者写文章的时候加上 comments: false<br>如下</p>
+</blockquote>
+<pre><code>---
+title: 文章分类
+date: 2022-01-01 00:00:00
+type: categories
+comments: false
+---
+</code></pre>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -736,80 +810,6 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
-    <title>隐藏页面底部强力驱动字样</title>
-    <url>/2022/07/04/next%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%AD%97%E6%A0%B7/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下\layout_partials\footer.swig<br>利用 <code>&lt;!--</code> 和 <code>--&gt;</code> 隐藏代码，如下</p>
-</blockquote>
-<pre><code>&lt;!--
-
-&#123;%- if theme.footer.powered %&#125;
-  &lt;div class=&quot;powered-by&quot;&gt;
-    &#123;%- set next_site = 'https://theme-next.org' %&#125;
-    &#123;%- if theme.scheme !== 'Gemini' %&#125;
-      &#123;%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %&#125;
-    &#123;%- endif %&#125;
-    &#123;&#123;- __('footer.powered', next_url('https://hexo.io', 'Hexo', &#123;class: 'theme-link'&#125;) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, &#123;class: 'theme-link'&#125;)) &#125;&#125;
-  &lt;/div&gt;
-&#123;%- endif %&#125;
-
-&#123;%- if theme.add_this_id %&#125;
-  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;
-    &lt;script src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=&#123;&#123; theme.add_this_id &#125;&#125;&quot; async=&quot;async&quot;&gt;&lt;/script&gt;
-  &lt;/div&gt;
-&#123;%- endif %&#125;
-
---&gt;
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加评论系统（无法正常使用）</title>
-    <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>地址 <a href="https://www.livere.com/">https://www.livere.com/</a><br>点击安装选择免费的版本，然后在管理页面查看代码，复制其中的data-uid字段，如下</p>
-</blockquote>
-<pre><code>data-uid=&quot;MTxxxxxxxxxx==&quot;
-</code></pre>
-<blockquote>
-<p>然后编辑文件next/_config.yml，启用livere评论系统，如下</p>
-</blockquote>
-<pre><code>comments:
-  # Available values: tabs | buttons
-  style: tabs
-  # Choose a comment system to be displayed by default.
-  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: livere
-</code></pre>
-<blockquote>
-<p>然后定位到livere_uid字段，粘贴刚刚复制的UID，如下</p>
-</blockquote>
-<pre><code># LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTxxxxxxxxxx==
-</code></pre>
-<blockquote>
-<p>然后本地先运行看看<br>具体功能可以在livere管理页面查看<br>其他的评论系统没试过，这个不用实名，而且使用还算方便</p>
-</blockquote>
-<h2 id="2-关闭某页面评论系统"><a href="#2-关闭某页面评论系统" class="headerlink" title="2. 关闭某页面评论系统"></a><strong>2. 关闭某页面评论系统</strong></h2><blockquote>
-<p>在编辑页面或者写文章的时候加上 comments: false<br>如下</p>
-</blockquote>
-<pre><code>---
-title: 文章分类
-date: 2022-01-01 00:00:00
-type: categories
-comments: false
----
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>office安装和激活</title>
     <url>/2022/06/10/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/</url>
     <content><![CDATA[<h2 id="1-下载安装office-tool-plus"><a href="#1-下载安装office-tool-plus" class="headerlink" title="1.下载安装office tool plus"></a><strong>1.下载安装office tool plus</strong></h2><blockquote>
@@ -830,7 +830,7 @@ comments: false
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#x72;&#x33;&#x36;&#x30;&#64;&#x6c;&#105;&#x76;&#x65;&#46;&#x63;&#111;&#x6d;">&#83;&#x6f;&#x61;&#x72;&#x33;&#x36;&#x30;&#64;&#x6c;&#105;&#x76;&#x65;&#46;&#x63;&#111;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#x53;&#111;&#97;&#114;&#51;&#54;&#x30;&#x40;&#108;&#x69;&#118;&#x65;&#46;&#x63;&#111;&#x6d;">&#x53;&#111;&#97;&#114;&#51;&#54;&#x30;&#x40;&#108;&#x69;&#118;&#x65;&#46;&#x63;&#111;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
@@ -838,6 +838,22 @@ comments: false
 ]]></content>
       <categories>
         <category>MarkdownPad 2</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于csdn登录后复制问题</title>
+    <url>/2022/01/30/%E5%85%B3%E4%BA%8Ecsdn%E7%99%BB%E5%BD%95%E5%90%8E%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1"><a href="#1" class="headerlink" title="1."></a><strong>1.</strong></h2><font size=5>
+
+<blockquote>
+<p>在csdn页面打开开发工具，F12<br>在控制台输入</p>
+<pre><code>document.body.contentEditable=&#39;true&#39;
+</code></pre>
+<p>回车<br>即可复制csdn页面代码内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>csdn</category>
       </categories>
   </entry>
   <entry>
@@ -879,33 +895,6 @@ comments: false
       </categories>
   </entry>
   <entry>
-    <title>关于csdn登录后复制问题</title>
-    <url>/2022/01/30/%E5%85%B3%E4%BA%8Ecsdn%E7%99%BB%E5%BD%95%E5%90%8E%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="1"><a href="#1" class="headerlink" title="1."></a><strong>1.</strong></h2><font size=5>
-
-<blockquote>
-<p>在csdn页面打开开发工具，F12<br>在控制台输入</p>
-<pre><code>document.body.contentEditable=&#39;true&#39;
-</code></pre>
-<p>回车<br>即可复制csdn页面代码内容</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>csdn</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在线下载网易云音乐</title>
-    <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
-    <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
-<p>打开你喜欢的歌页面，比如<a href="https://music.163.com/#/song?id=28878559">https://music.163.com/#/song?id=28878559</a><br>链接里的/#/song?id替换成/song/media/outer/url?id确认即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网易云音乐</category>
-      </categories>
-  </entry>
-  <entry>
     <title>在本地搭建hexo博客</title>
     <url>/2021/10/01/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
@@ -938,6 +927,17 @@ comments: false
 ]]></content>
       <categories>
         <category>hexo博客框架</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在线下载网易云音乐</title>
+    <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
+    <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
+<p>打开你喜欢的歌页面，比如<a href="https://music.163.com/#/song?id=28878559">https://music.163.com/#/song?id=28878559</a><br>链接里的/#/song?id替换成/song/media/outer/url?id确认即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网易云音乐</category>
       </categories>
   </entry>
   <entry>
@@ -978,27 +978,6 @@ scheme: Pisces
       </categories>
   </entry>
   <entry>
-    <title>设置首页文章数量</title>
-    <url>/2022/01/30/%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
-    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
-<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
-</blockquote>
-<pre><code>  path: &#39;&#39;
-  per_page: 1
-  order_by: -date
-</code></pre>
-<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
-<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
-</blockquote>
-<pre><code>per_page: 0
-pagination_dir: page
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>将本地hexo博客部署到github</title>
     <url>/2022/05/20/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/</url>
     <content><![CDATA[<h2 id="1-创建github账号"><a href="#1-创建github账号" class="headerlink" title="1. 创建github账号"></a><strong>1. 创建github账号</strong></h2><h2 id="2-new个仓库"><a href="#2-new个仓库" class="headerlink" title="2. new个仓库"></a><strong>2. new个仓库</strong></h2><blockquote>
@@ -1020,14 +999,35 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#111;&#109;">&#121;&#x6f;&#x75;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#46;&#99;&#111;&#109;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#64;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#x79;&#111;&#x75;&#64;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>设置首页文章数量</title>
+    <url>/2022/01/30/%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
+    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
+<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
+</blockquote>
+<pre><code>  path: &#39;&#39;
+  per_page: 1
+  order_by: -date
+</code></pre>
+<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
+<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
+</blockquote>
+<pre><code>per_page: 0
+pagination_dir: page
+</code></pre>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
