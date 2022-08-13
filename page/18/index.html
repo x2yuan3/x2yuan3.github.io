@@ -462,21 +462,6 @@
   </script>
       </div>
 
-<div id="he-plugin-standard"></div>
-<script>
-WIDGET = {
-  "CONFIG": {
-    "layout": "2",
-    "width": 220,
-    "height": 280,
-    "background": "5",
-    "dataColor": "000000",
-    "key": "d7f0675deef74d88a37bf2b868564674"
-  }
-}
-</script>
-<script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
-
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=422419563&auto=0&height=66"></iframe>
 
     </div>
@@ -636,7 +621,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : false,
-      notify     : true,
+      notify     : false,
       appId      : 'wKnEhdT4kGfb4xPn8WpqzMOn-MdYXbMMI',
       appKey     : 'kx1yK32zAfIp4tp9NjcdVIij',
       placeholder: "阿巴阿巴阿巴，，，",
@@ -646,12 +631,15 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       visitor    : false,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
-      recordIP   : false,
+      recordIP   : true,
       serverURLs : 'https://wknehdt4.api.lncldglobal.com'
     });
   }, window.Valine);
 });
 </script>
     </div>
+
+- <script src="/js/sakura.js"></script>
+
 <script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/xiaomai.model.json"},"display":{"position":"right","width":200,"height":390},"mobile":{"show":false},"react":{"opacity":1},"log":false});</script></body>
 </html>
