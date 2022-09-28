@@ -3,7 +3,7 @@
   <entry>
     <title>&lt;font color=&gt;无题&lt;/font&gt;</title>
     <url>/2022/06/20/%E6%97%A0%E9%A2%98/</url>
-    <content><![CDATA[<p><video controls = "true" poster="" oncontextmenu="return false" poster="" loop="" autoplay="" playsinline="" height="100%" width="100%" style="opacity: 1;"><source src="https://gorilla.cdnja.co/v/3m/3mBKE.mp4?token=w_CSlh9YHTp3LTr3f2lrzQ&expires=1662098647" type="video/mp4"></p>
+    <content><![CDATA[<p><video controls = "true" poster="" oncontextmenu="return false" poster="" loop="" autoplay="" playsinline="" height="100%" width="100%" style="opacity: 1;"><source src="https://gorilla.cdnja.co/v/0o/0OB7j.mp4?token=KQwNvqBkcW_L3HRJ20aWjw&expires=1664380649" type="video/mp4"></p>
 ]]></content>
       <categories>
         <category>置顶</category>
@@ -39,197 +39,6 @@ WIDGET = &#123;
       </categories>
   </entry>
   <entry>
-    <title>小细节修改合集</title>
-    <url>/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
-</blockquote>
-<pre><code>//评论区透明
-.comments &#123;
-    background: rgba(255,255,255,0.8);
-&#125;
-
-//侧边栏部件过多滚动自动回弹问题
-.sidebar-inner.affix &#123;
-  position: static;
-  top: 10px;
-&#125;
-
-//网页底部字体颜色
-.footer &#123;
-    color: #fff;
-    font-size: 0.875em;
-    padding: 20px 0;
-&#125;
-
-//社交列表图标间隔
-.links-of-author-item .fa, .links-of-author-item .fab, .links-of-author-item .far, .links-of-author-item .fas &#123;
-    margin-right: 4px;
-&#125;
-
-//分类括号颜色
-.category-all-page .category-list-count &#123;
-    color: #000;
-&#125;
-
-//分类二级页面分类字体颜色
-.posts-collapse .collection-header small &#123;
-    color: #000;
-    margin-left: 5px;
-&#125;
-
-//分类二级页面字体颜色
-body &#123;
-    background: var(--body-bg-color);
-    color: #000;
-    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
-    font-size: 1em;
-    line-height: 2;
-&#125;
-
-//标题颜色和选中颜色
-.brand &#123;
-    border-bottom: none;
-    color: #000;
-    display: inline-block;
-    line-height: 1.375em;
-    padding: 0 40px;
-    position: relative;
-&#125;
-.brand:hover &#123;
-    color: #000;
-&#125;
-
-//发表于
-.posts-expand .post-meta &#123;
-    color: #000;
-    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
-    font-size: 0.75em;
-    margin: 3px 0 60px 0;
-    text-align: center;
-&#125;
-
-//归档列表字体颜色
-.posts-collapse .post-title a, .posts-collapse .post-title span.exturl &#123;
-    border-bottom: none;
-    color: #000;
-&#125;
-
-//
-.site-author-name &#123;
-    color: #000;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-&#125;
-
-//
-.site-state-item-name &#123;
-    color: #000;
-    font-size: 0.8125em;
-&#125;
-
-//翻页栏
-.pagination &#123;
-    background: rgba(255,255,255,0.8);
-    border-radius: initial;
-    border-top: initial;
-//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
-    margin: 10px 0 0;
-    padding: 10px 0 10px;
-    border-radius: 20px;
-&#125;
-
-//菜单字体颜色
-a, span.exturl &#123;
-    border-bottom: 1px solid #000;
-    color: #000;
-    outline: 0;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    cursor: pointer;
-&#125;
-
-//隐私申明背景颜色
-.post-copyright &#123;
-    background: rgba(255,255,255,0.8);
-    border-left: 3px solid #ff2a2a;
-    list-style: none;
-    margin: 2em 0 0;
-    padding: 0.5em 1em;
-&#125;
-
-//代码区域字体颜色
-pre code &#123;
-    background: none;
-    color: #000000;
-    font-size: 0.875em;
-    padding: 0;
-    text-shadow: none;
-&#125;
-
-//代码区域背景颜色
-.highlight, pre &#123;
-    background: rgba(255,255,255,0.8);
-    color: #4d4d4c;
-    line-height: 1.6;
-    margin: 0 auto 20px;
-&#125;
-
-//菜单列表选中颜色
-.menu-item-active a, .menu .menu-item a:hover, .menu .menu-item span.exturl:hover &#123;
-    background: #fff;
-&#125;
-
-//文章段落间隔横线
-.post-body h1, .post-body h2 &#123;
-    border-bottom: 0px solid #000;
-&#125;
-
-//文章段落间隔竖线
-blockquote &#123;
-    border-left: 4px solid #000;
-    color: #000;
-    margin: 0;
-    padding: 0 15px;
-&#125;
-
-// 鼠标移动至文章标题时的效果
-.posts-expand .post-title-link::before &#123;
-    content: &quot;&quot;;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    transform: scaleX(0);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-&#125;
-
-//首页标题颜色
-.posts-expand .post-title-link &#123;
-    border-bottom: none;
-    color: #000;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-&#125;
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>开启搜索功能</title>
     <url>/2022/07/04/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
@@ -248,6 +57,228 @@ blockquote &#123;
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小细节修改合集</title>
+    <url>/2022/07/04/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+</blockquote>
+<pre><code>//菜单栏顶部标题
+.brand &#123;
+    border-bottom: none;
+    color: rgba(255,255,255,0);
+    display: inline-block;
+    line-height: 1.375em;
+    padding: 0 40px;
+    position: relative;
+&#125;
+
+//评论区透明
+.comments &#123;
+    background: rgba(255,255,255,0.8);
+&#125;
+
+//侧边栏部件过多滚动自动回弹问题
+.sidebar-inner.affix &#123;
+  position: static;
+  top: 10px;
+&#125;
+
+//网页底部字体颜色
+.footer &#123;
+    color: #fff;
+    font-size: 0.875em;
+    padding: 20px 0;
+&#125;
+
+//侧边栏社交图标间隔
+.links-of-author-item .fa, .links-of-author-item .fab, .links-of-author-item .far, .links-of-author-item .fas &#123;
+    margin-right: 10px;
+&#125;
+
+//分类括号颜色
+.category-all-page .category-list-count &#123;
+    color: #000;
+&#125;
+
+//分类二级页面的分类字体颜色
+.posts-collapse .collection-header small &#123;
+    color: #000;
+    margin-left: 5px;
+&#125;
+
+//分类二级页面字体颜色
+body &#123;
+    background: var(--body-bg-color);
+    color: #000;
+    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 1em;
+    line-height: 2;
+&#125;
+
+//文章发表于字体颜色
+.posts-expand .post-meta &#123;
+    color: #000;
+    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 0.75em;
+    margin: 3px 0 60px 0;
+    text-align: center;
+&#125;
+
+//侧边栏名字颜色
+.site-author-name &#123;
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+&#125;
+
+//侧边栏日志分类颜色
+.site-state-item-name &#123;
+    color: #000;
+    font-size: 0.8125em;
+&#125;
+
+//翻页栏
+.pagination &#123;
+    background: rgba(255,255,255,0.8);
+    border-radius: initial;
+    border-top: initial;
+//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+    margin: 10px 0 0;
+    padding: 10px 0 10px;
+    border-radius: 20px;
+&#125;
+
+//代码颜色
+pre code &#123;
+    background: none;
+    color: #000000;
+    font-size: 0.875em;
+    padding: 0;
+    text-shadow: none;
+&#125;
+
+//代码区域颜色
+.highlight, pre &#123;
+    background: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    margin: 0 auto 20px;
+&#125;
+
+//文章段落间隔横线
+.post-body h1, .post-body h2 &#123;
+    border-bottom: 0px solid #000;
+&#125;
+
+//文章段落间隔竖线
+blockquote &#123;
+    border-left: 4px solid #000;
+    color: #000;
+    margin: 0;
+    padding: 0 15px;
+&#125;
+
+//主页标题选中效果
+.posts-expand .post-title-link::before &#123;
+    background: #000;
+    bottom: 0;
+    content: &#39;&#39;;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    visibility: hidden;
+    width: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+&#125;
+
+//首页标题颜色
+.posts-expand .post-title-link &#123;
+    border-bottom: none;
+    color: #000;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+&#125;
+
+//电脑端壁纸
+body &#123;
+    background:url(https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+&#125;
+//手机端壁纸
+@media only screen and (max-width: 1080px) &#123;
+  body &#123;
+    background:url(https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+  &#125;
+&#125;
+
+//侧边菜单栏顶部显示
+.site-brand-container &#123;
+ background:url(images\caidan.png);
+&#125;
+
+//顶部加载条颜色
+.headband &#123;
+    background: #000;
+    height: 0px;
+&#125;
+
+//文章内容的透明度设置
+.post-block &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//侧边框的透明度设置
+.sidebar-inner &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//菜单栏的透明度设置
+.header-inner &#123;
+ background: rgba(255,255,255,0.8);
+&#125;
+
+//搜索框的透明度设置
+.popup &#123;
+ opacity: 1;
+&#125;
+
+//头像侧边栏的四个边角背景色优化
+.sidebar&#123;
+    background-color:transparent;
+&#125;
+
+//滚动条
+::-webkit-scrollbar-thumb &#123;
+    background-color: #ef8858;
+//    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar-track &#123;
+    background-color: #f9cbaa;
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar &#123;
+    width: 10px;
+    height: 0px;
+&#125;
 </code></pre>
 ]]></content>
       <categories>
@@ -468,10 +499,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#x6f;&#117;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#109;">&#121;&#x6f;&#117;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#109;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#111;&#117;&#64;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#111;&#117;&#64;&#101;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -515,34 +546,6 @@ deploy:
       </categories>
   </entry>
   <entry>
-    <title>更改侧边滑动条样式</title>
-    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl，添加如下代码</p>
-</blockquote>
-<pre><code>::-webkit-scrollbar-thumb &#123;
-    background-color: #6e6bc9;
-    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
-    border-radius: 3em;
-&#125;
-::-webkit-scrollbar-track &#123;
-    background-color: #121249;
-    border-radius: 0em;
-&#125;
-::-webkit-scrollbar &#123;
-    width: 10px;
-    height: 0px;
-&#125;
-</code></pre>
-<blockquote>
-<p>emmm具体颜色，样式什么的自己看着改吧</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>更改菜单栏顶部显示</title>
     <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
@@ -572,20 +575,28 @@ deploy:
       </categories>
   </entry>
   <entry>
-    <title>添加头像</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
-    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
+    <title>更改侧边滑动条样式</title>
+    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl，添加如下代码</p>
 </blockquote>
-<pre><code># Sidebar Avatar
-avatar:
-  # Replace the default image and set the url here.
-  url: /images/xiaoheimiaoio.png
-  # If true, the avatar will be dispalyed in circle.
-  rounded: true
-  # If true, the avatar will be rotated with the cursor.
-  rotated: true
+<pre><code>::-webkit-scrollbar-thumb &#123;
+    background-color: #6e6bc9;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+&#125;
+::-webkit-scrollbar-track &#123;
+    background-color: #121249;
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar &#123;
+    width: 10px;
+    height: 0px;
+&#125;
 </code></pre>
+<blockquote>
+<p>emmm具体颜色，样式什么的自己看着改吧</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -657,16 +668,19 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加文章版权信息</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+    <title>添加头像</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
+    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
+<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
 </blockquote>
-<pre><code>creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language:
+<pre><code># Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/xiaoheimiaoio.png
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: true
 </code></pre>
 ]]></content>
       <categories>
@@ -731,22 +745,16 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加网易云音乐插件</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
-<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
+    <title>添加文章版权信息</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
+<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
 </blockquote>
-<pre><code> &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
- 
-     &lt;/div&gt;
-   &lt;/aside&gt;
-   &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;
- &#123;% endmacro %&#125;
-</code></pre>
-<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
-<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
-</blockquote>
-<pre><code>pjax: true
+<pre><code>creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language:
 </code></pre>
 ]]></content>
       <categories>
@@ -779,6 +787,51 @@ tags:
 </code></pre>
 <blockquote>
 <p>（emmm设置为代码区怎么还是，，，）</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加网易云音乐插件</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
+<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
+</blockquote>
+<pre><code> &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+ 
+     &lt;/div&gt;
+   &lt;/aside&gt;
+   &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;
+ &#123;% endmacro %&#125;
+</code></pre>
+<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
+<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
+</blockquote>
+<pre><code>pjax: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+</blockquote>
+<pre><code> favicon:
+ small: /images/xiaoheimiaoio-16x16.png
+ medium: /images/xiaoheimiaoio-32x32.png
+ apple_touch_icon: /images/apple-touch-icon-next.png
+ safari_pinned_tab: /images/logo.svg
+ #android_manifest: /images/manifest.json
+ #ms_browserconfig: /images/browserconfig.xml
+</code></pre>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -873,35 +926,13 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
-</blockquote>
-<pre><code> favicon:
- small: /images/xiaoheimiaoio-16x16.png
- medium: /images/xiaoheimiaoio-32x32.png
- apple_touch_icon: /images/apple-touch-icon-next.png
- safari_pinned_tab: /images/logo.svg
- #android_manifest: /images/manifest.json
- #ms_browserconfig: /images/browserconfig.xml
-</code></pre>
-<blockquote>
-<p>修改small和medium为你的图标路径</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>使用MarkdownPad 2写文章</title>
     <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#97;&#x72;&#x33;&#x36;&#x30;&#x40;&#108;&#105;&#118;&#101;&#x2e;&#99;&#111;&#x6d;">&#x53;&#x6f;&#97;&#x72;&#x33;&#x36;&#x30;&#x40;&#108;&#105;&#118;&#101;&#x2e;&#99;&#111;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#x53;&#111;&#x61;&#x72;&#x33;&#x36;&#x30;&#64;&#108;&#105;&#118;&#101;&#46;&#99;&#x6f;&#x6d;">&#x53;&#111;&#x61;&#x72;&#x33;&#x36;&#x30;&#64;&#108;&#105;&#118;&#101;&#46;&#99;&#x6f;&#x6d;</a><br>授权秘钥:<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
