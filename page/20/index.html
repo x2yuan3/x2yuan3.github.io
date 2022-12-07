@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">添加文章版权信息</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/" class="post-title-link" itemprop="url">添加彩色滚动变换字体</a>
         </h2>
 
         <div class="post-meta">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,15 +256,55 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
 </blockquote>
-<pre><code>creative_commons:
-  license: by-nc-sa
-  sidebar: true
-  post: true
-  language:
+<pre><code>&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;
+  &lt;script&gt;
+    var binft = function (r) &#123;
+      function t() &#123;
+        return b[Math.floor(Math.random() * b.length)]
+      &#125;  
+      function e() &#123;
+        return String.fromCharCode(94 * Math.random() + 33)
+      &#125;
+      function n(r) &#123;
+        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;
+          var l = document.createElement(&quot;span&quot;);
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        &#125;
+        return n
+      &#125;
+      function i() &#123;
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      &#125;
+      var l = &quot;&quot;,
+      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;
+      return r + &quot;&quot;
+      &#125;),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],
+      c = &#123;
+        text: &quot;&quot;,
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: &quot;forward&quot;,
+        delay: a,
+        step: g
+      &#125;;
+      i()
+      &#125;;
+      binft(document.getElementById(&#39;binft&#39;));
+  &lt;/script&gt;
 </code></pre>
+<blockquote>
+<p>具体内容自行修改即可</p>
+</blockquote>
 
       
     </div>
