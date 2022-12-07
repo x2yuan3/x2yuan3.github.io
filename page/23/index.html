@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/" class="post-title-link" itemprop="url">添加背景，全局透明，全局边框圆角</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/" class="post-title-link" itemprop="url">添加网站图标</a>
         </h2>
 
         <div class="post-meta">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,84 +256,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-设置背景"><a href="#1-设置背景" class="headerlink" title="1. 设置背景"></a><strong>1. 设置背景</strong></h2><blockquote>
-<p>将你的背景图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找styles.styl,去掉#后保存，如下</p>
+          <h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
 </blockquote>
-<pre><code>custom_file_path:
-  #head: source/_data/head.swig
-  #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
-  #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
-  #footer: source/_data/footer.swig
-  #bodyEnd: source/_data/body-end.swig
-  #variable: source/_data/variables.styl
-  #mixin: source/_data/mixins.styl
-  style: source/_data/styles.styl
+<pre><code> favicon:
+ small: /images/xiaoheimiaoio-16x16.png
+ medium: /images/xiaoheimiaoio-32x32.png
+ apple_touch_icon: /images/apple-touch-icon-next.png
+ safari_pinned_tab: /images/logo.svg
+ #android_manifest: /images/manifest.json
+ #ms_browserconfig: /images/browserconfig.xml
 </code></pre>
 <blockquote>
-<p> 新建路径和文件blog/source/_data/styles.styl<br> 打开styles.styl输入以下代码</p>
-</blockquote>
-<pre><code>body &#123;
-    background:url(/images/black.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-&#125;
-</code></pre>
-<h2 id="1-1-设置手机端背景"><a href="#1-1-设置手机端背景" class="headerlink" title="1-1. 设置手机端背景"></a><strong>1-1. 设置手机端背景</strong></h2><pre><code>@media only screen and (max-width: 1080px) &#123;
-  body &#123;
-    background:url(/images/black.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-  &#125;
-&#125;
-</code></pre>
-<h2 id="2-设置透明"><a href="#2-设置透明" class="headerlink" title="2. 设置透明"></a><strong>2. 设置透明</strong></h2><blockquote>
-<p>同上在styles.styl输入以下代码</p>
-</blockquote>
-<pre><code>//文章内容的透明度设置
-.content-wrap &#123;
- opacity: 1;
-&#125;
-.post-block &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//侧边框的透明度设置
-.sidebar-inner &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//菜单栏的透明度设置
-.header-inner &#123;
- background: rgba(255,255,255,0.8);
-&#125;
-
-//搜索框的透明度设置
-.popup &#123;
- opacity: 1;
-&#125;
-</code></pre>
-<h2 id="3-全局边框圆角"><a href="#3-全局边框圆角" class="headerlink" title="3. 全局边框圆角"></a><strong>3. 全局边框圆角</strong></h2><blockquote>
-<p>打开blog/themes/next/source/css/_variables/Pisces.styl（你的主题是哪个就打开哪个，我这里设置的主题是Pisces）<br>搜索$border-radius-inner<br>修改如下</p>
-</blockquote>
-<pre><code>$border-radius-inner              = 20px;
-$border-radius                    = 20px;
-</code></pre>
-<blockquote>
-<p>这时候头像侧边栏的四个边角存在背景色，需要继续优化<br>打开blog/source/_data/styles.styl<br>添加如下代码</p>
-</blockquote>
-<pre><code>// 头像侧边栏的四个边角背景色优化
-.sidebar&#123;
-    background-color:transparent;
-&#125;
-</code></pre>
-<blockquote>
-<p>（关于翻页栏边框圆角在小细节修改合集里）</p>
+<p>修改small和medium为你的图标路径</p>
 </blockquote>
 
       
@@ -434,10 +369,10 @@ $border-radius                    = 20px;
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/xyuan23" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xyuan23" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/x2yuan3" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;x2yuan3" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:xyuan0023@gmail.com" title="E-Mail → mailto:xyuan0023@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="mailto:x2yuan3@gmail.com" title="E-Mail → mailto:x2yuan3@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
