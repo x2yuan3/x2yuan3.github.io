@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/" class="post-title-link" itemprop="url">开启黑暗模式</a>
+            <a href="/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">小细节修改合集</a>
         </h2>
 
         <div class="post-meta">
@@ -219,7 +219,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-07-04 00:00:00" itemprop="dateCreated datePublished" datetime="2022-07-04T00:00:00+08:00">2022-07-04</time>
+              <time title="创建时间：2022-06-01 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-01T00:00:00+08:00">2022-06-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/07/04/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,11 +256,219 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
 </blockquote>
-<pre><code># Dark Mode
-darkmode: true
+<pre><code>//菜单栏顶部标题
+.brand &#123;
+    border-bottom: none;
+    color: rgba(255,255,255,0);
+    display: inline-block;
+    line-height: 1.375em;
+    padding: 0 40px;
+    position: relative;
+&#125;
+
+//评论区透明
+.comments &#123;
+    background: rgba(255,255,255,0.8);
+&#125;
+
+//侧边栏部件过多滚动自动回弹问题
+.sidebar-inner.affix &#123;
+  position: static;
+  top: 10px;
+&#125;
+
+//网页底部字体颜色
+.footer &#123;
+    color: #fff;
+    font-size: 0.875em;
+    padding: 20px 0;
+&#125;
+
+//侧边栏社交图标间隔
+.links-of-author-item .fa, .links-of-author-item .fab, .links-of-author-item .far, .links-of-author-item .fas &#123;
+    margin-right: 10px;
+&#125;
+
+//分类括号颜色
+.category-all-page .category-list-count &#123;
+    color: #000;
+&#125;
+
+//分类二级页面的分类字体颜色
+.posts-collapse .collection-header small &#123;
+    color: #000;
+    margin-left: 5px;
+&#125;
+
+//分类二级页面字体颜色
+body &#123;
+    background: var(--body-bg-color);
+    color: #000;
+    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 1em;
+    line-height: 2;
+&#125;
+
+//文章发表于字体颜色
+.posts-expand .post-meta &#123;
+    color: #000;
+    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 0.75em;
+    margin: 3px 0 60px 0;
+    text-align: center;
+&#125;
+
+//侧边栏名字颜色
+.site-author-name &#123;
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+&#125;
+
+//侧边栏日志分类颜色
+.site-state-item-name &#123;
+    color: #000;
+    font-size: 0.8125em;
+&#125;
+
+//翻页栏
+.pagination &#123;
+    background: rgba(255,255,255,0.8);
+    border-radius: initial;
+    border-top: initial;
+//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
+    margin: 10px 0 0;
+    padding: 10px 0 10px;
+    border-radius: 20px;
+&#125;
+
+//代码颜色
+pre code &#123;
+    background: none;
+    color: #000000;
+    font-size: 0.875em;
+    padding: 0;
+    text-shadow: none;
+&#125;
+
+//代码区域颜色
+.highlight, pre &#123;
+    background: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    margin: 0 auto 20px;
+&#125;
+
+//文章段落间隔横线
+.post-body h1, .post-body h2 &#123;
+    border-bottom: 0px solid #000;
+&#125;
+
+//文章段落间隔竖线
+blockquote &#123;
+    border-left: 4px solid #000;
+    color: #000;
+    margin: 0;
+    padding: 0 15px;
+&#125;
+
+//主页标题选中效果
+.posts-expand .post-title-link::before &#123;
+    background: #000;
+    bottom: 0;
+    content: &#39;&#39;;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    visibility: hidden;
+    width: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+&#125;
+
+//首页标题颜色
+.posts-expand .post-title-link &#123;
+    border-bottom: none;
+    color: #000;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+&#125;
+
+//电脑端壁纸
+body &#123;
+    background:url(https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+&#125;
+//手机端壁纸
+@media only screen and (max-width: 1080px) &#123;
+  body &#123;
+    background:url(https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+  &#125;
+&#125;
+
+//侧边菜单栏顶部显示
+.site-brand-container &#123;
+ background:url(images\caidan.png);
+&#125;
+
+//顶部加载条颜色
+.headband &#123;
+    background: #000;
+    height: 0px;
+&#125;
+
+//文章内容的透明度设置
+.post-block &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//侧边框的透明度设置
+.sidebar-inner &#123;
+ background: rgba(255,255,255,0.8)
+&#125;
+
+//菜单栏的透明度设置
+.header-inner &#123;
+ background: rgba(255,255,255,0.8);
+&#125;
+
+//搜索框的透明度设置
+.popup &#123;
+ opacity: 1;
+&#125;
+
+//头像侧边栏的四个边角背景色优化
+.sidebar&#123;
+    background-color:transparent;
+&#125;
+
+//滚动条
+::-webkit-scrollbar-thumb &#123;
+    background-color: #ef8858;
+//    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar-track &#123;
+    background-color: #f9cbaa;
+    border-radius: 0em;
+&#125;
+::-webkit-scrollbar &#123;
+    width: 10px;
+    height: 0px;
+&#125;
 </code></pre>
 
       
@@ -596,7 +804,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 </script>
     </div>
 
-- <script src="/js/sakura.js"></script>
+<script src="/js/sakura.js"></script>
 
 <script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/xiaomai.model.json"},"display":{"position":"right","width":200,"height":390},"mobile":{"show":false},"react":{"opacity":1},"log":false});</script></body>
 </html>
