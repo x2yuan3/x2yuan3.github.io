@@ -259,175 +259,18 @@
           <h2 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a><strong>1. 新建js文件</strong></h2><blockquote>
 <p>代码如下<br>（记得替换自己飘落样式地址<br>如：img.src = “/images/fengye.png”</p>
 </blockquote>
-<pre><code>var stop, staticx;
-var img = new Image();
-img.src = &quot;/images/fengye.png&quot;
-
-function Sakura(x, y, s, r, fn) &#123;
-    this.x = x;
-    this.y = y;
-    this.s = s;
-    this.r = r;
-    this.fn = fn;
-&#125;
-Sakura.prototype.draw = function (cxt) &#123;
-    cxt.save();
-    var xc = 40 * this.s / 4;
-    cxt.translate(this.x, this.y);
-    cxt.rotate(this.r);
-    cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
-    cxt.restore();
-&#125;
-Sakura.prototype.update = function () &#123;
-    this.x = this.fn.x(this.x, this.y);
-    this.y = this.fn.y(this.y, this.y);
-    this.r = this.fn.r(this.r);
-    if (this.x &gt; window.innerWidth || this.x &lt; 0 || this.y &gt; window.innerHeight || this.y &lt; 0) &#123;
-        this.r = getRandom(&#39;fnr&#39;);
-        if (Math.random() &gt; 0.4) &#123;
-            this.x = getRandom(&#39;x&#39;);
-            this.y = 0;
-            this.s = getRandom(&#39;s&#39;);
-            this.r = getRandom(&#39;r&#39;);
-        &#125; else &#123;
-            this.x = window.innerWidth;
-            this.y = getRandom(&#39;y&#39;);
-            this.s = getRandom(&#39;s&#39;);
-            this.r = getRandom(&#39;r&#39;);
-        &#125;
-    &#125;
-&#125;
-SakuraList = function () &#123;
-    this.list = [];
-&#125;
-SakuraList.prototype.push = function (sakura) &#123;
-    this.list.push(sakura);
-&#125;
-SakuraList.prototype.update = function () &#123;
-    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;
-        this.list[i].update();
-    &#125;
-&#125;
-SakuraList.prototype.draw = function (cxt) &#123;
-    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;
-        this.list[i].draw(cxt);
-    &#125;
-&#125;
-SakuraList.prototype.get = function (i) &#123;
-    return this.list[i];
-&#125;
-SakuraList.prototype.size = function () &#123;
-    return this.list.length;
-&#125;
-
-function getRandom(option) &#123;
-    var ret, random;
-    switch (option) &#123;
-        case &#39;x&#39;:
-            ret = Math.random() * window.innerWidth;
-            break;
-        case &#39;y&#39;:
-            ret = Math.random() * window.innerHeight;
-            break;
-        case &#39;s&#39;:
-            ret = Math.random();
-            break;
-        case &#39;r&#39;:
-            ret = Math.random() * 6;
-            break;
-        case &#39;fnx&#39;:
-            random = -0.5 + Math.random() * 1;
-            ret = function (x, y) &#123;
-                return x + 0.5 * random - 1.7;
-            &#125;;
-            break;
-        case &#39;fny&#39;:
-            random = 1.5 + Math.random() * 0.7
-            ret = function (x, y) &#123;
-                return y + random;
-            &#125;;
-            break;
-        case &#39;fnr&#39;:
-            random = Math.random() * 0.03;
-            ret = function (r) &#123;
-                return r + random;
-            &#125;;
-            break;
-    &#125;
-    return ret;
-&#125;
-
-function startSakura() &#123;
-    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;
-    var canvas = document.createElement(&#39;canvas&#39;),
-        cxt;
-    staticx = true;
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-    canvas.setAttribute(&#39;style&#39;, &#39;position: fixed;left: 0;top: 0;pointer-events: none;&#39;);
-    canvas.setAttribute(&#39;id&#39;, &#39;canvas_sakura&#39;);
-    document.getElementsByTagName(&#39;body&#39;)[0].appendChild(canvas);
-    cxt = canvas.getContext(&#39;2d&#39;);
-    var sakuraList = new SakuraList();
-    for (var i = 0; i &lt; 50; i++) &#123;
-        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
-        randomX = getRandom(&#39;x&#39;);
-        randomY = getRandom(&#39;y&#39;);
-        randomR = getRandom(&#39;r&#39;);
-        randomS = getRandom(&#39;s&#39;);
-        randomFnx = getRandom(&#39;fnx&#39;);
-        randomFny = getRandom(&#39;fny&#39;);
-        randomFnR = getRandom(&#39;fnr&#39;);
-        sakura = new Sakura(randomX, randomY, randomS, randomR, &#123;
-            x: randomFnx,
-            y: randomFny,
-            r: randomFnR
-        &#125;);
-        sakura.draw(cxt);
-        sakuraList.push(sakura);
-    &#125;
-    stop = requestAnimationFrame(function () &#123;
-        cxt.clearRect(0, 0, canvas.width, canvas.height);
-        sakuraList.update();
-        sakuraList.draw(cxt);
-        stop = requestAnimationFrame(arguments.callee);
-    &#125;)
-&#125;
-window.onresize = function () &#123;
-    var canvasSnow = document.getElementById(&#39;canvas_snow&#39;);
-&#125;
-img.onload = function () &#123;
-    startSakura();
-&#125;
-
-function stopp() &#123;
-    if (staticx) &#123;
-        var child = document.getElementById(&quot;canvas_sakura&quot;);
-        child.parentNode.removeChild(child);
-        window.cancelAnimationFrame(stop);
-        staticx = false;
-    &#125; else &#123;
-        startSakura();
-    &#125;
-&#125;
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br></pre></td><td class="code"><pre><span class="line">var stop, staticx;</span><br><span class="line">var img = new Image();</span><br><span class="line">img.src = &quot;/images/fengye.png&quot;</span><br><span class="line"></span><br><span class="line">function Sakura(x, y, s, r, fn) &#123;</span><br><span class="line">    this.x = x;</span><br><span class="line">    this.y = y;</span><br><span class="line">    this.s = s;</span><br><span class="line">    this.r = r;</span><br><span class="line">    this.fn = fn;</span><br><span class="line">&#125;</span><br><span class="line">Sakura.prototype.draw = function (cxt) &#123;</span><br><span class="line">    cxt.save();</span><br><span class="line">    var xc = 40 * this.s / 4;</span><br><span class="line">    cxt.translate(this.x, this.y);</span><br><span class="line">    cxt.rotate(this.r);</span><br><span class="line">    cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)</span><br><span class="line">    cxt.restore();</span><br><span class="line">&#125;</span><br><span class="line">Sakura.prototype.update = function () &#123;</span><br><span class="line">    this.x = this.fn.x(this.x, this.y);</span><br><span class="line">    this.y = this.fn.y(this.y, this.y);</span><br><span class="line">    this.r = this.fn.r(this.r);</span><br><span class="line">    if (this.x &gt; window.innerWidth || this.x &lt; 0 || this.y &gt; window.innerHeight || this.y &lt; 0) &#123;</span><br><span class="line">        this.r = getRandom(&#x27;fnr&#x27;);</span><br><span class="line">        if (Math.random() &gt; 0.4) &#123;</span><br><span class="line">            this.x = getRandom(&#x27;x&#x27;);</span><br><span class="line">            this.y = 0;</span><br><span class="line">            this.s = getRandom(&#x27;s&#x27;);</span><br><span class="line">            this.r = getRandom(&#x27;r&#x27;);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            this.x = window.innerWidth;</span><br><span class="line">            this.y = getRandom(&#x27;y&#x27;);</span><br><span class="line">            this.s = getRandom(&#x27;s&#x27;);</span><br><span class="line">            this.r = getRandom(&#x27;r&#x27;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList = function () &#123;</span><br><span class="line">    this.list = [];</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.push = function (sakura) &#123;</span><br><span class="line">    this.list.push(sakura);</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.update = function () &#123;</span><br><span class="line">    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;</span><br><span class="line">        this.list[i].update();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.draw = function (cxt) &#123;</span><br><span class="line">    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;</span><br><span class="line">        this.list[i].draw(cxt);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.get = function (i) &#123;</span><br><span class="line">    return this.list[i];</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.size = function () &#123;</span><br><span class="line">    return this.list.length;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getRandom(option) &#123;</span><br><span class="line">    var ret, random;</span><br><span class="line">    switch (option) &#123;</span><br><span class="line">        case &#x27;x&#x27;:</span><br><span class="line">            ret = Math.random() * window.innerWidth;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;y&#x27;:</span><br><span class="line">            ret = Math.random() * window.innerHeight;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;s&#x27;:</span><br><span class="line">            ret = Math.random();</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;r&#x27;:</span><br><span class="line">            ret = Math.random() * 6;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fnx&#x27;:</span><br><span class="line">            random = -0.5 + Math.random() * 1;</span><br><span class="line">            ret = function (x, y) &#123;</span><br><span class="line">                return x + 0.5 * random - 1.7;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fny&#x27;:</span><br><span class="line">            random = 1.5 + Math.random() * 0.7</span><br><span class="line">            ret = function (x, y) &#123;</span><br><span class="line">                return y + random;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fnr&#x27;:</span><br><span class="line">            random = Math.random() * 0.03;</span><br><span class="line">            ret = function (r) &#123;</span><br><span class="line">                return r + random;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">    &#125;</span><br><span class="line">    return ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function startSakura() &#123;</span><br><span class="line">    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;</span><br><span class="line">    var canvas = document.createElement(&#x27;canvas&#x27;),</span><br><span class="line">        cxt;</span><br><span class="line">    staticx = true;</span><br><span class="line">    canvas.height = window.innerHeight;</span><br><span class="line">    canvas.width = window.innerWidth;</span><br><span class="line">    canvas.setAttribute(&#x27;style&#x27;, &#x27;position: fixed;left: 0;top: 0;pointer-events: none;&#x27;);</span><br><span class="line">    canvas.setAttribute(&#x27;id&#x27;, &#x27;canvas_sakura&#x27;);</span><br><span class="line">    document.getElementsByTagName(&#x27;body&#x27;)[0].appendChild(canvas);</span><br><span class="line">    cxt = canvas.getContext(&#x27;2d&#x27;);</span><br><span class="line">    var sakuraList = new SakuraList();</span><br><span class="line">    for (var i = 0; i &lt; 50; i++) &#123;</span><br><span class="line">        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;</span><br><span class="line">        randomX = getRandom(&#x27;x&#x27;);</span><br><span class="line">        randomY = getRandom(&#x27;y&#x27;);</span><br><span class="line">        randomR = getRandom(&#x27;r&#x27;);</span><br><span class="line">        randomS = getRandom(&#x27;s&#x27;);</span><br><span class="line">        randomFnx = getRandom(&#x27;fnx&#x27;);</span><br><span class="line">        randomFny = getRandom(&#x27;fny&#x27;);</span><br><span class="line">        randomFnR = getRandom(&#x27;fnr&#x27;);</span><br><span class="line">        sakura = new Sakura(randomX, randomY, randomS, randomR, &#123;</span><br><span class="line">            x: randomFnx,</span><br><span class="line">            y: randomFny,</span><br><span class="line">            r: randomFnR</span><br><span class="line">        &#125;);</span><br><span class="line">        sakura.draw(cxt);</span><br><span class="line">        sakuraList.push(sakura);</span><br><span class="line">    &#125;</span><br><span class="line">    stop = requestAnimationFrame(function () &#123;</span><br><span class="line">        cxt.clearRect(0, 0, canvas.width, canvas.height);</span><br><span class="line">        sakuraList.update();</span><br><span class="line">        sakuraList.draw(cxt);</span><br><span class="line">        stop = requestAnimationFrame(arguments.callee);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">window.onresize = function () &#123;</span><br><span class="line">    var canvasSnow = document.getElementById(&#x27;canvas_snow&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">img.onload = function () &#123;</span><br><span class="line">    startSakura();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function stopp() &#123;</span><br><span class="line">    if (staticx) &#123;</span><br><span class="line">        var child = document.getElementById(&quot;canvas_sakura&quot;);</span><br><span class="line">        child.parentNode.removeChild(child);</span><br><span class="line">        window.cancelAnimationFrame(stop);</span><br><span class="line">        staticx = false;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        startSakura();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>将js文件放置到\themes\next\source\js目录下</p>
 </blockquote>
 <h2 id="2-引用js文件"><a href="#2-引用js文件" class="headerlink" title="2. 引用js文件"></a><strong>2. 引用js文件</strong></h2><blockquote>
 <p>打开C\themes\next\layout_layout.swig<br>添加如下代码</p>
 </blockquote>
-<pre><code>&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>大致位置如下</p>
 </blockquote>
-<pre><code>&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
 

@@ -259,39 +259,22 @@
           <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
 <p>地址 <a target="_blank" rel="noopener" href="https://www.livere.com/">https://www.livere.com/</a><br>点击安装选择免费的版本，然后在管理页面查看代码，复制其中的data-uid字段，如下</p>
 </blockquote>
-<pre><code>data-uid=&quot;MTxxxxxxxxxx==&quot;
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data-uid=&quot;MTxxxxxxxxxx==&quot;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>然后编辑文件next/_config.yml，启用livere评论系统，如下</p>
 </blockquote>
-<pre><code>comments:
-  # Available values: tabs | buttons
-  style: tabs
-  # Choose a comment system to be displayed by default.
-  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: livere
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">comments:</span><br><span class="line">  # Available values: tabs | buttons</span><br><span class="line">  style: tabs</span><br><span class="line">  # Choose a comment system to be displayed by default.</span><br><span class="line">  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine</span><br><span class="line">  active: livere</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>然后定位到livere_uid字段，粘贴刚刚复制的UID，如下</p>
 </blockquote>
-<pre><code># LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTxxxxxxxxxx==
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># LiveRe comments system</span><br><span class="line"># You can get your uid from https://livere.com/insight/myCode (General web site)</span><br><span class="line">livere_uid: MTxxxxxxxxxx==</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>然后本地先运行看看<br>具体功能可以在livere管理页面查看<br>其他的评论系统没试过，这个不用实名，而且使用还算方便</p>
 </blockquote>
 <h2 id="2-关闭某页面评论系统"><a href="#2-关闭某页面评论系统" class="headerlink" title="2. 关闭某页面评论系统"></a><strong>2. 关闭某页面评论系统</strong></h2><blockquote>
 <p>在编辑页面或者写文章的时候加上 comments: false<br>如下</p>
 </blockquote>
-<pre><code>---
-title: 文章分类
-date: 2022-01-01 00:00:00
-type: categories
-comments: false
----
-</code></pre>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2022-01-01 00:00:00</span><br><span class="line">type: categories</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"></span><br></pre></td></tr></table></figure>
       
     </div>
 

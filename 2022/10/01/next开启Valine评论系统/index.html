@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="0. 目前国内网络无法评论和查看评论1. 创建LeanCloud账号 网址：https:&#x2F;&#x2F;leancloud.app&#x2F;创建应用，设置，应用凭证，获取appid，appkey和REST API 服务器地址  2. 配置Valine 打开\themes\next_config.yml配置如下  # Valine # For more information: https:&#x2F;&#x2F;valine.js.or">
+  <meta name="description" content="0. 目前国内网络无法评论和查看评论1. 创建LeanCloud账号 网址：https:&#x2F;&#x2F;leancloud.app&#x2F;创建应用，设置，应用凭证，获取appid，appkey和REST API 服务器地址  2. 配置Valine 打开\themes\next_config.yml配置如下  123456789101112131415161718# Valine# For more informa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Valine评论系统">
 <meta property="og:url" content="http://example.com/2022/10/01/next%E5%BC%80%E5%90%AFValine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="emmmmmmmmm">
-<meta property="og:description" content="0. 目前国内网络无法评论和查看评论1. 创建LeanCloud账号 网址：https:&#x2F;&#x2F;leancloud.app&#x2F;创建应用，设置，应用凭证，获取appid，appkey和REST API 服务器地址  2. 配置Valine 打开\themes\next_config.yml配置如下  # Valine # For more information: https:&#x2F;&#x2F;valine.js.or">
+<meta property="og:description" content="0. 目前国内网络无法评论和查看评论1. 创建LeanCloud账号 网址：https:&#x2F;&#x2F;leancloud.app&#x2F;创建应用，设置，应用凭证，获取appid，appkey和REST API 服务器地址  2. 配置Valine 打开\themes\next_config.yml配置如下  123456789101112131415161718# Valine# For more informa">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-30T16:00:00.000Z">
 <meta property="article:modified_time" content="2022-12-08T02:25:32.749Z">
@@ -266,26 +266,7 @@
 <h2 id="2-配置Valine"><a href="#2-配置Valine" class="headerlink" title="2. 配置Valine"></a><strong>2. 配置Valine</strong></h2><blockquote>
 <p>打开\themes\next_config.yml<br>配置如下</p>
 </blockquote>
-<pre><code># Valine
-# For more information: https://valine.js.org, https://github.com/xCss/Valine
-valine:
-  enable: true （记得打开
-  appid: 你的appid # Your leancloud application appid
-  appkey: 你的appkey # Your leancloud application appkey
-  notify: true # Mail notifier
-  verify: false # Verification code
-  placeholder: 阿巴阿巴阿巴，，， # Comment box placeholder
-  avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
-  pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: true # Whether to record the commenter IP
-  serverURLs: 你的REST API 服务器地址 # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-  #post_meta_order: 0
-</code></pre>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># Valine</span><br><span class="line"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span><br><span class="line">valine:</span><br><span class="line">  enable: true （记得打开</span><br><span class="line">  appid: 你的appid # Your leancloud application appid</span><br><span class="line">  appkey: 你的appkey # Your leancloud application appkey</span><br><span class="line">  notify: true # Mail notifier</span><br><span class="line">  verify: false # Verification code</span><br><span class="line">  placeholder: 阿巴阿巴阿巴，，， # Comment box placeholder</span><br><span class="line">  avatar: mm # Gravatar style</span><br><span class="line">  guest_info: nick,mail,link # Custom comment header</span><br><span class="line">  pageSize: 10 # Pagination size</span><br><span class="line">  language: # Language, available values: en, zh-cn</span><br><span class="line">  visitor: false # Article reading statistic</span><br><span class="line">  comment_count: true # If false, comment count will only be displayed in post page, not in home page</span><br><span class="line">  recordIP: true # Whether to record the commenter IP</span><br><span class="line">  serverURLs: 你的REST API 服务器地址 # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span><br><span class="line">  #post_meta_order: 0</span><br></pre></td></tr></table></figure>
     </div>
 
     

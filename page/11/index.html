@@ -259,44 +259,21 @@
           <h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
 <p>在blog根目录，打开 git bash 运行命令如下</p>
 </blockquote>
-<pre><code>hexo new page guestbook
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page guestbook</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>编辑留言板页面文件，guestbook\index.md<br>如下</p>
 </blockquote>
-<pre><code>---
-title: 留言板
-date: 2022-05-20 20:00:00
----
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2022-05-20 20:00:00</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">做个留言板0v0</span><br></pre></td></tr></table></figure>
 
-做个留言板0v0
-</code></pre>
 <h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
 <p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下</p>
 </blockquote>
-<pre><code>menu:
-  home: / || fa fa-home
-  categories: /categories/ || fa fa-th
-  tags: /tags/ || fa fa-tags
-  archives: /archives/ || fa fa-archive
-  guestbook: /guestbook/ || fa fa-comment
-  about: /about/ || fa fa-user
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  guestbook: /guestbook/ || fa fa-comment</span><br><span class="line">  about: /about/ || fa fa-user</span><br></pre></td></tr></table></figure>
+
 <h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
 <p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下</p>
 </blockquote>
-<pre><code>menu:
-  home: 首页
-  archives: 归档
-  categories: 分类
-  tags: 标签
-  about: 关于
-  search: 搜索
-  schedule: 日程表
-  sitemap: 站点地图
-  commonweal: 公益 404
-  guestbook: 留言
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  tags: 标签</span><br><span class="line">  about: 关于</span><br><span class="line">  search: 搜索</span><br><span class="line">  schedule: 日程表</span><br><span class="line">  sitemap: 站点地图</span><br><span class="line">  commonweal: 公益 404</span><br><span class="line">  guestbook: 留言</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>  即可，本地运行看看吧</p>
 </blockquote>

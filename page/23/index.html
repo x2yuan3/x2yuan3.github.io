@@ -259,19 +259,12 @@
           <h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
 <p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
 </blockquote>
-<pre><code> &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
- 
-     &lt;/div&gt;
-   &lt;/aside&gt;
-   &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;
- &#123;% endmacro %&#125;
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/aside&gt;</span><br><span class="line">  &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;</span><br><span class="line">&#123;% endmacro %&#125;</span><br></pre></td></tr></table></figure>
+
 <h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
 <p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
 </blockquote>
-<pre><code>pjax: true
-</code></pre>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>
       
     </div>
 
