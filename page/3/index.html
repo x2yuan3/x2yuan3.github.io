@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" class="post-title-link" itemprop="url">小细节修改合集</a>
+            <a href="/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/" class="post-title-link" itemprop="url">樱花飘落效果</a>
         </h2>
 
         <div class="post-meta">
@@ -219,7 +219,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-06-01 00:00:00" itemprop="dateCreated datePublished" datetime="2022-06-01T00:00:00+08:00">2022-06-01</time>
+              <time title="创建时间：2022-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2022-10-01T00:00:00+08:00">2022-10-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,219 +256,176 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+          <h2 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a><strong>1. 新建js文件</strong></h2><blockquote>
+<p>代码如下<br>（记得替换自己飘落样式地址<br>如：img.src = “/images/fengye.png”</p>
 </blockquote>
-<pre><code>//菜单栏顶部标题
-.brand &#123;
-    border-bottom: none;
-    color: rgba(255,255,255,0);
-    display: inline-block;
-    line-height: 1.375em;
-    padding: 0 40px;
-    position: relative;
+<pre><code>var stop, staticx;
+var img = new Image();
+img.src = &quot;/images/fengye.png&quot;
+
+function Sakura(x, y, s, r, fn) &#123;
+    this.x = x;
+    this.y = y;
+    this.s = s;
+    this.r = r;
+    this.fn = fn;
+&#125;
+Sakura.prototype.draw = function (cxt) &#123;
+    cxt.save();
+    var xc = 40 * this.s / 4;
+    cxt.translate(this.x, this.y);
+    cxt.rotate(this.r);
+    cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
+    cxt.restore();
+&#125;
+Sakura.prototype.update = function () &#123;
+    this.x = this.fn.x(this.x, this.y);
+    this.y = this.fn.y(this.y, this.y);
+    this.r = this.fn.r(this.r);
+    if (this.x &gt; window.innerWidth || this.x &lt; 0 || this.y &gt; window.innerHeight || this.y &lt; 0) &#123;
+        this.r = getRandom(&#39;fnr&#39;);
+        if (Math.random() &gt; 0.4) &#123;
+            this.x = getRandom(&#39;x&#39;);
+            this.y = 0;
+            this.s = getRandom(&#39;s&#39;);
+            this.r = getRandom(&#39;r&#39;);
+        &#125; else &#123;
+            this.x = window.innerWidth;
+            this.y = getRandom(&#39;y&#39;);
+            this.s = getRandom(&#39;s&#39;);
+            this.r = getRandom(&#39;r&#39;);
+        &#125;
+    &#125;
+&#125;
+SakuraList = function () &#123;
+    this.list = [];
+&#125;
+SakuraList.prototype.push = function (sakura) &#123;
+    this.list.push(sakura);
+&#125;
+SakuraList.prototype.update = function () &#123;
+    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;
+        this.list[i].update();
+    &#125;
+&#125;
+SakuraList.prototype.draw = function (cxt) &#123;
+    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;
+        this.list[i].draw(cxt);
+    &#125;
+&#125;
+SakuraList.prototype.get = function (i) &#123;
+    return this.list[i];
+&#125;
+SakuraList.prototype.size = function () &#123;
+    return this.list.length;
 &#125;
 
-//评论区透明
-.comments &#123;
-    background: rgba(255,255,255,0.8);
+function getRandom(option) &#123;
+    var ret, random;
+    switch (option) &#123;
+        case &#39;x&#39;:
+            ret = Math.random() * window.innerWidth;
+            break;
+        case &#39;y&#39;:
+            ret = Math.random() * window.innerHeight;
+            break;
+        case &#39;s&#39;:
+            ret = Math.random();
+            break;
+        case &#39;r&#39;:
+            ret = Math.random() * 6;
+            break;
+        case &#39;fnx&#39;:
+            random = -0.5 + Math.random() * 1;
+            ret = function (x, y) &#123;
+                return x + 0.5 * random - 1.7;
+            &#125;;
+            break;
+        case &#39;fny&#39;:
+            random = 1.5 + Math.random() * 0.7
+            ret = function (x, y) &#123;
+                return y + random;
+            &#125;;
+            break;
+        case &#39;fnr&#39;:
+            random = Math.random() * 0.03;
+            ret = function (r) &#123;
+                return r + random;
+            &#125;;
+            break;
+    &#125;
+    return ret;
 &#125;
 
-//侧边栏部件过多滚动自动回弹问题
-.sidebar-inner.affix &#123;
-  position: static;
-  top: 10px;
+function startSakura() &#123;
+    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;
+    var canvas = document.createElement(&#39;canvas&#39;),
+        cxt;
+    staticx = true;
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    canvas.setAttribute(&#39;style&#39;, &#39;position: fixed;left: 0;top: 0;pointer-events: none;&#39;);
+    canvas.setAttribute(&#39;id&#39;, &#39;canvas_sakura&#39;);
+    document.getElementsByTagName(&#39;body&#39;)[0].appendChild(canvas);
+    cxt = canvas.getContext(&#39;2d&#39;);
+    var sakuraList = new SakuraList();
+    for (var i = 0; i &lt; 50; i++) &#123;
+        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
+        randomX = getRandom(&#39;x&#39;);
+        randomY = getRandom(&#39;y&#39;);
+        randomR = getRandom(&#39;r&#39;);
+        randomS = getRandom(&#39;s&#39;);
+        randomFnx = getRandom(&#39;fnx&#39;);
+        randomFny = getRandom(&#39;fny&#39;);
+        randomFnR = getRandom(&#39;fnr&#39;);
+        sakura = new Sakura(randomX, randomY, randomS, randomR, &#123;
+            x: randomFnx,
+            y: randomFny,
+            r: randomFnR
+        &#125;);
+        sakura.draw(cxt);
+        sakuraList.push(sakura);
+    &#125;
+    stop = requestAnimationFrame(function () &#123;
+        cxt.clearRect(0, 0, canvas.width, canvas.height);
+        sakuraList.update();
+        sakuraList.draw(cxt);
+        stop = requestAnimationFrame(arguments.callee);
+    &#125;)
+&#125;
+window.onresize = function () &#123;
+    var canvasSnow = document.getElementById(&#39;canvas_snow&#39;);
+&#125;
+img.onload = function () &#123;
+    startSakura();
 &#125;
 
-//网页底部字体颜色
-.footer &#123;
-    color: #fff;
-    font-size: 0.875em;
-    padding: 20px 0;
+function stopp() &#123;
+    if (staticx) &#123;
+        var child = document.getElementById(&quot;canvas_sakura&quot;);
+        child.parentNode.removeChild(child);
+        window.cancelAnimationFrame(stop);
+        staticx = false;
+    &#125; else &#123;
+        startSakura();
+    &#125;
 &#125;
+</code></pre>
+<blockquote>
+<p>将js文件放置到\themes\next\source\js目录下</p>
+</blockquote>
+<h2 id="2-引用js文件"><a href="#2-引用js文件" class="headerlink" title="2. 引用js文件"></a><strong>2. 引用js文件</strong></h2><blockquote>
+<p>打开C\themes\next\layout_layout.swig<br>添加如下代码</p>
+</blockquote>
+<pre><code>&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<blockquote>
+<p>大致位置如下</p>
+</blockquote>
+<pre><code>&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;
 
-//侧边栏社交图标间隔
-.links-of-author-item .fa, .links-of-author-item .fab, .links-of-author-item .far, .links-of-author-item .fas &#123;
-    margin-right: 10px;
-&#125;
-
-//分类括号颜色
-.category-all-page .category-list-count &#123;
-    color: #000;
-&#125;
-
-//分类二级页面的分类字体颜色
-.posts-collapse .collection-header small &#123;
-    color: #000;
-    margin-left: 5px;
-&#125;
-
-//分类二级页面字体颜色
-body &#123;
-    background: var(--body-bg-color);
-    color: #000;
-    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
-    font-size: 1em;
-    line-height: 2;
-&#125;
-
-//文章发表于字体颜色
-.posts-expand .post-meta &#123;
-    color: #000;
-    font-family: &#39;Lato&#39;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
-    font-size: 0.75em;
-    margin: 3px 0 60px 0;
-    text-align: center;
-&#125;
-
-//侧边栏名字颜色
-.site-author-name &#123;
-    color: #000;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-&#125;
-
-//侧边栏日志分类颜色
-.site-state-item-name &#123;
-    color: #000;
-    font-size: 0.8125em;
-&#125;
-
-//翻页栏
-.pagination &#123;
-    background: rgba(255,255,255,0.8);
-    border-radius: initial;
-    border-top: initial;
-//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);
-    margin: 10px 0 0;
-    padding: 10px 0 10px;
-    border-radius: 20px;
-&#125;
-
-//代码颜色
-pre code &#123;
-    background: none;
-    color: #000000;
-    font-size: 0.875em;
-    padding: 0;
-    text-shadow: none;
-&#125;
-
-//代码区域颜色
-.highlight, pre &#123;
-    background: rgba(255,255,255,0.8);
-    line-height: 1.6;
-    margin: 0 auto 20px;
-&#125;
-
-//文章段落间隔横线
-.post-body h1, .post-body h2 &#123;
-    border-bottom: 0px solid #000;
-&#125;
-
-//文章段落间隔竖线
-blockquote &#123;
-    border-left: 4px solid #000;
-    color: #000;
-    margin: 0;
-    padding: 0 15px;
-&#125;
-
-//主页标题选中效果
-.posts-expand .post-title-link::before &#123;
-    background: #000;
-    bottom: 0;
-    content: &#39;&#39;;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    transform: scaleX(0);
-    visibility: hidden;
-    width: 100%;
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-&#125;
-
-//首页标题颜色
-.posts-expand .post-title-link &#123;
-    border-bottom: none;
-    color: #000;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-&#125;
-
-//电脑端壁纸
-body &#123;
-    background:url(https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-&#125;
-//手机端壁纸
-@media only screen and (max-width: 1080px) &#123;
-  body &#123;
-    background:url(https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 100%;
-  &#125;
-&#125;
-
-//侧边菜单栏顶部显示
-.site-brand-container &#123;
- background:url(images\caidan.png);
-&#125;
-
-//顶部加载条颜色
-.headband &#123;
-    background: #000;
-    height: 0px;
-&#125;
-
-//文章内容的透明度设置
-.post-block &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//侧边框的透明度设置
-.sidebar-inner &#123;
- background: rgba(255,255,255,0.8)
-&#125;
-
-//菜单栏的透明度设置
-.header-inner &#123;
- background: rgba(255,255,255,0.8);
-&#125;
-
-//搜索框的透明度设置
-.popup &#123;
- opacity: 1;
-&#125;
-
-//头像侧边栏的四个边角背景色优化
-.sidebar&#123;
-    background-color:transparent;
-&#125;
-
-//滚动条
-::-webkit-scrollbar-thumb &#123;
-    background-color: #ef8858;
-//    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
-    border-radius: 0em;
-&#125;
-::-webkit-scrollbar-track &#123;
-    background-color: #f9cbaa;
-    border-radius: 0em;
-&#125;
-::-webkit-scrollbar &#123;
-    width: 10px;
-    height: 0px;
-&#125;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 
       
@@ -488,7 +445,7 @@ body &#123;
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/31/">31</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -555,7 +512,7 @@ body &#123;
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

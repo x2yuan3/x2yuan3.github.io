@@ -12,6 +12,39 @@
       </categories>
   </entry>
   <entry>
+    <title>Valine评论系统</title>
+    <url>/2022/10/01/next%E5%BC%80%E5%90%AFValine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h2 id="0-目前国内网络无法评论和查看评论"><a href="#0-目前国内网络无法评论和查看评论" class="headerlink" title="0. 目前国内网络无法评论和查看评论"></a><strong>0. 目前国内网络无法评论和查看评论</strong></h2><h2 id="1-创建LeanCloud账号"><a href="#1-创建LeanCloud账号" class="headerlink" title="1. 创建LeanCloud账号"></a><strong>1. 创建LeanCloud账号</strong></h2><blockquote>
+<p>网址：<a href="https://leancloud.app/">https://leancloud.app/</a><br>创建应用，设置，应用凭证，获取appid，appkey和REST API 服务器地址</p>
+</blockquote>
+<h2 id="2-配置Valine"><a href="#2-配置Valine" class="headerlink" title="2. 配置Valine"></a><strong>2. 配置Valine</strong></h2><blockquote>
+<p>打开\themes\next_config.yml<br>配置如下</p>
+</blockquote>
+<pre><code># Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+valine:
+  enable: true （记得打开
+  appid: 你的appid # Your leancloud application appid
+  appkey: 你的appkey # Your leancloud application appkey
+  notify: true # Mail notifier
+  verify: false # Verification code
+  placeholder: 阿巴阿巴阿巴，，， # Comment box placeholder
+  avatar: mm # Gravatar style
+  guest_info: nick,mail,link # Custom comment header
+  pageSize: 10 # Pagination size
+  language: # Language, available values: en, zh-cn
+  visitor: false # Article reading statistic
+  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  recordIP: true # Whether to record the commenter IP
+  serverURLs: 你的REST API 服务器地址 # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  #post_meta_order: 0
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>樱花飘落效果</title>
     <url>/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/</url>
     <content><![CDATA[<h2 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a><strong>1. 新建js文件</strong></h2><blockquote>
@@ -413,6 +446,20 @@ body &#123;
       </categories>
   </entry>
   <entry>
+    <title>开启黑暗模式</title>
+    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+</blockquote>
+<pre><code># Dark Mode
+darkmode: true
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>开启搜索功能</title>
     <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
@@ -431,20 +478,6 @@ body &#123;
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>开启黑暗模式</title>
-    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
-</blockquote>
-<pre><code># Dark Mode
-darkmode: true
 </code></pre>
 ]]></content>
       <categories>
@@ -535,6 +568,49 @@ darkmode: true
       </categories>
   </entry>
   <entry>
+    <title>开启livere评论系统（已关闭）</title>
+    <url>/2022/05/20/next%E5%BC%80%E5%90%AFlivere%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%B7%B2%E5%85%B3%E9%97%AD%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>地址 <a href="https://www.livere.com/">https://www.livere.com/</a><br>点击安装选择免费的版本，然后在管理页面查看代码，复制其中的data-uid字段，如下</p>
+</blockquote>
+<pre><code>data-uid=&quot;MTxxxxxxxxxx==&quot;
+</code></pre>
+<blockquote>
+<p>然后编辑文件next/_config.yml，启用livere评论系统，如下</p>
+</blockquote>
+<pre><code>comments:
+  # Available values: tabs | buttons
+  style: tabs
+  # Choose a comment system to be displayed by default.
+  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+  active: livere
+</code></pre>
+<blockquote>
+<p>然后定位到livere_uid字段，粘贴刚刚复制的UID，如下</p>
+</blockquote>
+<pre><code># LiveRe comments system
+# You can get your uid from https://livere.com/insight/myCode (General web site)
+livere_uid: MTxxxxxxxxxx==
+</code></pre>
+<blockquote>
+<p>然后本地先运行看看<br>具体功能可以在livere管理页面查看<br>其他的评论系统没试过，这个不用实名，而且使用还算方便</p>
+</blockquote>
+<h2 id="2-关闭某页面评论系统"><a href="#2-关闭某页面评论系统" class="headerlink" title="2. 关闭某页面评论系统"></a><strong>2. 关闭某页面评论系统</strong></h2><blockquote>
+<p>在编辑页面或者写文章的时候加上 comments: false<br>如下</p>
+</blockquote>
+<pre><code>---
+title: 文章分类
+date: 2022-01-01 00:00:00
+type: categories
+comments: false
+---
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加留言板页面</title>
     <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/</url>
     <content><![CDATA[<h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
@@ -587,51 +663,8 @@ date: 2022-05-20 20:00:00
       </categories>
   </entry>
   <entry>
-    <title>添加评论系统（无法正常使用）</title>
-    <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>地址 <a href="https://www.livere.com/">https://www.livere.com/</a><br>点击安装选择免费的版本，然后在管理页面查看代码，复制其中的data-uid字段，如下</p>
-</blockquote>
-<pre><code>data-uid=&quot;MTxxxxxxxxxx==&quot;
-</code></pre>
-<blockquote>
-<p>然后编辑文件next/_config.yml，启用livere评论系统，如下</p>
-</blockquote>
-<pre><code>comments:
-  # Available values: tabs | buttons
-  style: tabs
-  # Choose a comment system to be displayed by default.
-  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: livere
-</code></pre>
-<blockquote>
-<p>然后定位到livere_uid字段，粘贴刚刚复制的UID，如下</p>
-</blockquote>
-<pre><code># LiveRe comments system
-# You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTxxxxxxxxxx==
-</code></pre>
-<blockquote>
-<p>然后本地先运行看看<br>具体功能可以在livere管理页面查看<br>其他的评论系统没试过，这个不用实名，而且使用还算方便</p>
-</blockquote>
-<h2 id="2-关闭某页面评论系统"><a href="#2-关闭某页面评论系统" class="headerlink" title="2. 关闭某页面评论系统"></a><strong>2. 关闭某页面评论系统</strong></h2><blockquote>
-<p>在编辑页面或者写文章的时候加上 comments: false<br>如下</p>
-</blockquote>
-<pre><code>---
-title: 文章分类
-date: 2022-01-01 00:00:00
-type: categories
-comments: false
----
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>将本地hexo博客部署到github</title>
-    <url>/2022/05/20/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/</url>
+    <title>本地hexo博客部署到github</title>
+    <url>/2022/05/20/%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/</url>
     <content><![CDATA[<h2 id="1-创建github账号"><a href="#1-创建github账号" class="headerlink" title="1. 创建github账号"></a><strong>1. 创建github账号</strong></h2><h2 id="2-new个仓库"><a href="#2-new个仓库" class="headerlink" title="2. new个仓库"></a><strong>2. new个仓库</strong></h2><blockquote>
 <p>仓库名称格式为”你的用户名.GitHub.io”</p>
 </blockquote>
@@ -651,10 +684,10 @@ deploy:
 <pre><code>npm install hexo-deployer-git --save
 </code></pre>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#x79;&#111;&#117;&#64;&#x65;&#120;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#111;&#117;&#64;&#x65;&#120;&#x61;&#109;&#112;&#108;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;">&#121;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#99;&#x6f;&#x6d;</a>“<br>在Git Bash命令下输入git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -755,32 +788,6 @@ deploy:
       </categories>
   </entry>
   <entry>
-    <title>添加分类，标签，关于</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
-    <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
-<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page categories<br>成功后会提示：<br>进入blog/source\categories，打开 index.md 添加 type: categories<br>如下<br><code>---</code><br><code>title: 文章分类</code><br><code>date: 2022-01-01</code><br><code>type: categories</code><br><code>---</code><br>保存并关闭文件</p>
-</blockquote>
-<h2 id="2-给文章添加categories-分类-属性"><a href="#2-给文章添加categories-分类-属性" class="headerlink" title="2. 给文章添加categories(分类)属性"></a><strong>2. 给文章添加categories(分类)属性</strong></h2><blockquote>
-<p>格式如下<br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br>至此，成功给文章添加分类，点击首页的【分类】可以看到该分类下的所有文章</p>
-</blockquote>
-<h2 id="3-创建【标签】选项"><a href="#3-创建【标签】选项" class="headerlink" title="3. 创建【标签】选项"></a><strong>3. 创建【标签】选项</strong></h2><blockquote>
-<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page tags<br>成功后会提示：<br>进入blog/source/tags，打开 index.md 添加type: tags<br>如下<br><code>---</code><br><code>title: 标签</code><br><code>date: 2022-01-01</code><br><code>type: tags</code><br><code>---</code><br>保存并关闭文件</p>
-</blockquote>
-<h2 id="4-给文章添加tags-标签-属性"><a href="#4-给文章添加tags-标签-属性" class="headerlink" title="4. 给文章添加tags(标签)属性"></a><strong>4. 给文章添加tags(标签)属性</strong></h2><blockquote>
-<p>格式如下<br><code>---</code><br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br><code>tags: </code><br><code>- 标签</code><br><code>---</code></p>
-</blockquote>
-<h2 id="5-创建【关于】选项"><a href="#5-创建【关于】选项" class="headerlink" title="5. 创建【关于】选项"></a><strong>5. 创建【关于】选项</strong></h2><blockquote>
-<p>hexo new page about<br><code>---</code><br><code>title: 关于</code><br><code>date: 2022-01-01</code><br><code>type: about</code><br><code>---</code></p>
-</blockquote>
-<blockquote>
-<p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加live2d角色</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/</url>
     <content><![CDATA[<h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
@@ -820,28 +827,8 @@ live2d:
       </categories>
   </entry>
   <entry>
-    <title>添加头像</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
-    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
-</blockquote>
-<pre><code># Sidebar Avatar
-avatar:
-  # Replace the default image and set the url here.
-  url: /images/xiaoheimiaoio.png
-  # If true, the avatar will be dispalyed in circle.
-  rounded: true
-  # If true, the avatar will be rotated with the cursor.
-  rotated: true
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加彩色滚动变换字体</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
+    <title>添加侧边栏彩色滚动变换字体</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
 <p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
 </blockquote>
@@ -891,6 +878,52 @@ avatar:
 <blockquote>
 <p>具体内容自行修改即可</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加分类，标签，关于</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
+    <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
+<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page categories<br>成功后会提示：<br>进入blog/source\categories，打开 index.md 添加 type: categories<br>如下<br><code>---</code><br><code>title: 文章分类</code><br><code>date: 2022-01-01</code><br><code>type: categories</code><br><code>---</code><br>保存并关闭文件</p>
+</blockquote>
+<h2 id="2-给文章添加categories-分类-属性"><a href="#2-给文章添加categories-分类-属性" class="headerlink" title="2. 给文章添加categories(分类)属性"></a><strong>2. 给文章添加categories(分类)属性</strong></h2><blockquote>
+<p>格式如下<br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br>至此，成功给文章添加分类，点击首页的【分类】可以看到该分类下的所有文章</p>
+</blockquote>
+<h2 id="3-创建【标签】选项"><a href="#3-创建【标签】选项" class="headerlink" title="3. 创建【标签】选项"></a><strong>3. 创建【标签】选项</strong></h2><blockquote>
+<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page tags<br>成功后会提示：<br>进入blog/source/tags，打开 index.md 添加type: tags<br>如下<br><code>---</code><br><code>title: 标签</code><br><code>date: 2022-01-01</code><br><code>type: tags</code><br><code>---</code><br>保存并关闭文件</p>
+</blockquote>
+<h2 id="4-给文章添加tags-标签-属性"><a href="#4-给文章添加tags-标签-属性" class="headerlink" title="4. 给文章添加tags(标签)属性"></a><strong>4. 给文章添加tags(标签)属性</strong></h2><blockquote>
+<p>格式如下<br><code>---</code><br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br><code>tags: </code><br><code>- 标签</code><br><code>---</code></p>
+</blockquote>
+<h2 id="5-创建【关于】选项"><a href="#5-创建【关于】选项" class="headerlink" title="5. 创建【关于】选项"></a><strong>5. 创建【关于】选项</strong></h2><blockquote>
+<p>hexo new page about<br><code>---</code><br><code>title: 关于</code><br><code>date: 2022-01-01</code><br><code>type: about</code><br><code>---</code></p>
+</blockquote>
+<blockquote>
+<p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加头像</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
+    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
+<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
+</blockquote>
+<pre><code># Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/xiaoheimiaoio.png
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: true
+</code></pre>
 ]]></content>
       <categories>
         <category>博客更新日志</category>
@@ -991,8 +1024,29 @@ tags:
       </categories>
   </entry>
   <entry>
+    <title>设置首页文章数量</title>
+    <url>/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
+    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
+<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
+</blockquote>
+<pre><code>  path: &#39;&#39;
+  per_page: 1
+  order_by: -date
+</code></pre>
+<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
+<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
+</blockquote>
+<pre><code>per_page: 0
+pagination_dir: page
+</code></pre>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加背景，全局透明，全局边框圆角</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/</url>
+    <url>/2022/01/30/next%E9%85%8D%E7%BD%AE%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/</url>
     <content><![CDATA[<h2 id="1-设置背景"><a href="#1-设置背景" class="headerlink" title="1. 设置背景"></a><strong>1. 设置背景</strong></h2><blockquote>
 <p>将你的背景图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找styles.styl,去掉#后保存，如下</p>
 </blockquote>
@@ -1078,6 +1132,23 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
+    <title>使用MarkdownPad 2写文章</title>
+    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
+<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
+</blockquote>
+<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
+<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#114;&#x33;&#x36;&#x30;&#64;&#x6c;&#x69;&#118;&#101;&#46;&#x63;&#x6f;&#x6d;">&#83;&#x6f;&#x61;&#114;&#x33;&#x36;&#x30;&#64;&#x6c;&#x69;&#118;&#101;&#46;&#x63;&#x6f;&#x6d;</a><br>授权秘钥:  GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+</blockquote>
+<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
+<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>MarkdownPad 2</category>
+      </categories>
+  </entry>
+  <entry>
     <title>关于csdn登录后复制问题</title>
     <url>/2022/01/30/%E5%85%B3%E4%BA%8Ecsdn%E7%99%BB%E5%BD%95%E5%90%8E%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1"><a href="#1" class="headerlink" title="1."></a><strong>1.</strong></h2><font size=5>
@@ -1094,23 +1165,6 @@ $border-radius                    = 20px;
       </categories>
   </entry>
   <entry>
-    <title>使用MarkdownPad 2写文章</title>
-    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
-<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
-</blockquote>
-<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#97;&#x72;&#51;&#x36;&#48;&#x40;&#108;&#105;&#118;&#101;&#46;&#99;&#111;&#x6d;">&#x53;&#x6f;&#97;&#x72;&#51;&#x36;&#48;&#x40;&#108;&#105;&#118;&#101;&#46;&#99;&#111;&#x6d;</a><br>授权秘钥:  GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
-</blockquote>
-<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
-<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>MarkdownPad 2</category>
-      </categories>
-  </entry>
-  <entry>
     <title>在线下载网易云音乐</title>
     <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
     <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
@@ -1119,27 +1173,6 @@ $border-radius                    = 20px;
 ]]></content>
       <categories>
         <category>网易云音乐</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>设置首页文章数量</title>
-    <url>/2022/01/30/%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
-    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
-<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
-</blockquote>
-<pre><code>  path: &#39;&#39;
-  per_page: 1
-  order_by: -date
-</code></pre>
-<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
-<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
-</blockquote>
-<pre><code>per_page: 0
-pagination_dir: page
-</code></pre>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
       </categories>
   </entry>
   <entry>
@@ -1154,43 +1187,8 @@ pagination_dir: page
       </categories>
   </entry>
   <entry>
-    <title>在本地搭建hexo博客</title>
-    <url>/2021/10/01/%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
-<p>安装 Git  <a href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
-</blockquote>
-<blockquote>
-<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
-</blockquote>
-<blockquote>
-<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br><font color=#FF0000>报错！2022-06-09</font><br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
-</blockquote>
-<blockquote>
-<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
-</blockquote>
-<blockquote>
-<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
-</blockquote>
-<blockquote>
-<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
-</blockquote>
-<blockquote>
-<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
-</blockquote>
-<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
-<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
-</blockquote>
-<blockquote>
-<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo博客框架</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>设置next主题</title>
-    <url>/2021/10/01/%E8%AE%BE%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</url>
+    <title>next主题</title>
+    <url>/2021/10/01/next%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
 <p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
 </blockquote>
@@ -1223,6 +1221,41 @@ scheme: Pisces
 ]]></content>
       <categories>
         <category>next主题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>本地搭建hexo博客</title>
+    <url>/2021/10/01/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
+<p>安装 Git  <a href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
+</blockquote>
+<blockquote>
+<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
+</blockquote>
+<blockquote>
+<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br><font color=#FF0000>报错！2022-06-09</font><br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
+</blockquote>
+<blockquote>
+<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
+</blockquote>
+<blockquote>
+<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
+</blockquote>
+<blockquote>
+<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
+</blockquote>
+<blockquote>
+<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
+</blockquote>
+<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
+<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
+</blockquote>
+<blockquote>
+<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>hexo博客框架</category>
       </categories>
   </entry>
 </search>
