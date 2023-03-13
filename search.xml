@@ -65,21 +65,6 @@
       </categories>
   </entry>
   <entry>
-    <title>开启搜索功能</title>
-    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开blog _config.yml<br>在底部添加如下设置</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>开启黑暗模式</title>
     <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
@@ -91,12 +76,16 @@
       </categories>
   </entry>
   <entry>
-    <title>隐藏页面底部强力驱动字样</title>
-    <url>/2022/06/01/next%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%AD%97%E6%A0%B7/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下\layout_partials\footer.swig<br>利用 <code>&lt;!--</code> 和 <code>--&gt;</code> 隐藏代码，如下</p>
+    <title>开启搜索功能</title>
+    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开blog _config.yml<br>在底部添加如下设置</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- if theme.scheme !== &#x27;Gemini&#x27; %&#125;</span><br><span class="line">      &#123;%- set next_site = &#x27;https://&#x27; + theme.scheme | lower + &#x27;.theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;, &#123;class: &#x27;theme-link&#x27;&#125;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme, &#123;class: &#x27;theme-link&#x27;&#125;)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.add_this_id %&#125;</span><br><span class="line">  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;</span><br><span class="line">    &lt;script src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=&#123;&#123; theme.add_this_id &#125;&#125;&quot; async=&quot;async&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -113,6 +102,17 @@
 ]]></content>
       <categories>
         <category>office</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>隐藏页面底部强力驱动字样</title>
+    <url>/2022/06/01/next%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%AD%97%E6%A0%B7/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下\layout_partials\footer.swig<br>利用 <code>&lt;!--</code> 和 <code>--&gt;</code> 隐藏代码，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- if theme.scheme !== &#x27;Gemini&#x27; %&#125;</span><br><span class="line">      &#123;%- set next_site = &#x27;https://&#x27; + theme.scheme | lower + &#x27;.theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;, &#123;class: &#x27;theme-link&#x27;&#125;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme, &#123;class: &#x27;theme-link&#x27;&#125;)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.add_this_id %&#125;</span><br><span class="line">  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;</span><br><span class="line">    &lt;script src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=&#123;&#123; theme.add_this_id &#125;&#125;&quot; async=&quot;async&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
       </categories>
   </entry>
   <entry>
@@ -224,10 +224,10 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#111;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#x79;&#111;&#117;&#x40;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#109;">&#x79;&#111;&#117;&#x40;&#101;&#x78;&#97;&#109;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#109;</a>“<br>git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#111;&#x6d;">&#121;&#111;&#x75;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#111;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -262,21 +262,6 @@
       </categories>
   </entry>
   <entry>
-    <title>更改侧边滑动条样式</title>
-    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl，添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #6e6bc9;</span><br><span class="line">    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 3em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #121249;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>emmm具体颜色，样式什么的自己看着改吧</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>更改菜单栏顶部显示</title>
     <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
@@ -293,6 +278,21 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.headband &#123;</span><br><span class="line"> height: 0px;</span><br><span class="line"> background: #000;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这下全局边框圆角总算能看了，（话说全局阴影，，，）</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>更改侧边滑动条样式</title>
+    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl，添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #6e6bc9;</span><br><span class="line">    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 3em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #121249;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>emmm具体颜色，样式什么的自己看着改吧</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -433,22 +433,6 @@
       </categories>
   </entry>
   <entry>
-    <title>设置首页文章数量</title>
-    <url>/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
-    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
-<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">path: &#x27;&#x27;</span><br><span class="line">per_page: 1</span><br><span class="line">order_by: -date</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
-<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">per_page: 0</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加背景，全局透明，全局边框圆角</title>
     <url>/2022/01/30/next%E9%85%8D%E7%BD%AE%E8%83%8C%E6%99%AF%EF%BC%8C%E5%85%A8%E5%B1%80%E9%80%8F%E6%98%8E%EF%BC%8C%E5%85%A8%E5%B1%80%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92/</url>
     <content><![CDATA[<h2 id="1-设置背景"><a href="#1-设置背景" class="headerlink" title="1. 设置背景"></a><strong>1. 设置背景</strong></h2><blockquote>
@@ -485,13 +469,29 @@
       </categories>
   </entry>
   <entry>
+    <title>设置首页文章数量</title>
+    <url>/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
+    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
+<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">path: &#x27;&#x27;</span><br><span class="line">per_page: 1</span><br><span class="line">order_by: -date</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
+<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">per_page: 0</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>使用MarkdownPad 2写文章</title>
     <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#111;&#x61;&#x72;&#51;&#x36;&#x30;&#64;&#108;&#x69;&#x76;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x53;&#111;&#x61;&#x72;&#51;&#x36;&#x30;&#64;&#108;&#x69;&#x76;&#x65;&#x2e;&#x63;&#111;&#x6d;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#x61;&#114;&#x33;&#54;&#48;&#64;&#108;&#105;&#x76;&#x65;&#46;&#99;&#111;&#109;">&#x53;&#x6f;&#x61;&#114;&#x33;&#54;&#48;&#64;&#108;&#105;&#x76;&#x65;&#46;&#99;&#111;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
@@ -528,6 +528,17 @@
       </categories>
   </entry>
   <entry>
+    <title>hexo报错问题解决</title>
+    <url>/2021/10/01/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<h2 id="1-解决-bash-hexo-command-not-found"><a href="#1-解决-bash-hexo-command-not-found" class="headerlink" title="1. 解决 bash: hexo: command not found"></a><strong>1. 解决 bash: hexo: command not found</strong></h2><blockquote>
+<p>在系统变量Path，将自己hexo博客文件下 node_modules 的 .bin 文件路径添加到 Path 里面即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>hexo报错问题解决</category>
+      </categories>
+  </entry>
+  <entry>
     <title>next主题</title>
     <url>/2021/10/01/next%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
@@ -544,17 +555,6 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>next主题</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hexo报错问题解决</title>
-    <url>/2021/10/01/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<h2 id="1-解决-bash-hexo-command-not-found"><a href="#1-解决-bash-hexo-command-not-found" class="headerlink" title="1. 解决 bash: hexo: command not found"></a><strong>1. 解决 bash: hexo: command not found</strong></h2><blockquote>
-<p>在系统变量Path，将自己hexo博客文件下 node_modules 的 .bin 文件路径添加到 Path 里面即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo报错问题解决</category>
       </categories>
   </entry>
   <entry>
