@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/" class="post-title-link" itemprop="url">添加头像</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/" class="post-title-link" itemprop="url">添加分类，标签，关于</a>
         </h2>
 
         <div class="post-meta">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,10 +256,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
+          <h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
+<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page categories<br>成功后会提示：<br>进入blog/source\categories，打开 index.md 添加 type: categories<br>如下<br><code>---</code><br><code>title: 文章分类</code><br><code>date: 2022-01-01</code><br><code>type: categories</code><br><code>---</code><br>保存并关闭文件</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: /images/xiaoheimiaoio.png</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: true</span><br></pre></td></tr></table></figure>
+<h2 id="2-给文章添加categories-分类-属性"><a href="#2-给文章添加categories-分类-属性" class="headerlink" title="2. 给文章添加categories(分类)属性"></a><strong>2. 给文章添加categories(分类)属性</strong></h2><blockquote>
+<p>格式如下<br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br>至此，成功给文章添加分类，点击首页的【分类】可以看到该分类下的所有文章</p>
+</blockquote>
+<h2 id="3-创建【标签】选项"><a href="#3-创建【标签】选项" class="headerlink" title="3. 创建【标签】选项"></a><strong>3. 创建【标签】选项</strong></h2><blockquote>
+<p>打开Git Bash，进入博客文件夹，执行以下命令<br>hexo new page tags<br>成功后会提示：<br>进入blog/source/tags，打开 index.md 添加type: tags<br>如下<br><code>---</code><br><code>title: 标签</code><br><code>date: 2022-01-01</code><br><code>type: tags</code><br><code>---</code><br>保存并关闭文件</p>
+</blockquote>
+<h2 id="4-给文章添加tags-标签-属性"><a href="#4-给文章添加tags-标签-属性" class="headerlink" title="4. 给文章添加tags(标签)属性"></a><strong>4. 给文章添加tags(标签)属性</strong></h2><blockquote>
+<p>格式如下<br><code>---</code><br><code>title: 添加分类及标签</code><br><code>date: 2022-1-30</code><br><code>categories: </code><br><code>- next更新日志</code><br><code>tags: </code><br><code>- 标签</code><br><code>---</code></p>
+</blockquote>
+<h2 id="5-创建【关于】选项"><a href="#5-创建【关于】选项" class="headerlink" title="5. 创建【关于】选项"></a><strong>5. 创建【关于】选项</strong></h2><blockquote>
+<p>hexo new page about<br><code>---</code><br><code>title: 关于</code><br><code>date: 2022-01-01</code><br><code>type: about</code><br><code>---</code></p>
+</blockquote>
+<blockquote>
+<p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
+</blockquote>
+
       
     </div>
 
@@ -416,7 +431,7 @@
   </script>
       </div>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=422419563&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1354451040&auto=1&height=66"></iframe>
 
     </div>
   </aside>
@@ -435,7 +450,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
