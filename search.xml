@@ -215,10 +215,10 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#x75;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">&#x79;&#x6f;&#x75;&#64;&#101;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a>“<br>git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#109;">&#121;&#x6f;&#x75;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;&#109;</a>“<br>git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -291,6 +291,21 @@
       </categories>
   </entry>
   <entry>
+    <title>添加侧边栏彩色滚动变换字体</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>具体内容自行修改即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加live2d角色</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/</url>
     <content><![CDATA[<h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
@@ -310,16 +325,12 @@
       </categories>
   </entry>
   <entry>
-    <title>添加侧边栏彩色滚动变换字体</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
+    <title>添加头像</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
+    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
+<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>具体内容自行修改即可</p>
-</blockquote>
-]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: /images/xiaoheimiaoio.png</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: true</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -351,39 +362,12 @@
       </categories>
   </entry>
   <entry>
-    <title>添加头像</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%A4%B4%E5%83%8F/</url>
-    <content><![CDATA[<h2 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a><strong>1. 添加头像</strong></h2><blockquote>
-<p>将你的头像图片复制到blog/themes/next/source/images<br>打开主题配置文件即blog/themes/next/_config.yml，查找Sidebar Avatar<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line">avatar:</span><br><span class="line">  # Replace the default image and set the url here.</span><br><span class="line">  url: /images/xiaoheimiaoio.png</span><br><span class="line">  # If true, the avatar will be dispalyed in circle.</span><br><span class="line">  rounded: true</span><br><span class="line">  # If true, the avatar will be rotated with the cursor.</span><br><span class="line">  rotated: true</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加文章版权信息</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
     <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
 <p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加网易云音乐插件</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
-    <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
-<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/aside&gt;</span><br><span class="line">  &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;</span><br><span class="line">&#123;% endmacro %&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
-<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -404,6 +388,22 @@
 <p>（emmm设置为代码区怎么还是，，，）</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加网易云音乐插件</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
+    <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
+<p>在网易云生成外链播放器<br>打开blog/themes/next/layout/_macro/sidebar.swig<br>将外链复制在合适的位置，例如：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1837804830&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/aside&gt;</span><br><span class="line">  &lt;div id=&quot;sidebar-dimmer&quot;&gt;&lt;/div&gt;</span><br><span class="line">&#123;% endmacro %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-设置全局播放不间断"><a href="#2-设置全局播放不间断" class="headerlink" title="2. 设置全局播放不间断"></a><strong>2. 设置全局播放不间断</strong></h2><blockquote>
+<p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -482,7 +482,7 @@
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#x61;&#x72;&#51;&#x36;&#x30;&#64;&#108;&#x69;&#118;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x53;&#x6f;&#x61;&#x72;&#51;&#x36;&#x30;&#64;&#108;&#x69;&#118;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#97;&#114;&#51;&#54;&#x30;&#x40;&#x6c;&#105;&#x76;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#x53;&#x6f;&#97;&#114;&#51;&#54;&#x30;&#x40;&#x6c;&#105;&#x76;&#x65;&#x2e;&#x63;&#111;&#x6d;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
@@ -490,6 +490,17 @@
 ]]></content>
       <categories>
         <category>MarkdownPad 2</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>在线下载网易云音乐</title>
+    <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
+    <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
+<p>打开你喜欢的歌页面，比如<a href="https://music.163.com/#/song?id=28878559">https://music.163.com/#/song?id=28878559</a><br>链接里的/#/song?id替换成/song/media/outer/url?id确认即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网易云音乐</category>
       </categories>
   </entry>
   <entry>
@@ -505,17 +516,6 @@
 ]]></content>
       <categories>
         <category>csdn</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>在线下载网易云音乐</title>
-    <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
-    <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
-<p>打开你喜欢的歌页面，比如<a href="https://music.163.com/#/song?id=28878559">https://music.163.com/#/song?id=28878559</a><br>链接里的/#/song?id替换成/song/media/outer/url?id确认即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网易云音乐</category>
       </categories>
   </entry>
   <entry>
