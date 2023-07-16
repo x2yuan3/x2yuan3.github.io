@@ -1,66 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Windows通过数据线控制Android手机</title>
-    <url>/2022/01/30/Windows%E9%80%9A%E8%BF%87%E6%95%B0%E6%8D%AE%E7%BA%BF%E6%8E%A7%E5%88%B6Android%E6%89%8B%E6%9C%BA/</url>
-    <content><![CDATA[<h2 id="1-使用scrcpy"><a href="#1-使用scrcpy" class="headerlink" title="1. 使用scrcpy"></a><strong>1. 使用scrcpy</strong></h2><blockquote>
-<p>下载地址<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a><br>手机打开开发者模式，打开usb调试<br>通过数据线连接电脑<br>把文件解压出来，在文件夹里打开cmd（可在文件路径输入cmd快捷打开）<br>输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">scrcpy</span><br></pre></td></tr></table></figure>
-<p>手机端会弹出是否信任设备窗口，点击始终信任<br>其余可在官方文档查看<br>官方文档<a href="https://github.com/Genymobile/scrcpy#translations">https://github.com/Genymobile/scrcpy#translations</a></p>
+    <title>&lt;font color=&gt;无题&lt;/font&gt;</title>
+    <url>/2022/06/01/%E6%97%A0%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1-获取OneDrive直链"><a href="#1-获取OneDrive直链" class="headerlink" title="1.获取OneDrive直链"></a><strong>1.获取OneDrive直链</strong></h2><blockquote>
+<p><a href="https://mapaler.github.io/GetOneDriveDirectLink/">https://mapaler.github.io/GetOneDriveDirectLink/</a><br>测试ing…</p>
 </blockquote>
-]]></content>
+<video controls width="100%">
+    <source src="http://storage.live.com/items/5AF2D5AD824110!125:/zhongerbingedwww.mp4?authkey=!AIEHcP6xacWyIbw" type="video/mp4">
+</video>]]></content>
       <categories>
-        <category>Android</category>
+        <category>置顶</category>
       </categories>
   </entry>
   <entry>
-    <title>next主题</title>
-    <url>/2021/10/01/next%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
-<p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
-</blockquote>
-<h2 id="2-设置next"><a href="#2-设置next" class="headerlink" title="2. 设置next"></a><strong>2. 设置next</strong></h2><blockquote>
-<p>修改根目录下的_config.yml(称为站点配置文件)</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: #标题</span><br><span class="line">subtitle: #副标题</span><br><span class="line">description: #备注</span><br><span class="line">keywords: </span><br><span class="line">author: #作者</span><br><span class="line">language: zh-CN #主题语言（主题语言在themes/next/language)</span><br><span class="line">timezone: #时区</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next #修改主题</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
-<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>next主题</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hexo报错问题解决</title>
-    <url>/2021/10/01/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<h2 id="1-解决-bash-hexo-command-not-found"><a href="#1-解决-bash-hexo-command-not-found" class="headerlink" title="1. 解决 bash: hexo: command not found"></a><strong>1. 解决 bash: hexo: command not found</strong></h2><blockquote>
-<p>在系统变量Path，将自己hexo博客文件下 node_modules 的 .bin 文件路径添加到 Path 里面即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo报错问题解决</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>关闭文章&quot;更新于&quot;</title>
-    <url>/2022/01/30/next%E5%85%B3%E9%97%AD%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0%E4%BA%8E/</url>
-    <content><![CDATA[<h2 id="1-修改next配置文件"><a href="#1-修改next配置文件" class="headerlink" title="1. 修改next配置文件"></a><strong>1. 修改next配置文件</strong></h2><blockquote>
-<p>打开blog\themes\next_config.yml<br>查找post_meta:<br>将updated_at下的enable: true修改为false，如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_meta:</span><br><span class="line">  item_text: true</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">  enable: false</span><br><span class="line">  another_day: true</span><br><span class="line">  categories: true</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>小细节修改合集</title>
-    <url>/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//菜单栏顶部标题</span><br><span class="line">.brand &#123;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    color: rgba(255,255,255,0);</span><br><span class="line">    display: inline-block;</span><br><span class="line">    line-height: 1.375em;</span><br><span class="line">    padding: 0 40px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//评论区透明</span><br><span class="line">.comments &#123;</span><br><span class="line">    background: rgba(255,255,255,0.8);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏部件过多滚动自动回弹问题</span><br><span class="line">.sidebar-inner.affix &#123;</span><br><span class="line">  position: static;</span><br><span class="line">  top: 10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//网页底部字体颜色</span><br><span class="line">.footer &#123;</span><br><span class="line">    color: #fff;</span><br><span class="line">    font-size: 0.875em;</span><br><span class="line">    padding: 20px 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏社交图标间隔</span><br><span class="line">.links-of-author-item .fa, .links-of-author-item .fab, .links-of-author-item .far, .links-of-author-item .fas &#123;</span><br><span class="line">    margin-right: 10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//分类括号颜色</span><br><span class="line">.category-all-page .category-list-count &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//分类二级页面的分类字体颜色</span><br><span class="line">.posts-collapse .collection-header small &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    margin-left: 5px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//分类二级页面字体颜色</span><br><span class="line">body &#123;</span><br><span class="line">    background: var(--body-bg-color);</span><br><span class="line">    color: #000;</span><br><span class="line">    font-family: &#x27;Lato&#x27;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;</span><br><span class="line">    font-size: 1em;</span><br><span class="line">    line-height: 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章发表于字体颜色</span><br><span class="line">.posts-expand .post-meta &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    font-family: &#x27;Lato&#x27;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;</span><br><span class="line">    font-size: 0.75em;</span><br><span class="line">    margin: 3px 0 60px 0;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏名字颜色</span><br><span class="line">.site-author-name &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    font-weight: 600;</span><br><span class="line">    margin: 0;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏日志分类颜色</span><br><span class="line">.site-state-item-name &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    font-size: 0.8125em;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//翻页栏</span><br><span class="line">.pagination &#123;</span><br><span class="line">    background: rgba(255,255,255,0.8);</span><br><span class="line">    border-radius: initial;</span><br><span class="line">    border-top: initial;</span><br><span class="line">//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);</span><br><span class="line">    margin: 10px 0 0;</span><br><span class="line">    padding: 10px 0 10px;</span><br><span class="line">    border-radius: 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//代码颜色</span><br><span class="line">pre code &#123;</span><br><span class="line">    background: none;</span><br><span class="line">    color: #000000;</span><br><span class="line">    font-size: 0.875em;</span><br><span class="line">    padding: 0;</span><br><span class="line">    text-shadow: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//代码区域颜色</span><br><span class="line">.highlight, pre &#123;</span><br><span class="line">    background: rgba(255,255,255,0.8);</span><br><span class="line">    line-height: 1.6;</span><br><span class="line">    margin: 0 auto 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章段落间隔横线</span><br><span class="line">.post-body h1, .post-body h2 &#123;</span><br><span class="line">    border-bottom: 0px solid #000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章段落间隔竖线</span><br><span class="line">blockquote &#123;</span><br><span class="line">    border-left: 4px solid #000;</span><br><span class="line">    color: #000;</span><br><span class="line">    margin: 0;</span><br><span class="line">    padding: 0 15px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//主页标题选中效果</span><br><span class="line">.posts-expand .post-title-link::before &#123;</span><br><span class="line">    background: #000;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    content: &#x27;&#x27;;</span><br><span class="line">    height: 2px;</span><br><span class="line">    left: 0;</span><br><span class="line">    position: absolute;</span><br><span class="line">    transform: scaleX(0);</span><br><span class="line">    visibility: hidden;</span><br><span class="line">    width: 100%;</span><br><span class="line">    transition-delay: 0s;</span><br><span class="line">    transition-duration: 0.2s;</span><br><span class="line">    transition-timing-function: ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//首页标题颜色</span><br><span class="line">.posts-expand .post-title-link &#123;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    color: #000;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    position: relative;</span><br><span class="line">    vertical-align: top;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//电脑端壁纸</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg);</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-position: 100% 100%;</span><br><span class="line">&#125;</span><br><span class="line">//手机端壁纸</span><br><span class="line">@media only screen and (max-width: 1080px) &#123;</span><br><span class="line">  body &#123;</span><br><span class="line">    background:url(https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg);</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-position: 100% 100%;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边菜单栏顶部显示</span><br><span class="line">.site-brand-container &#123;</span><br><span class="line"> background:url(images\caidan.png);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//顶部加载条颜色</span><br><span class="line">.headband &#123;</span><br><span class="line">    background: #000;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章内容的透明度设置</span><br><span class="line">.post-block &#123;</span><br><span class="line"> background: rgba(255,255,255,0.8)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边框的透明度设置</span><br><span class="line">.sidebar-inner &#123;</span><br><span class="line"> background: rgba(255,255,255,0.8)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//菜单栏的透明度设置</span><br><span class="line">.header-inner &#123;</span><br><span class="line"> background: rgba(255,255,255,0.8);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//搜索框的透明度设置</span><br><span class="line">.popup &#123;</span><br><span class="line"> opacity: 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//头像侧边栏的四个边角背景色优化</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    background-color:transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//滚动条</span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #ef8858;</span><br><span class="line">//    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #f9cbaa;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>底部跳动的红心</title>
+    <url>/2022/12/13/next%E5%BA%95%E9%83%A8%E8%B7%B3%E5%8A%A8%E7%9A%84%E7%BA%A2%E5%BF%83/</url>
+    <content><![CDATA[<h2 id="1-修改next主题配置文件"><a href="#1-修改next主题配置文件" class="headerlink" title="1. 修改next主题配置文件"></a><strong>1. 修改next主题配置文件</strong></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">animated: true</span><br><span class="line"># Change the color of icon, using Hex Code.</span><br><span class="line">color: &quot;#ff0000&quot;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -80,11 +36,125 @@
       </categories>
   </entry>
   <entry>
-    <title>底部跳动的红心</title>
-    <url>/2022/12/13/next%E5%BA%95%E9%83%A8%E8%B7%B3%E5%8A%A8%E7%9A%84%E7%BA%A2%E5%BF%83/</url>
-    <content><![CDATA[<h2 id="1-修改next主题配置文件"><a href="#1-修改next主题配置文件" class="headerlink" title="1. 修改next主题配置文件"></a><strong>1. 修改next主题配置文件</strong></h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">animated: true</span><br><span class="line"># Change the color of icon, using Hex Code.</span><br><span class="line">color: &quot;#ff0000&quot;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>樱花飘落效果</title>
+    <url>/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/</url>
+    <content><![CDATA[<h2 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a><strong>1. 新建js文件</strong></h2><blockquote>
+<p>代码如下<br>（记得替换自己飘落样式地址<br>如：img.src = “/images/fengye.png”</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var stop, staticx;</span><br><span class="line">var img = new Image();</span><br><span class="line">img.src = &quot;/images/fengye.png&quot;</span><br><span class="line"></span><br><span class="line">function Sakura(x, y, s, r, fn) &#123;</span><br><span class="line">    this.x = x;</span><br><span class="line">    this.y = y;</span><br><span class="line">    this.s = s;</span><br><span class="line">    this.r = r;</span><br><span class="line">    this.fn = fn;</span><br><span class="line">&#125;</span><br><span class="line">Sakura.prototype.draw = function (cxt) &#123;</span><br><span class="line">    cxt.save();</span><br><span class="line">    var xc = 40 * this.s / 4;</span><br><span class="line">    cxt.translate(this.x, this.y);</span><br><span class="line">    cxt.rotate(this.r);</span><br><span class="line">    cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)</span><br><span class="line">    cxt.restore();</span><br><span class="line">&#125;</span><br><span class="line">Sakura.prototype.update = function () &#123;</span><br><span class="line">    this.x = this.fn.x(this.x, this.y);</span><br><span class="line">    this.y = this.fn.y(this.y, this.y);</span><br><span class="line">    this.r = this.fn.r(this.r);</span><br><span class="line">    if (this.x &gt; window.innerWidth || this.x &lt; 0 || this.y &gt; window.innerHeight || this.y &lt; 0) &#123;</span><br><span class="line">        this.r = getRandom(&#x27;fnr&#x27;);</span><br><span class="line">        if (Math.random() &gt; 0.4) &#123;</span><br><span class="line">            this.x = getRandom(&#x27;x&#x27;);</span><br><span class="line">            this.y = 0;</span><br><span class="line">            this.s = getRandom(&#x27;s&#x27;);</span><br><span class="line">            this.r = getRandom(&#x27;r&#x27;);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            this.x = window.innerWidth;</span><br><span class="line">            this.y = getRandom(&#x27;y&#x27;);</span><br><span class="line">            this.s = getRandom(&#x27;s&#x27;);</span><br><span class="line">            this.r = getRandom(&#x27;r&#x27;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList = function () &#123;</span><br><span class="line">    this.list = [];</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.push = function (sakura) &#123;</span><br><span class="line">    this.list.push(sakura);</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.update = function () &#123;</span><br><span class="line">    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;</span><br><span class="line">        this.list[i].update();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.draw = function (cxt) &#123;</span><br><span class="line">    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;</span><br><span class="line">        this.list[i].draw(cxt);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.get = function (i) &#123;</span><br><span class="line">    return this.list[i];</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.size = function () &#123;</span><br><span class="line">    return this.list.length;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getRandom(option) &#123;</span><br><span class="line">    var ret, random;</span><br><span class="line">    switch (option) &#123;</span><br><span class="line">        case &#x27;x&#x27;:</span><br><span class="line">            ret = Math.random() * window.innerWidth;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;y&#x27;:</span><br><span class="line">            ret = Math.random() * window.innerHeight;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;s&#x27;:</span><br><span class="line">            ret = Math.random();</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;r&#x27;:</span><br><span class="line">            ret = Math.random() * 6;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fnx&#x27;:</span><br><span class="line">            random = -0.5 + Math.random() * 1;</span><br><span class="line">            ret = function (x, y) &#123;</span><br><span class="line">                return x + 0.5 * random - 1.7;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fny&#x27;:</span><br><span class="line">            random = 1.5 + Math.random() * 0.7</span><br><span class="line">            ret = function (x, y) &#123;</span><br><span class="line">                return y + random;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fnr&#x27;:</span><br><span class="line">            random = Math.random() * 0.03;</span><br><span class="line">            ret = function (r) &#123;</span><br><span class="line">                return r + random;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">    &#125;</span><br><span class="line">    return ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function startSakura() &#123;</span><br><span class="line">    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;</span><br><span class="line">    var canvas = document.createElement(&#x27;canvas&#x27;),</span><br><span class="line">        cxt;</span><br><span class="line">    staticx = true;</span><br><span class="line">    canvas.height = window.innerHeight;</span><br><span class="line">    canvas.width = window.innerWidth;</span><br><span class="line">    canvas.setAttribute(&#x27;style&#x27;, &#x27;position: fixed;left: 0;top: 0;pointer-events: none;&#x27;);</span><br><span class="line">    canvas.setAttribute(&#x27;id&#x27;, &#x27;canvas_sakura&#x27;);</span><br><span class="line">    document.getElementsByTagName(&#x27;body&#x27;)[0].appendChild(canvas);</span><br><span class="line">    cxt = canvas.getContext(&#x27;2d&#x27;);</span><br><span class="line">    var sakuraList = new SakuraList();</span><br><span class="line">    for (var i = 0; i &lt; 50; i++) &#123;</span><br><span class="line">        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;</span><br><span class="line">        randomX = getRandom(&#x27;x&#x27;);</span><br><span class="line">        randomY = getRandom(&#x27;y&#x27;);</span><br><span class="line">        randomR = getRandom(&#x27;r&#x27;);</span><br><span class="line">        randomS = getRandom(&#x27;s&#x27;);</span><br><span class="line">        randomFnx = getRandom(&#x27;fnx&#x27;);</span><br><span class="line">        randomFny = getRandom(&#x27;fny&#x27;);</span><br><span class="line">        randomFnR = getRandom(&#x27;fnr&#x27;);</span><br><span class="line">        sakura = new Sakura(randomX, randomY, randomS, randomR, &#123;</span><br><span class="line">            x: randomFnx,</span><br><span class="line">            y: randomFny,</span><br><span class="line">            r: randomFnR</span><br><span class="line">        &#125;);</span><br><span class="line">        sakura.draw(cxt);</span><br><span class="line">        sakuraList.push(sakura);</span><br><span class="line">    &#125;</span><br><span class="line">    stop = requestAnimationFrame(function () &#123;</span><br><span class="line">        cxt.clearRect(0, 0, canvas.width, canvas.height);</span><br><span class="line">        sakuraList.update();</span><br><span class="line">        sakuraList.draw(cxt);</span><br><span class="line">        stop = requestAnimationFrame(arguments.callee);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">window.onresize = function () &#123;</span><br><span class="line">    var canvasSnow = document.getElementById(&#x27;canvas_snow&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">img.onload = function () &#123;</span><br><span class="line">    startSakura();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function stopp() &#123;</span><br><span class="line">    if (staticx) &#123;</span><br><span class="line">        var child = document.getElementById(&quot;canvas_sakura&quot;);</span><br><span class="line">        child.parentNode.removeChild(child);</span><br><span class="line">        window.cancelAnimationFrame(stop);</span><br><span class="line">        staticx = false;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        startSakura();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>将js文件放置到next\source\js目录下</p>
+</blockquote>
+<h2 id="2-引用js文件"><a href="#2-引用js文件" class="headerlink" title="2. 引用js文件"></a><strong>2. 引用js文件</strong></h2><blockquote>
+<p>打开next\layout\layout.swig<br>添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>大致位置如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小细节修改合集</title>
+    <url>/2022/06/01/next%E5%B0%8F%E7%BB%86%E8%8A%82%E4%BF%AE%E6%94%B9%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl<br>添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//菜单栏顶部标题</span><br><span class="line">.brand &#123;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    color: rgba(255,255,255,0);</span><br><span class="line">    display: inline-block;</span><br><span class="line">    line-height: 1.375em;</span><br><span class="line">    padding: 0 40px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//评论区透明</span><br><span class="line">.comments &#123;</span><br><span class="line">    background: rgba(255,255,255,0.8);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏部件过多滚动自动回弹问题</span><br><span class="line">.sidebar-inner.affix &#123;</span><br><span class="line">  position: static;</span><br><span class="line">  top: 10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//网页底部字体颜色</span><br><span class="line">.footer &#123;</span><br><span class="line">    color: #fff;</span><br><span class="line">    font-size: 0.875em;</span><br><span class="line">    padding: 20px 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏社交图标间隔</span><br><span class="line">.links-of-author-item .fa, .links-of-author-item .fab, .links-of-author-item .far, .links-of-author-item .fas &#123;</span><br><span class="line">    margin-right: 10px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//分类括号颜色</span><br><span class="line">.category-all-page .category-list-count &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//分类二级页面的分类字体颜色</span><br><span class="line">.posts-collapse .collection-header small &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    margin-left: 5px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//分类二级页面字体颜色</span><br><span class="line">body &#123;</span><br><span class="line">    background: var(--body-bg-color);</span><br><span class="line">    color: #000;</span><br><span class="line">    font-family: &#x27;Lato&#x27;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;</span><br><span class="line">    font-size: 1em;</span><br><span class="line">    line-height: 2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章发表于字体颜色</span><br><span class="line">.posts-expand .post-meta &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    font-family: &#x27;Lato&#x27;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;</span><br><span class="line">    font-size: 0.75em;</span><br><span class="line">    margin: 3px 0 60px 0;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏名字颜色</span><br><span class="line">.site-author-name &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    font-weight: 600;</span><br><span class="line">    margin: 0;</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边栏日志分类颜色</span><br><span class="line">.site-state-item-name &#123;</span><br><span class="line">    color: #000;</span><br><span class="line">    font-size: 0.8125em;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//翻页栏</span><br><span class="line">.pagination &#123;</span><br><span class="line">    background: rgba(255,255,255,0.8);</span><br><span class="line">    border-radius: initial;</span><br><span class="line">    border-top: initial;</span><br><span class="line">//    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 6%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 -1px 0.5px 0 rgb(0 0 0 / 9%);</span><br><span class="line">    margin: 10px 0 0;</span><br><span class="line">    padding: 10px 0 10px;</span><br><span class="line">    border-radius: 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//代码颜色</span><br><span class="line">pre code &#123;</span><br><span class="line">    background: none;</span><br><span class="line">    color: #000000;</span><br><span class="line">    font-size: 0.875em;</span><br><span class="line">    padding: 0;</span><br><span class="line">    text-shadow: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//代码区域颜色</span><br><span class="line">.highlight, pre &#123;</span><br><span class="line">    background: rgba(255,255,255,0.8);</span><br><span class="line">    line-height: 1.6;</span><br><span class="line">    margin: 0 auto 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章段落间隔横线</span><br><span class="line">.post-body h1, .post-body h2 &#123;</span><br><span class="line">    border-bottom: 0px solid #000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章段落间隔竖线</span><br><span class="line">blockquote &#123;</span><br><span class="line">    border-left: 4px solid #000;</span><br><span class="line">    color: #000;</span><br><span class="line">    margin: 0;</span><br><span class="line">    padding: 0 15px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//主页标题选中效果</span><br><span class="line">.posts-expand .post-title-link::before &#123;</span><br><span class="line">    background: #000;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    content: &#x27;&#x27;;</span><br><span class="line">    height: 2px;</span><br><span class="line">    left: 0;</span><br><span class="line">    position: absolute;</span><br><span class="line">    transform: scaleX(0);</span><br><span class="line">    visibility: hidden;</span><br><span class="line">    width: 100%;</span><br><span class="line">    transition-delay: 0s;</span><br><span class="line">    transition-duration: 0.2s;</span><br><span class="line">    transition-timing-function: ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//首页标题颜色</span><br><span class="line">.posts-expand .post-title-link &#123;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    color: #000;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    position: relative;</span><br><span class="line">    vertical-align: top;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//电脑端壁纸</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg);</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-position: 100% 100%;</span><br><span class="line">&#125;</span><br><span class="line">//手机端壁纸</span><br><span class="line">@media only screen and (max-width: 1080px) &#123;</span><br><span class="line">  body &#123;</span><br><span class="line">    background:url(https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg);</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment: fixed;</span><br><span class="line">    background-position: 100% 100%;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边菜单栏顶部显示</span><br><span class="line">.site-brand-container &#123;</span><br><span class="line"> background:url(images\caidan.png);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//顶部加载条颜色</span><br><span class="line">.headband &#123;</span><br><span class="line">    background: #000;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//文章内容的透明度设置</span><br><span class="line">.post-block &#123;</span><br><span class="line"> background: rgba(255,255,255,0.8)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//侧边框的透明度设置</span><br><span class="line">.sidebar-inner &#123;</span><br><span class="line"> background: rgba(255,255,255,0.8)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//菜单栏的透明度设置</span><br><span class="line">.header-inner &#123;</span><br><span class="line"> background: rgba(255,255,255,0.8);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//搜索框的透明度设置</span><br><span class="line">.popup &#123;</span><br><span class="line"> opacity: 1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//头像侧边栏的四个边角背景色优化</span><br><span class="line">.sidebar&#123;</span><br><span class="line">    background-color:transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//滚动条</span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #ef8858;</span><br><span class="line">//    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #f9cbaa;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开启搜索功能</title>
+    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
+<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开blog _config.yml<br>在底部添加如下设置</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开启黑暗模式</title>
+    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Dark Mode</span><br><span class="line">darkmode: true</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>office安装和激活</title>
+    <url>/2022/06/01/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<h2 id="1-下载安装office-tool-plus"><a href="#1-下载安装office-tool-plus" class="headerlink" title="1.下载安装office tool plus"></a><strong>1.下载安装office tool plus</strong></h2><blockquote>
+<p>下载地址：<a href="https://otp.landian.vip/">https://otp.landian.vip/</a></p>
+</blockquote>
+<h2 id="2-office-tool-plus激活功能"><a href="#2-office-tool-plus激活功能" class="headerlink" title="2.office tool plus激活功能"></a><strong>2.office tool plus激活功能</strong></h2><blockquote>
+<p>kms激活：<a href="http://kms.03k.org/">http://kms.03k.org</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>office</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>隐藏页面底部强力驱动字样</title>
+    <url>/2022/06/01/next%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%AD%97%E6%A0%B7/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下\layout_partials\footer.swig<br>利用 <code>&lt;!--</code> 和 <code>--&gt;</code> 隐藏代码，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- if theme.scheme !== &#x27;Gemini&#x27; %&#125;</span><br><span class="line">      &#123;%- set next_site = &#x27;https://&#x27; + theme.scheme | lower + &#x27;.theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;, &#123;class: &#x27;theme-link&#x27;&#125;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme, &#123;class: &#x27;theme-link&#x27;&#125;)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.add_this_id %&#125;</span><br><span class="line">  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;</span><br><span class="line">    &lt;script src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=&#123;&#123; theme.add_this_id &#125;&#125;&quot; async=&quot;async&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>原神私服搭建（windows篇）</title>
+    <url>/2022/06/01/%E5%8E%9F%E7%A5%9E%E7%A7%81%E6%9C%8D%E6%90%AD%E5%BB%BA%EF%BC%88windows%E7%AF%87%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="1-下载所有文件"><a href="#1-下载所有文件" class="headerlink" title="1.下载所有文件"></a><strong>1.下载所有文件</strong></h2><blockquote>
+<p><a href="https://cloud.rainkavik.com/s/vkbup?password=v6mh4v">https://cloud.rainkavik.com/s/vkbup?password=v6mh4v</a><br>全部打包下载</p>
+</blockquote>
+<h2 id="2-安装环境"><a href="#2-安装环境" class="headerlink" title="2.安装环境"></a><strong>2.安装环境</strong></h2><blockquote>
+<p>打开./服务端/环境及工具<br>安装MongoDB，Python，Mitmproxy，java<br>注意：MongoDB安装时建议不勾选 Install MongoDB Compass（当然你也可以选择安装它，可能需要更久的安装时间）</p>
+</blockquote>
+<h2 id="3-运行服务器"><a href="#3-运行服务器" class="headerlink" title="3.运行服务器"></a><strong>3.运行服务器</strong></h2><blockquote>
+<p>解压./服务端/完整包：full-grasscutter-dev-#xxx_RainKavik.zip<br>解压密码：rainkavik.com<br>并进入该文件夹，如果您按照此教程部署，直接双击 run.bat 即可运行服务端；如果安装了其他版本的 java 或者修改了安装位置，请自行修改此bat文件后再启动，启动前请确保 MongoDB 在运行中。<br>如果启动后控制台无任何报错，且最后输出 Game Server started on port 22102 字样即为启动成功</p>
+</blockquote>
+<h2 id="4-启动代理"><a href="#4-启动代理" class="headerlink" title="4.启动代理"></a><strong>4.启动代理</strong></h2><blockquote>
+<p>双击运行 proxy.bat ，如果您不希望其他主机连接到服务端，删除此脚本中的 –set block_global=false即可；如果希望在其他端口运行代理，右键编辑此文件修改 23333 为你期望的端口即可，如果删除此参数则默认监听 8080 端口，不要使用常见端口避免被攻击，此端口即为客户端系统代理所用端口。<br>出现 Proxy server listening at http://*:23333 即为启动成功</p>
+</blockquote>
+<h2 id="5-连接服务器"><a href="#5-连接服务器" class="headerlink" title="5.连接服务器"></a><strong>5.连接服务器</strong></h2><blockquote>
+<p>如服务端与客户端分开在两台机子，则还需确保服务端端口 UDP22102 TCP443 TCP54321 均开启且未被其他程序占用（在进行连接的时候，请在config.json中更改 accessAddress为服务器/电脑IP）<br>Windows10/11：设置-网络和Internet-代理，地址本机搭建填写 127.0.0.1，连接服务器则填写 服务器公网IP 端口23333。<br>iOS/iPad OS：设置-无线局域网-详情（连接Wi-Fi右侧蓝色“i”）-HTTP代理，选择 手动,服务器填写 电脑/服务器IP。<br>安卓方法与iOS相似，在此不多重复。</p>
+</blockquote>
+<h2 id="6-下载证书"><a href="#6-下载证书" class="headerlink" title="6.下载证书"></a><strong>6.下载证书</strong></h2><blockquote>
+<p>挂好代理以后用系统自带浏览器打开 <a href="http://mitm.it/">http://mitm.it</a> ，选择你系统的证书进行下载<br>注意：服务器 IP 更换后需要重新下载安装证书！<br>如果提示：”If you can see this, traffic is not passing through mitmproxy.” 则说明代理没有成功挂上。<br>注意：如连接服务器代理，中国内地区域服务器会因为备案问题没法访问。需要在服务器先下载证书，再拷贝到其他设备上。</p>
+</blockquote>
+<h2 id="7-证书安装及信任"><a href="#7-证书安装及信任" class="headerlink" title="7.证书安装及信任"></a><strong>7.证书安装及信任</strong></h2><blockquote>
+<p>Windows：<br>双击打开相应服务器的证书 -&gt; 安装证书 -&gt; 本地计算机 -&gt; 将所有的证书都放入下列储存-&gt; 浏览 -&gt; 受信任的根证书颁发机构 -&gt; 完成<br>如要求密码直接留空白即可！<br>Android：<br>ROOT方法：下载 pem 格式证书，root 并解锁 system 分区后手动复制到 /system/etc/security/cacerts 并重命名为 c8750f0d.0 即可 (如果安装多个私服的证书，依次把文件命名为 c8750f0d.1 c8750f0d.2 … 即可)；如果不能解锁系统分区可参照网盘中我的私服专用的模块制作自己私服的 CA 证书模块，或者安装信任用户证书的模块后直接在 Android 系统设置中安装为用户证书即可<br>免ROOT方法：尝接下载安装用户证书 (分别安装 CA 和 WLAN 证书)， 使用网盘版本游戏客户端（./genshin-impact-patched.apk）。注意:首次进入游戏先注册一个国际服账号，把资源下好了，再进行开代理连接服务器。<br>iOS：</p>
+</blockquote>
+<h2 id="8-创建原神私服账号"><a href="#8-创建原神私服账号" class="headerlink" title="8.创建原神私服账号"></a><strong>8.创建原神私服账号</strong></h2><blockquote>
+<p>account 指令在控制台创建账号才可以登录，当然你也可以根据下节更改配置从而允许不存在的账号自动注册。创建方法如下：<br>语法：account create [name] [uid]<br>例如：account create xyuan 10000</p>
+</blockquote>
+<h2 id="9-开始游戏"><a href="#9-开始游戏" class="headerlink" title="9.开始游戏"></a><strong>9.开始游戏</strong></h2><blockquote>
+<p>更新游戏<br>开启代理再运行游戏便进入私服，不开启代理运行游戏就是官服</p>
+</blockquote>
+<h2 id="10-文档"><a href="#10-文档" class="headerlink" title="10.文档"></a><strong>10.文档</strong></h2><blockquote>
+<p><a href="https://github.com/Grasscutters/Grasscutter">https://github.com/Grasscutters/Grasscutter</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>原神</category>
       </categories>
   </entry>
   <entry>
@@ -114,27 +184,83 @@
       </categories>
   </entry>
   <entry>
-    <title>开启黑暗模式</title>
-    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+    <title>添加留言板页面</title>
+    <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
+<p>在blog根目录，打开 git bash 运行命令如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Dark Mode</span><br><span class="line">darkmode: true</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page guestbook</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>编辑留言板页面文件，guestbook\index.md<br>如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2022-05-20 20:00:00</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">做个留言板0v0</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
+<p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  guestbook: /guestbook/ || fa fa-comment</span><br><span class="line">  about: /about/ || fa fa-user</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
+<p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  tags: 标签</span><br><span class="line">  about: 关于</span><br><span class="line">  search: 搜索</span><br><span class="line">  schedule: 日程表</span><br><span class="line">  sitemap: 站点地图</span><br><span class="line">  commonweal: 公益 404</span><br><span class="line">  guestbook: 留言</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>  即可，本地运行看看吧</p>
+</blockquote>
+]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
   </entry>
   <entry>
-    <title>开启搜索功能</title>
-    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
-<p>在blog根目录打开git bash输入如下代码下载<br>npm install hexo-generator-searchdb –save<br>打开blog _config.yml<br>在底部添加如下设置</p>
+    <title>本地hexo博客部署到github</title>
+    <url>/2022/05/20/%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/</url>
+    <content><![CDATA[<h2 id="1-创建github账号"><a href="#1-创建github账号" class="headerlink" title="1. 创建github账号"></a><strong>1. 创建github账号</strong></h2><h2 id="2-new个仓库"><a href="#2-new个仓库" class="headerlink" title="2. new个仓库"></a><strong>2. new个仓库</strong></h2><blockquote>
+<p>仓库名称格式为”你的用户名.GitHub.io”</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
+<h2 id="3-修改博客根目录站点配置文件"><a href="#3-修改博客根目录站点配置文件" class="headerlink" title="3. 修改博客根目录站点配置文件"></a><strong>3. 修改博客根目录站点配置文件</strong></h2><blockquote>
+<p>根据自己仓库地址修改，如下：</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/xyuan23/xyuan23.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-安装Git部署插件"><a href="#4-安装Git部署插件" class="headerlink" title="4. 安装Git部署插件"></a><strong>4. 安装Git部署插件</strong></h2><blockquote>
+<p>在博客根目录打开 Git Bash （建议以管理员身份运行）<br>输入：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+</blockquote>
+<h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
+<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;">&#121;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
+</blockquote>
+<h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
+<p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Windows通过数据线控制Android手机</title>
+    <url>/2022/01/30/Windows%E9%80%9A%E8%BF%87%E6%95%B0%E6%8D%AE%E7%BA%BF%E6%8E%A7%E5%88%B6Android%E6%89%8B%E6%9C%BA/</url>
+    <content><![CDATA[<h2 id="1-使用scrcpy"><a href="#1-使用scrcpy" class="headerlink" title="1. 使用scrcpy"></a><strong>1. 使用scrcpy</strong></h2><blockquote>
+<p>下载地址<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a><br>手机打开开发者模式，打开usb调试<br>通过数据线连接电脑<br>把文件解压出来，在文件夹里打开cmd（可在文件路径输入cmd快捷打开）<br>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">scrcpy</span><br></pre></td></tr></table></figure>
+<p>手机端会弹出是否信任设备窗口，点击始终信任<br>其余可在官方文档查看<br>官方文档<a href="https://github.com/Genymobile/scrcpy#translations">https://github.com/Genymobile/scrcpy#translations</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关闭文章&quot;更新于&quot;</title>
+    <url>/2022/01/30/next%E5%85%B3%E9%97%AD%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0%E4%BA%8E/</url>
+    <content><![CDATA[<h2 id="1-修改next配置文件"><a href="#1-修改next配置文件" class="headerlink" title="1. 修改next配置文件"></a><strong>1. 修改next配置文件</strong></h2><blockquote>
+<p>打开blog\themes\next_config.yml<br>查找post_meta:<br>将updated_at下的enable: true修改为false，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_meta:</span><br><span class="line">  item_text: true</span><br><span class="line">  created_at: true</span><br><span class="line">  updated_at:</span><br><span class="line">  enable: false</span><br><span class="line">  another_day: true</span><br><span class="line">  categories: true</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -150,28 +276,6 @@
 <p>emmm具体颜色，样式什么的自己看着改吧</p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>樱花飘落效果</title>
-    <url>/2022/10/01/next%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD%E6%95%88%E6%9E%9C/</url>
-    <content><![CDATA[<h2 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a><strong>1. 新建js文件</strong></h2><blockquote>
-<p>代码如下<br>（记得替换自己飘落样式地址<br>如：img.src = “/images/fengye.png”</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var stop, staticx;</span><br><span class="line">var img = new Image();</span><br><span class="line">img.src = &quot;/images/fengye.png&quot;</span><br><span class="line"></span><br><span class="line">function Sakura(x, y, s, r, fn) &#123;</span><br><span class="line">    this.x = x;</span><br><span class="line">    this.y = y;</span><br><span class="line">    this.s = s;</span><br><span class="line">    this.r = r;</span><br><span class="line">    this.fn = fn;</span><br><span class="line">&#125;</span><br><span class="line">Sakura.prototype.draw = function (cxt) &#123;</span><br><span class="line">    cxt.save();</span><br><span class="line">    var xc = 40 * this.s / 4;</span><br><span class="line">    cxt.translate(this.x, this.y);</span><br><span class="line">    cxt.rotate(this.r);</span><br><span class="line">    cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)</span><br><span class="line">    cxt.restore();</span><br><span class="line">&#125;</span><br><span class="line">Sakura.prototype.update = function () &#123;</span><br><span class="line">    this.x = this.fn.x(this.x, this.y);</span><br><span class="line">    this.y = this.fn.y(this.y, this.y);</span><br><span class="line">    this.r = this.fn.r(this.r);</span><br><span class="line">    if (this.x &gt; window.innerWidth || this.x &lt; 0 || this.y &gt; window.innerHeight || this.y &lt; 0) &#123;</span><br><span class="line">        this.r = getRandom(&#x27;fnr&#x27;);</span><br><span class="line">        if (Math.random() &gt; 0.4) &#123;</span><br><span class="line">            this.x = getRandom(&#x27;x&#x27;);</span><br><span class="line">            this.y = 0;</span><br><span class="line">            this.s = getRandom(&#x27;s&#x27;);</span><br><span class="line">            this.r = getRandom(&#x27;r&#x27;);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            this.x = window.innerWidth;</span><br><span class="line">            this.y = getRandom(&#x27;y&#x27;);</span><br><span class="line">            this.s = getRandom(&#x27;s&#x27;);</span><br><span class="line">            this.r = getRandom(&#x27;r&#x27;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList = function () &#123;</span><br><span class="line">    this.list = [];</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.push = function (sakura) &#123;</span><br><span class="line">    this.list.push(sakura);</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.update = function () &#123;</span><br><span class="line">    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;</span><br><span class="line">        this.list[i].update();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.draw = function (cxt) &#123;</span><br><span class="line">    for (var i = 0, len = this.list.length; i &lt; len; i++) &#123;</span><br><span class="line">        this.list[i].draw(cxt);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.get = function (i) &#123;</span><br><span class="line">    return this.list[i];</span><br><span class="line">&#125;</span><br><span class="line">SakuraList.prototype.size = function () &#123;</span><br><span class="line">    return this.list.length;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getRandom(option) &#123;</span><br><span class="line">    var ret, random;</span><br><span class="line">    switch (option) &#123;</span><br><span class="line">        case &#x27;x&#x27;:</span><br><span class="line">            ret = Math.random() * window.innerWidth;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;y&#x27;:</span><br><span class="line">            ret = Math.random() * window.innerHeight;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;s&#x27;:</span><br><span class="line">            ret = Math.random();</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;r&#x27;:</span><br><span class="line">            ret = Math.random() * 6;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fnx&#x27;:</span><br><span class="line">            random = -0.5 + Math.random() * 1;</span><br><span class="line">            ret = function (x, y) &#123;</span><br><span class="line">                return x + 0.5 * random - 1.7;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fny&#x27;:</span><br><span class="line">            random = 1.5 + Math.random() * 0.7</span><br><span class="line">            ret = function (x, y) &#123;</span><br><span class="line">                return y + random;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">        case &#x27;fnr&#x27;:</span><br><span class="line">            random = Math.random() * 0.03;</span><br><span class="line">            ret = function (r) &#123;</span><br><span class="line">                return r + random;</span><br><span class="line">            &#125;;</span><br><span class="line">            break;</span><br><span class="line">    &#125;</span><br><span class="line">    return ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function startSakura() &#123;</span><br><span class="line">    requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame;</span><br><span class="line">    var canvas = document.createElement(&#x27;canvas&#x27;),</span><br><span class="line">        cxt;</span><br><span class="line">    staticx = true;</span><br><span class="line">    canvas.height = window.innerHeight;</span><br><span class="line">    canvas.width = window.innerWidth;</span><br><span class="line">    canvas.setAttribute(&#x27;style&#x27;, &#x27;position: fixed;left: 0;top: 0;pointer-events: none;&#x27;);</span><br><span class="line">    canvas.setAttribute(&#x27;id&#x27;, &#x27;canvas_sakura&#x27;);</span><br><span class="line">    document.getElementsByTagName(&#x27;body&#x27;)[0].appendChild(canvas);</span><br><span class="line">    cxt = canvas.getContext(&#x27;2d&#x27;);</span><br><span class="line">    var sakuraList = new SakuraList();</span><br><span class="line">    for (var i = 0; i &lt; 50; i++) &#123;</span><br><span class="line">        var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;</span><br><span class="line">        randomX = getRandom(&#x27;x&#x27;);</span><br><span class="line">        randomY = getRandom(&#x27;y&#x27;);</span><br><span class="line">        randomR = getRandom(&#x27;r&#x27;);</span><br><span class="line">        randomS = getRandom(&#x27;s&#x27;);</span><br><span class="line">        randomFnx = getRandom(&#x27;fnx&#x27;);</span><br><span class="line">        randomFny = getRandom(&#x27;fny&#x27;);</span><br><span class="line">        randomFnR = getRandom(&#x27;fnr&#x27;);</span><br><span class="line">        sakura = new Sakura(randomX, randomY, randomS, randomR, &#123;</span><br><span class="line">            x: randomFnx,</span><br><span class="line">            y: randomFny,</span><br><span class="line">            r: randomFnR</span><br><span class="line">        &#125;);</span><br><span class="line">        sakura.draw(cxt);</span><br><span class="line">        sakuraList.push(sakura);</span><br><span class="line">    &#125;</span><br><span class="line">    stop = requestAnimationFrame(function () &#123;</span><br><span class="line">        cxt.clearRect(0, 0, canvas.width, canvas.height);</span><br><span class="line">        sakuraList.update();</span><br><span class="line">        sakuraList.draw(cxt);</span><br><span class="line">        stop = requestAnimationFrame(arguments.callee);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">window.onresize = function () &#123;</span><br><span class="line">    var canvasSnow = document.getElementById(&#x27;canvas_snow&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">img.onload = function () &#123;</span><br><span class="line">    startSakura();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function stopp() &#123;</span><br><span class="line">    if (staticx) &#123;</span><br><span class="line">        var child = document.getElementById(&quot;canvas_sakura&quot;);</span><br><span class="line">        child.parentNode.removeChild(child);</span><br><span class="line">        window.cancelAnimationFrame(stop);</span><br><span class="line">        staticx = false;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        startSakura();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>将js文件放置到next\source\js目录下</p>
-</blockquote>
-<h2 id="2-引用js文件"><a href="#2-引用js文件" class="headerlink" title="2. 引用js文件"></a><strong>2. 引用js文件</strong></h2><blockquote>
-<p>打开next\layout\layout.swig<br>添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>大致位置如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;script src=&quot;/js/sakura.js&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -219,21 +323,6 @@
       </categories>
   </entry>
   <entry>
-    <title>添加侧边栏彩色滚动变换字体</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>具体内容自行修改即可</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加分类，标签，关于</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
     <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
@@ -260,12 +349,16 @@
       </categories>
   </entry>
   <entry>
-    <title>添加文章版权信息</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+    <title>添加侧边栏彩色滚动变换字体</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>具体内容自行修改即可</p>
+</blockquote>
+]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -282,30 +375,12 @@
       </categories>
   </entry>
   <entry>
-    <title>添加留言板页面</title>
-    <url>/2022/05/20/next%E6%B7%BB%E5%8A%A0%E7%95%99%E8%A8%80%E6%9D%BF%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h2 id="1-添加页面"><a href="#1-添加页面" class="headerlink" title="1. 添加页面"></a><strong>1. 添加页面</strong></h2><blockquote>
-<p>在blog根目录，打开 git bash 运行命令如下</p>
+    <title>添加文章版权信息</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
+<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page guestbook</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>编辑留言板页面文件，guestbook\index.md<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2022-05-20 20:00:00</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">做个留言板0v0</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-编辑next主题文件"><a href="#2-编辑next主题文件" class="headerlink" title="2. 编辑next主题文件"></a><strong>2. 编辑next主题文件</strong></h2><blockquote>
-<p>编辑next_config.yml，查找 menu:<br>添加 guestbook: /guestbook/ || fa fa-comment 如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  guestbook: /guestbook/ || fa fa-comment</span><br><span class="line">  about: /about/ || fa fa-user</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-编辑文本文件"><a href="#3-编辑文本文件" class="headerlink" title="3. 编辑文本文件"></a><strong>3. 编辑文本文件</strong></h2><blockquote>
-<p>在next\languages\zh-CN.yml 添加 guestbook: 留言<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: 首页</span><br><span class="line">  archives: 归档</span><br><span class="line">  categories: 分类</span><br><span class="line">  tags: 标签</span><br><span class="line">  about: 关于</span><br><span class="line">  search: 搜索</span><br><span class="line">  schedule: 日程表</span><br><span class="line">  sitemap: 站点地图</span><br><span class="line">  commonweal: 公益 404</span><br><span class="line">  guestbook: 留言</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>  即可，本地运行看看吧</p>
-</blockquote>
-]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -331,6 +406,21 @@
       </categories>
   </entry>
   <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加网易云音乐插件</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
@@ -342,21 +432,6 @@
 <p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>修改small和medium为你的图标路径</p>
-</blockquote>
-]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -414,28 +489,20 @@
       </categories>
   </entry>
   <entry>
-    <title>office安装和激活</title>
-    <url>/2022/06/01/office%E5%AE%89%E8%A3%85%E5%92%8C%E6%BF%80%E6%B4%BB/</url>
-    <content><![CDATA[<h2 id="1-下载安装office-tool-plus"><a href="#1-下载安装office-tool-plus" class="headerlink" title="1.下载安装office tool plus"></a><strong>1.下载安装office tool plus</strong></h2><blockquote>
-<p>下载地址：<a href="https://otp.landian.vip/">https://otp.landian.vip/</a></p>
+    <title>使用MarkdownPad 2写文章</title>
+    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
+<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
-<h2 id="2-office-tool-plus激活功能"><a href="#2-office-tool-plus激活功能" class="headerlink" title="2.office tool plus激活功能"></a><strong>2.office tool plus激活功能</strong></h2><blockquote>
-<p>kms激活：<a href="http://kms.03k.org/">http://kms.03k.org</a></p>
+<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
+<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#x72;&#51;&#54;&#48;&#x40;&#x6c;&#105;&#x76;&#x65;&#46;&#99;&#x6f;&#109;">&#83;&#x6f;&#x61;&#x72;&#51;&#54;&#48;&#x40;&#x6c;&#105;&#x76;&#x65;&#46;&#99;&#x6f;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+</blockquote>
+<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
+<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
 </blockquote>
 ]]></content>
       <categories>
-        <category>office</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>隐藏页面底部强力驱动字样</title>
-    <url>/2022/06/01/next%E9%9A%90%E8%97%8F%E9%A1%B5%E9%9D%A2%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%AD%97%E6%A0%B7/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下\layout_partials\footer.swig<br>利用 <code>&lt;!--</code> 和 <code>--&gt;</code> 隐藏代码，如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.footer.powered %&#125;</span><br><span class="line">  &lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">    &#123;%- set next_site = &#x27;https://theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- if theme.scheme !== &#x27;Gemini&#x27; %&#125;</span><br><span class="line">      &#123;%- set next_site = &#x27;https://&#x27; + theme.scheme | lower + &#x27;.theme-next.org&#x27; %&#125;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line">    &#123;&#123;- __(&#x27;footer.powered&#x27;, next_url(&#x27;https://hexo.io&#x27;, &#x27;Hexo&#x27;, &#123;class: &#x27;theme-link&#x27;&#125;) + &#x27; &amp; &#x27; + next_url(next_site, &#x27;NexT.&#x27; + theme.scheme, &#123;class: &#x27;theme-link&#x27;&#125;)) &#125;&#125;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%- if theme.add_this_id %&#125;</span><br><span class="line">  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;</span><br><span class="line">    &lt;script src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=&#123;&#123; theme.add_this_id &#125;&#125;&quot; async=&quot;async&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
+        <category>MarkdownPad 2</category>
       </categories>
   </entry>
   <entry>
@@ -454,23 +521,6 @@
       </categories>
   </entry>
   <entry>
-    <title>使用MarkdownPad 2写文章</title>
-    <url>/2022/01/30/%E4%BD%BF%E7%94%A8MarkdownPad%202%E5%86%99%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a><strong>1. 安装</strong></h2><blockquote>
-<p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
-</blockquote>
-<h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#83;&#111;&#x61;&#114;&#51;&#x36;&#48;&#64;&#108;&#105;&#118;&#x65;&#46;&#99;&#x6f;&#x6d;">&#83;&#111;&#x61;&#114;&#51;&#x36;&#48;&#64;&#108;&#105;&#118;&#x65;&#46;&#99;&#x6f;&#x6d;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
-</blockquote>
-<h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
-<p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>MarkdownPad 2</category>
-      </categories>
-  </entry>
-  <entry>
     <title>在线下载网易云音乐</title>
     <url>/2022/01/30/%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90/</url>
     <content><![CDATA[<h2 id="1-打开网易云音乐网页版"><a href="#1-打开网易云音乐网页版" class="headerlink" title="1. 打开网易云音乐网页版"></a><strong>1. 打开网易云音乐网页版</strong></h2><blockquote>
@@ -482,83 +532,33 @@
       </categories>
   </entry>
   <entry>
-    <title>原神私服搭建（windows篇）</title>
-    <url>/2022/06/01/%E5%8E%9F%E7%A5%9E%E7%A7%81%E6%9C%8D%E6%90%AD%E5%BB%BA%EF%BC%88windows%E7%AF%87%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="1-下载所有文件"><a href="#1-下载所有文件" class="headerlink" title="1.下载所有文件"></a><strong>1.下载所有文件</strong></h2><blockquote>
-<p><a href="https://cloud.rainkavik.com/s/vkbup?password=v6mh4v">https://cloud.rainkavik.com/s/vkbup?password=v6mh4v</a><br>全部打包下载</p>
+    <title>next主题</title>
+    <url>/2021/10/01/next%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1-下载next"><a href="#1-下载next" class="headerlink" title="1. 下载next"></a><strong>1. 下载next</strong></h2><blockquote>
+<p>管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹根目录，输入如下代码将next主题下载到博客文件夹/themes<br>git clone <a href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a> themes/next</p>
 </blockquote>
-<h2 id="2-安装环境"><a href="#2-安装环境" class="headerlink" title="2.安装环境"></a><strong>2.安装环境</strong></h2><blockquote>
-<p>打开./服务端/环境及工具<br>安装MongoDB，Python，Mitmproxy，java<br>注意：MongoDB安装时建议不勾选 Install MongoDB Compass（当然你也可以选择安装它，可能需要更久的安装时间）</p>
+<h2 id="2-设置next"><a href="#2-设置next" class="headerlink" title="2. 设置next"></a><strong>2. 设置next</strong></h2><blockquote>
+<p>修改根目录下的_config.yml(称为站点配置文件)</p>
 </blockquote>
-<h2 id="3-运行服务器"><a href="#3-运行服务器" class="headerlink" title="3.运行服务器"></a><strong>3.运行服务器</strong></h2><blockquote>
-<p>解压./服务端/完整包：full-grasscutter-dev-#xxx_RainKavik.zip<br>解压密码：rainkavik.com<br>并进入该文件夹，如果您按照此教程部署，直接双击 run.bat 即可运行服务端；如果安装了其他版本的 java 或者修改了安装位置，请自行修改此bat文件后再启动，启动前请确保 MongoDB 在运行中。<br>如果启动后控制台无任何报错，且最后输出 Game Server started on port 22102 字样即为启动成功</p>
-</blockquote>
-<h2 id="4-启动代理"><a href="#4-启动代理" class="headerlink" title="4.启动代理"></a><strong>4.启动代理</strong></h2><blockquote>
-<p>双击运行 proxy.bat ，如果您不希望其他主机连接到服务端，删除此脚本中的 –set block_global=false即可；如果希望在其他端口运行代理，右键编辑此文件修改 23333 为你期望的端口即可，如果删除此参数则默认监听 8080 端口，不要使用常见端口避免被攻击，此端口即为客户端系统代理所用端口。<br>出现 Proxy server listening at http://*:23333 即为启动成功</p>
-</blockquote>
-<h2 id="5-连接服务器"><a href="#5-连接服务器" class="headerlink" title="5.连接服务器"></a><strong>5.连接服务器</strong></h2><blockquote>
-<p>如服务端与客户端分开在两台机子，则还需确保服务端端口 UDP22102 TCP443 TCP54321 均开启且未被其他程序占用（在进行连接的时候，请在config.json中更改 accessAddress为服务器/电脑IP）<br>Windows10/11：设置-网络和Internet-代理，地址本机搭建填写 127.0.0.1，连接服务器则填写 服务器公网IP 端口23333。<br>iOS/iPad OS：设置-无线局域网-详情（连接Wi-Fi右侧蓝色“i”）-HTTP代理，选择 手动,服务器填写 电脑/服务器IP。<br>安卓方法与iOS相似，在此不多重复。</p>
-</blockquote>
-<h2 id="6-下载证书"><a href="#6-下载证书" class="headerlink" title="6.下载证书"></a><strong>6.下载证书</strong></h2><blockquote>
-<p>挂好代理以后用系统自带浏览器打开 <a href="http://mitm.it/">http://mitm.it</a> ，选择你系统的证书进行下载<br>注意：服务器 IP 更换后需要重新下载安装证书！<br>如果提示：”If you can see this, traffic is not passing through mitmproxy.” 则说明代理没有成功挂上。<br>注意：如连接服务器代理，中国内地区域服务器会因为备案问题没法访问。需要在服务器先下载证书，再拷贝到其他设备上。</p>
-</blockquote>
-<h2 id="7-证书安装及信任"><a href="#7-证书安装及信任" class="headerlink" title="7.证书安装及信任"></a><strong>7.证书安装及信任</strong></h2><blockquote>
-<p>Windows：<br>双击打开相应服务器的证书 -&gt; 安装证书 -&gt; 本地计算机 -&gt; 将所有的证书都放入下列储存-&gt; 浏览 -&gt; 受信任的根证书颁发机构 -&gt; 完成<br>如要求密码直接留空白即可！<br>Android：<br>ROOT方法：下载 pem 格式证书，root 并解锁 system 分区后手动复制到 /system/etc/security/cacerts 并重命名为 c8750f0d.0 即可 (如果安装多个私服的证书，依次把文件命名为 c8750f0d.1 c8750f0d.2 … 即可)；如果不能解锁系统分区可参照网盘中我的私服专用的模块制作自己私服的 CA 证书模块，或者安装信任用户证书的模块后直接在 Android 系统设置中安装为用户证书即可<br>免ROOT方法：尝接下载安装用户证书 (分别安装 CA 和 WLAN 证书)， 使用网盘版本游戏客户端（./genshin-impact-patched.apk）。注意:首次进入游戏先注册一个国际服账号，把资源下好了，再进行开代理连接服务器。<br>iOS：</p>
-</blockquote>
-<h2 id="8-创建原神私服账号"><a href="#8-创建原神私服账号" class="headerlink" title="8.创建原神私服账号"></a><strong>8.创建原神私服账号</strong></h2><blockquote>
-<p>account 指令在控制台创建账号才可以登录，当然你也可以根据下节更改配置从而允许不存在的账号自动注册。创建方法如下：<br>语法：account create [name] [uid]<br>例如：account create xyuan 10000</p>
-</blockquote>
-<h2 id="9-开始游戏"><a href="#9-开始游戏" class="headerlink" title="9.开始游戏"></a><strong>9.开始游戏</strong></h2><blockquote>
-<p>更新游戏<br>开启代理再运行游戏便进入私服，不开启代理运行游戏就是官服</p>
-</blockquote>
-<h2 id="10-文档"><a href="#10-文档" class="headerlink" title="10.文档"></a><strong>10.文档</strong></h2><blockquote>
-<p><a href="https://github.com/Grasscutters/Grasscutter">https://github.com/Grasscutters/Grasscutter</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>原神</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>&lt;font color=&gt;无题&lt;/font&gt;</title>
-    <url>/2022/06/01/%E6%97%A0%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="1-获取OneDrive直链"><a href="#1-获取OneDrive直链" class="headerlink" title="1.获取OneDrive直链"></a><strong>1.获取OneDrive直链</strong></h2><blockquote>
-<p><a href="https://mapaler.github.io/GetOneDriveDirectLink/">https://mapaler.github.io/GetOneDriveDirectLink/</a><br>测试ing…</p>
-</blockquote>
-<video controls width="100%">
-    <source src="http://storage.live.com/items/5AF2D5AD824110!125:/zhongerbingedwww.mp4?authkey=!AIEHcP6xacWyIbw" type="video/mp4">
-</video>]]></content>
-      <categories>
-        <category>置顶</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>本地hexo博客部署到github</title>
-    <url>/2022/05/20/%E6%9C%AC%E5%9C%B0hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github/</url>
-    <content><![CDATA[<h2 id="1-创建github账号"><a href="#1-创建github账号" class="headerlink" title="1. 创建github账号"></a><strong>1. 创建github账号</strong></h2><h2 id="2-new个仓库"><a href="#2-new个仓库" class="headerlink" title="2. new个仓库"></a><strong>2. new个仓库</strong></h2><blockquote>
-<p>仓库名称格式为”你的用户名.GitHub.io”</p>
-</blockquote>
-<h2 id="3-修改博客根目录站点配置文件"><a href="#3-修改博客根目录站点配置文件" class="headerlink" title="3. 修改博客根目录站点配置文件"></a><strong>3. 修改博客根目录站点配置文件</strong></h2><blockquote>
-<p>根据自己仓库地址修改，如下：</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/xyuan23/xyuan23.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: #标题</span><br><span class="line">subtitle: #副标题</span><br><span class="line">description: #备注</span><br><span class="line">keywords: </span><br><span class="line">author: #作者</span><br><span class="line">language: zh-CN #主题语言（主题语言在themes/next/language)</span><br><span class="line">timezone: #时区</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next #修改主题</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-安装Git部署插件"><a href="#4-安装Git部署插件" class="headerlink" title="4. 安装Git部署插件"></a><strong>4. 安装Git部署插件</strong></h2><blockquote>
-<p>在博客根目录打开 Git Bash （建议以管理员身份运行）<br>输入：</p>
+<h2 id="2-修改主题"><a href="#2-修改主题" class="headerlink" title="2. 修改主题"></a><strong>2. 修改主题</strong></h2><blockquote>
+<p>next主题有四种：Muse、Mist、Pisces、Gemini<br>我选的是Pisces，打开博客文件夹/themes/next/下的_config.yml，将你选择的主题前的#删除</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#103;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
-</blockquote>
-<h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;">&#121;&#x6f;&#x75;&#x40;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
-</blockquote>
-<h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
-<p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>next主题</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo报错问题解决</title>
+    <url>/2021/10/01/hexo%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<h2 id="1-解决-bash-hexo-command-not-found"><a href="#1-解决-bash-hexo-command-not-found" class="headerlink" title="1. 解决 bash: hexo: command not found"></a><strong>1. 解决 bash: hexo: command not found</strong></h2><blockquote>
+<p>在系统变量Path，将自己hexo博客文件下 node_modules 的 .bin 文件路径添加到 Path 里面即可</p>
 </blockquote>
 ]]></content>
       <categories>
-        <category>博客更新日志</category>
+        <category>hexo报错问题解决</category>
       </categories>
   </entry>
   <entry>
