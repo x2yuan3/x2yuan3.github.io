@@ -22,26 +22,26 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title">
-<meta property="og:url" content="http://example.com/categories/Android/index.html">
+<meta property="og:url" content="http://example.com/page/33/index.html">
 <meta property="og:site_name">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="x2yuan3">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/categories/Android/">
+<link rel="canonical" href="http://example.com/page/33/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : false,
+    isHome : true,
     isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: Android | </title>
+  <title></title>
   
 
 
@@ -187,52 +187,122 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/">
 
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Android
-          <small>分类</small>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/xiaoheimiaoio.png">
+      <meta itemprop="name" content="x2yuan3">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/01/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">本地搭建hexo博客</a>
         </h2>
-      </div>
+
+        <div class="post-meta">
+
+
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-01T00:00:00+08:00">2021-10-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index"><span itemprop="name">hexo博客框架</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/10/01/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/10/01/%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+          <h2 id="1-搭建环境"><a href="#1-搭建环境" class="headerlink" title="1. 搭建环境"></a><strong>1. 搭建环境</strong></h2><blockquote>
+<p>安装 Git  <a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a><br>安装 Nodejs  <a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
+</blockquote>
+<blockquote>
+<p>配置自定义的全局模块安装位置和缓存位置，新建两个文件夹 node_global 和 node_cache （配置在c盘可能存在权限问题）</p>
+</blockquote>
+<blockquote>
+<p>然后在cmd管理员权限下执行如下两个命令：<br>npm config set prefix C:\node_global<br>npm config set cache C:\node_cache<br><font color=#FF0000>报错！2022-06-09</font><br>npm WARN config global <code>--global</code>, <code>--local</code> are deprecated. Use <code>--location=global</code> instead.<br>解决方法，打开nodejs安装目录，修改npm.cmd文件，将 prefix -g 修改为 prefix –location=global 即可</p>
+</blockquote>
+<blockquote>
+<p>以下命令可查看当前全局模块安装位置和缓存位置<br>npm config get prefix<br>npm config get cache</p>
+</blockquote>
+<blockquote>
+<p>执行成功后，在环境变量→系统变量中新建一个变量名为 NODE_PATH，值为：C:\Program Files\nodejs\node_modules</p>
+</blockquote>
+<blockquote>
+<p>最后编辑用户变量Path，将相应npm的路径修改为：C:\node_global</p>
+</blockquote>
+<blockquote>
+<p>完成以上在 cmd 执行 npm install webpack -g 安装成功后模块已经在自定义文件夹中了</p>
+</blockquote>
+<h2 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2. 安装hexo"></a><strong>2. 安装hexo</strong></h2><blockquote>
+<p>建立博客文件夹，然后管理员权限下打开 Git Bash 通过cd命令移动到博客文件夹内，输入 npm install -g hexo-cli 命令安装Hexo</p>
+</blockquote>
+<blockquote>
+<p>安装完成后，输入 hexo init 命令初始化博客<br>然后输入 hexo g 静态部署<br>这时网页已经部署完成，输入 hexo s 命令可查看<br>浏览器输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 就可以打开新部署的网页<br>注：hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</p>
+</blockquote>
+
+      
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-01-30T00:00:00+08:00"
-              content="2022-01-30">
-          01-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/01/30/Windows%E9%80%9A%E8%BF%87%E6%95%B0%E6%8D%AE%E7%BA%BF%E6%8E%A7%E5%88%B6Android%E6%89%8B%E6%9C%BA/" itemprop="url">
-            <span itemprop="name">Windows通过数据线控制Android手机</span>
-          </a>
-      </div>
-
-    </header>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
   </article>
-
-    </div>
-  </div>
   
   
   
 
+
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/32/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><span class="page-number current">33</span>
+  </nav>
 
 
 

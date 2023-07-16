@@ -193,7 +193,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/xiaoheimiaoio.png">
@@ -207,7 +207,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/" class="post-title-link" itemprop="url">设置首页文章数量</a>
+            <a href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/" class="post-title-link" itemprop="url">添加网站图标</a>
         </h2>
 
         <div class="post-meta">
@@ -240,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -256,15 +256,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
-<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
+          <h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">path: &#x27;&#x27;</span><br><span class="line">per_page: 1</span><br><span class="line">order_by: -date</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
 
-<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
-<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">per_page: 0</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -282,7 +281,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/24/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><span class="page-number current">25</span><a class="page-number" href="/page/26/">26</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><a class="extend next" rel="next" href="/page/26/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/24/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><span class="page-number current">25</span><a class="page-number" href="/page/26/">26</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><a class="extend next" rel="next" href="/page/26/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -349,14 +348,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">33</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
@@ -421,7 +420,7 @@
   </script>
       </div>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1354451040&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2013726927&auto=0&height=66"></iframe>
 
     </div>
   </aside>

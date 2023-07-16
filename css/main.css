@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3971ff;
+  background: #124bff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2787,7 +2787,7 @@ blockquote {
   vertical-align: top;
 }
 body {
-  background: url("https://s3.bmp.ovh/imgs/2022/07/27/5980c9b0f48fadbf.jpg");
+  background: url("https://onedrive.live.com/embed?resid=5AF2D5AD824110%21123&authkey=%21AIEpqr5KLU60hho&width=1920&height=1080");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2795,7 +2795,7 @@ body {
 }
 @media only screen and (max-width: 1080px) {
   body {
-    background: url("https://s3.bmp.ovh/imgs/2022/07/27/22e5776d346dc86a.jpg");
+    background: url("https://onedrive.live.com/embed?resid=5AF2D5AD824110%21124&authkey=%21AKJIRITJqiWHOqs&width=1080&height=1920");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
