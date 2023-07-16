@@ -228,10 +228,10 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#64;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#121;&#111;&#x75;&#64;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#99;&#111;&#109;">&#121;&#111;&#x75;&#64;&#x65;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#99;&#111;&#109;</a>“<br>git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -281,6 +281,25 @@
       </categories>
   </entry>
   <entry>
+    <title>添加live2d角色</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/</url>
+    <content><![CDATA[<h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
+<p>在blog根目录打开 git bash 输入如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
+<p><a href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
+</blockquote>
+<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
+<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">##自定义看板娘动画</span><br><span class="line">live2d: </span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local ##主目录</span><br><span class="line">  pluginRootPath: live2d_models/ ##模型目录</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: 33.2017.tomo-bukatsu.high ##对应的模型名称</span><br><span class="line">  display:</span><br><span class="line">    position: right ##居右</span><br><span class="line">    width: 285 ##宽度</span><br><span class="line">    height: 300 ##高度</span><br><span class="line">  mobile:</span><br><span class="line">    show: false ##移动端是否显示</span><br><span class="line">  react:</span><br><span class="line">    opacity: 1</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>更改菜单栏顶部显示</title>
     <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
@@ -299,25 +318,6 @@
 <p>这下全局边框圆角总算能看了，（话说全局阴影，，，）</p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加live2d角色</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0live2d%E8%A7%92%E8%89%B2/</url>
-    <content><![CDATA[<h2 id="1-安装live2d插件"><a href="#1-安装live2d插件" class="headerlink" title="1. 安装live2d插件"></a><strong>1. 安装live2d插件</strong></h2><blockquote>
-<p>在blog根目录打开 git bash 输入如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-下载live2d模型"><a href="#2-下载live2d模型" class="headerlink" title="2. 下载live2d模型"></a><strong>2. 下载live2d模型</strong></h2><blockquote>
-<p><a href="https://github.com/summerscar/live2dDemo">https://github.com/summerscar/live2dDemo</a><br>预览模型地址 <a href="https://summerscar.me/live2dDemo/">https://summerscar.me/live2dDemo/</a></p>
-</blockquote>
-<h2 id="3-安装live2d模型"><a href="#3-安装live2d模型" class="headerlink" title="3. 安装live2d模型"></a><strong>3. 安装live2d模型</strong></h2><blockquote>
-<p>在blog根目录下新建目录live2d_models，并将需要的模型复制到此处<br>在blog根目录下 _config.yml 文件末尾添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">##自定义看板娘动画</span><br><span class="line">live2d: </span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local ##主目录</span><br><span class="line">  pluginRootPath: live2d_models/ ##模型目录</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: 33.2017.tomo-bukatsu.high ##对应的模型名称</span><br><span class="line">  display:</span><br><span class="line">    position: right ##居右</span><br><span class="line">    width: 285 ##宽度</span><br><span class="line">    height: 300 ##高度</span><br><span class="line">  mobile:</span><br><span class="line">    show: false ##移动端是否显示</span><br><span class="line">  react:</span><br><span class="line">    opacity: 1</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -375,6 +375,37 @@
       </categories>
   </entry>
   <entry>
+    <title>添加文章版权信息</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
+<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加文章置顶</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<h2 id="1-添加文章置顶"><a href="#1-添加文章置顶" class="headerlink" title="1. 添加文章置顶"></a><strong>1. 添加文章置顶</strong></h2><blockquote>
+<p>打开Git Bash输入<br><code>npm uninstall hexo-generator-index --save</code><br><code>npm install hexo-generator-index-pin-top --save</code><br>之后在需要置顶的文章添加top，如</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 添加文章置顶</span><br><span class="line">date:  2022-01-30</span><br><span class="line">top：1</span><br><span class="line">categories: </span><br><span class="line">- next更新日志</span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-添加置顶标志"><a href="#2-添加置顶标志" class="headerlink" title="2. 添加置顶标志"></a><strong>2. 添加置顶标志</strong></h2><blockquote>
+<p>打开bolg/themes/next/layout/_macro/post.swig<br>查找<code>&lt;div class=&quot;post-meta&quot;&gt;</code><br>添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=red&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>（emmm设置为代码区怎么还是，，，）</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加网易云音乐插件</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
@@ -401,37 +432,6 @@
 <p>修改small和medium为你的图标路径</p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加文章置顶</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<h2 id="1-添加文章置顶"><a href="#1-添加文章置顶" class="headerlink" title="1. 添加文章置顶"></a><strong>1. 添加文章置顶</strong></h2><blockquote>
-<p>打开Git Bash输入<br><code>npm uninstall hexo-generator-index --save</code><br><code>npm install hexo-generator-index-pin-top --save</code><br>之后在需要置顶的文章添加top，如</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 添加文章置顶</span><br><span class="line">date:  2022-01-30</span><br><span class="line">top：1</span><br><span class="line">categories: </span><br><span class="line">- next更新日志</span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-添加置顶标志"><a href="#2-添加置顶标志" class="headerlink" title="2. 添加置顶标志"></a><strong>2. 添加置顶标志</strong></h2><blockquote>
-<p>打开bolg/themes/next/layout/_macro/post.swig<br>查找<code>&lt;div class=&quot;post-meta&quot;&gt;</code><br>添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;i class=&quot;fa fa-thumb-tack&quot;&gt;&lt;/i&gt;</span><br><span class="line">    &lt;font color=red&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>（emmm设置为代码区怎么还是，，，）</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加文章版权信息</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/</url>
-    <content><![CDATA[<h2 id="1-添加文章版权信息"><a href="#1-添加文章版权信息" class="headerlink" title="1. 添加文章版权信息"></a><strong>1. 添加文章版权信息</strong></h2><blockquote>
-<p>打开主题配置文件即blog/themes/next/_config.yml，查找creative_commons:<br>修改如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: true</span><br><span class="line">  post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -495,7 +495,7 @@
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#x6f;&#x61;&#x72;&#51;&#x36;&#48;&#x40;&#108;&#x69;&#118;&#x65;&#x2e;&#x63;&#111;&#109;">&#x53;&#x6f;&#x61;&#x72;&#51;&#x36;&#48;&#x40;&#108;&#x69;&#118;&#x65;&#x2e;&#x63;&#111;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#83;&#x6f;&#97;&#114;&#51;&#x36;&#48;&#x40;&#108;&#105;&#x76;&#101;&#x2e;&#x63;&#x6f;&#109;">&#83;&#x6f;&#97;&#114;&#51;&#x36;&#48;&#x40;&#108;&#105;&#x76;&#101;&#x2e;&#x63;&#x6f;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
