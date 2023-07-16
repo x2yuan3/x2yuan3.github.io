@@ -69,6 +69,17 @@
       </categories>
   </entry>
   <entry>
+    <title>开启黑暗模式</title>
+    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Dark Mode</span><br><span class="line">darkmode: true</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>开启搜索功能</title>
     <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1.如题"></a><strong>1.如题</strong></h2><blockquote>
@@ -79,17 +90,6 @@
 <p>打开NexT _config.yml<br>搜索Local Search，设置为开启，如下</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local Search</span><br><span class="line"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>开启黑暗模式</title>
-    <url>/2022/06/01/next%E5%BC%80%E5%90%AF%E9%BB%91%E6%9A%97%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开主题目录下/_config.yml<br>修改Dark Mode，如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Dark Mode</span><br><span class="line">darkmode: true</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -228,10 +228,10 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#116;&#64;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#109;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;">&#121;&#111;&#x75;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#x40;&#x65;&#120;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#109;">&#x79;&#x6f;&#117;&#x40;&#x65;&#120;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#99;&#111;&#109;</a>“<br>git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -266,21 +266,6 @@
       </categories>
   </entry>
   <entry>
-    <title>更改侧边滑动条样式</title>
-    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog\source_data\styles.styl，添加如下代码</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #6e6bc9;</span><br><span class="line">    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 3em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #121249;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>emmm具体颜色，样式什么的自己看着改吧</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>更改菜单栏顶部显示</title>
     <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
@@ -297,6 +282,21 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.headband &#123;</span><br><span class="line"> height: 0px;</span><br><span class="line"> background: #000;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这下全局边框圆角总算能看了，（话说全局阴影，，，）</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>更改侧边滑动条样式</title>
+    <url>/2022/01/30/next%E6%9B%B4%E6%94%B9%E4%BE%A7%E8%BE%B9%E6%BB%91%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog\source_data\styles.styl，添加如下代码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    background-color: #6e6bc9;</span><br><span class="line">    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);</span><br><span class="line">    border-radius: 3em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-track &#123;</span><br><span class="line">    background-color: #121249;</span><br><span class="line">    border-radius: 0em;</span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    width: 10px;</span><br><span class="line">    height: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>emmm具体颜色，样式什么的自己看着改吧</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -323,6 +323,21 @@
       </categories>
   </entry>
   <entry>
+    <title>添加侧边栏彩色滚动变换字体</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
+    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
+<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>具体内容自行修改即可</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加分类，标签，关于</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB,%E6%A0%87%E7%AD%BE,%E5%85%B3%E4%BA%8E/</url>
     <content><![CDATA[<h2 id="1-创建【分类】选项"><a href="#1-创建【分类】选项" class="headerlink" title="1. 创建【分类】选项"></a><strong>1. 创建【分类】选项</strong></h2><blockquote>
@@ -342,21 +357,6 @@
 </blockquote>
 <blockquote>
 <p>至此，成功给文章添加标签，点击首页的【标签】可以看到该标签下的所有文章</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>添加侧边栏彩色滚动变换字体</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%BD%A9%E8%89%B2%E6%BB%9A%E5%8A%A8%E5%8F%98%E6%8D%A2%E5%AD%97%E4%BD%93/</url>
-    <content><![CDATA[<h2 id="1-如题"><a href="#1-如题" class="headerlink" title="1. 如题"></a><strong>1. 如题</strong></h2><blockquote>
-<p>打开blog/themes/next/layout/_macro/sidebar.swig<br>在合适位置添加如下代码：</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft = function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l = document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t = o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l = &quot;&quot;,</span><br><span class="line">      o = [&quot;内容&quot;, &quot;内容&quot;,&quot;内容&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c = &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#x27;binft&#x27;));</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>具体内容自行修改即可</p>
 </blockquote>
 ]]></content>
       <categories>
@@ -406,21 +406,6 @@
       </categories>
   </entry>
   <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>修改small和medium为你的图标路径</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>博客更新日志</category>
-      </categories>
-  </entry>
-  <entry>
     <title>添加网易云音乐插件</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
@@ -432,6 +417,21 @@
 <p>这里使用pjax插件实现功能<br>Git Bash进入blog\themes\next<br>输入 <code>git clone https://github.com/theme-next/theme-next-pjax source/lib/pjax</code> 安装pjax插件<br>在next配置文件启用pjax插件，如下</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pjax: true</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
+]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -495,7 +495,7 @@
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#x72;&#51;&#54;&#48;&#x40;&#x6c;&#105;&#x76;&#x65;&#46;&#99;&#x6f;&#109;">&#83;&#x6f;&#x61;&#x72;&#51;&#54;&#48;&#x40;&#x6c;&#105;&#x76;&#x65;&#46;&#99;&#x6f;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#83;&#111;&#x61;&#114;&#x33;&#x36;&#x30;&#x40;&#x6c;&#x69;&#118;&#101;&#46;&#99;&#111;&#x6d;">&#83;&#111;&#x61;&#114;&#x33;&#x36;&#x30;&#x40;&#x6c;&#x69;&#118;&#101;&#46;&#99;&#111;&#x6d;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
