@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d69d13;
+  background: #e7653e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2787,7 +2787,7 @@ blockquote {
   vertical-align: top;
 }
 body {
-  background: url("https://onedrive.live.com/embed?resid=5AF2D5AD824110%21123&authkey=%21AIEpqr5KLU60hho&width=1920&height=1080");
+  background: url("http://storage.live.com/items/5AF2D5AD824110!123:/xiaoniaoyouliuhuawwwbz.jpg?authkey=%21AIEpqr5KLU60hho");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -2795,7 +2795,7 @@ body {
 }
 @media only screen and (max-width: 1080px) {
   body {
-    background: url("https://onedrive.live.com/embed?resid=5AF2D5AD824110%21124&authkey=%21AKJIRITJqiWHOqs&width=1080&height=1920");
+    background: url("http://storage.live.com/items/5AF2D5AD824110!124:/xiaoniaoyouliuhuawwwbzs.jpg?authkey=%21AKJIRITJqiWHOqs");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
