@@ -236,10 +236,10 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h2 id="5-生成密钥"><a href="#5-生成密钥" class="headerlink" title="5. 生成密钥"></a><strong>5. 生成密钥</strong></h2><blockquote>
-<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
+<p>在Git Bash 输入 ssh-keygen -t rsa 生成密钥文件<br>打开密钥文件 Windows 10位置：C:/Users/自己用户名/.ssh  cat id_rsa.pub打开密钥，复制密钥到自己github→Settings→SSH and GPG kesy即可<br>验证是否成功，可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#111;&#x6d;</a> 进行检验 （第一次需要填yes）<br>如 Hi xyuanyy! You’ve successfully authenticated, but GitHub does not provide shell access.则绑定成功</p>
 </blockquote>
 <h2 id="6-设置-user-email-和-user-name"><a href="#6-设置-user-email-和-user-name" class="headerlink" title="6. 设置 user.email 和 user.name"></a><strong>6. 设置 user.email 和 user.name</strong></h2><blockquote>
-<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;">&#x79;&#111;&#x75;&#64;&#101;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#46;&#99;&#x6f;&#109;</a>“<br>git config –global user.name “Your Name”</p>
+<p>在Git Bash命令下输入<br>git config –global user.email “<a href="mailto:&#x79;&#111;&#117;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#x79;&#111;&#117;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
 </blockquote>
 <h2 id="7-部署到github"><a href="#7-部署到github" class="headerlink" title="7. 部署到github"></a><strong>7. 部署到github</strong></h2><blockquote>
 <p>回到 Git Bash 输入部署命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>（可能因为网络原因报错，多试几次）</p>
@@ -414,6 +414,21 @@
       </categories>
   </entry>
   <entry>
+    <title>添加网站图标</title>
+    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
+<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>修改small和medium为你的图标路径</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>博客更新日志</category>
+      </categories>
+  </entry>
+  <entry>
     <title>添加网易云音乐插件</title>
     <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/</url>
     <content><![CDATA[<h2 id="1-添加网易云音乐插件"><a href="#1-添加网易云音乐插件" class="headerlink" title="1. 添加网易云音乐插件"></a><strong>1. 添加网易云音乐插件</strong></h2><blockquote>
@@ -430,16 +445,17 @@
       </categories>
   </entry>
   <entry>
-    <title>添加网站图标</title>
-    <url>/2022/01/30/next%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87/</url>
-    <content><![CDATA[<h2 id="1-添加网站图标"><a href="#1-添加网站图标" class="headerlink" title="1. 添加网站图标"></a><strong>1. 添加网站图标</strong></h2><blockquote>
-<p>将网站图标复制到blog/themes/next/source/images<br>然后配置主题文件即blog/themes/next/_config.yml，查找favicon<br>如下</p>
+    <title>设置首页文章数量</title>
+    <url>/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
+    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
+<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">favicon:</span><br><span class="line">small: /images/xiaoheimiaoio-16x16.png</span><br><span class="line">medium: /images/xiaoheimiaoio-32x32.png</span><br><span class="line">apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">safari_pinned_tab: /images/logo.svg</span><br><span class="line">#android_manifest: /images/manifest.json</span><br><span class="line">#ms_browserconfig: /images/browserconfig.xml</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>修改small和medium为你的图标路径</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">path: &#x27;&#x27;</span><br><span class="line">per_page: 1</span><br><span class="line">order_by: -date</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
+<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
 </blockquote>
-]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">per_page: 0</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>博客更新日志</category>
       </categories>
@@ -487,7 +503,7 @@
 <p>下载地址:  <a href="http://www.markdownpad.com/">http://www.markdownpad.com/</a></p>
 </blockquote>
 <h2 id="2-激活"><a href="#2-激活" class="headerlink" title="2. 激活"></a><strong>2. 激活</strong></h2><blockquote>
-<p>邮箱:  <a href="mailto:&#x53;&#111;&#97;&#x72;&#51;&#x36;&#48;&#x40;&#x6c;&#105;&#x76;&#x65;&#x2e;&#99;&#111;&#109;">&#x53;&#111;&#97;&#x72;&#51;&#x36;&#48;&#x40;&#x6c;&#105;&#x76;&#x65;&#x2e;&#99;&#111;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
+<p>邮箱:  <a href="mailto:&#83;&#x6f;&#x61;&#114;&#x33;&#54;&#x30;&#64;&#x6c;&#x69;&#x76;&#101;&#x2e;&#99;&#x6f;&#109;">&#83;&#x6f;&#x61;&#114;&#x33;&#54;&#x30;&#64;&#x6c;&#x69;&#x76;&#101;&#x2e;&#99;&#x6f;&#109;</a><br>授权密钥：<br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</p>
 </blockquote>
 <h2 id="3-安装Awesomium"><a href="#3-安装Awesomium" class="headerlink" title="3. 安装Awesomium"></a><strong>3. 安装Awesomium</strong></h2><blockquote>
 <p>下载地址:  <a href="http://markdownpad.com/faq.html#livepreview-directx">http://markdownpad.com/faq.html#livepreview-directx</a></p>
@@ -521,22 +537,6 @@
 ]]></content>
       <categories>
         <category>网易云音乐</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>设置首页文章数量</title>
-    <url>/2022/01/30/next%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E6%95%B0%E9%87%8F/</url>
-    <content><![CDATA[<h2 id="1-设置首页文章数量"><a href="#1-设置首页文章数量" class="headerlink" title="1. 设置首页文章数量"></a><strong>1. 设置首页文章数量</strong></h2><blockquote>
-<p>打开blog_config.yml，查找index_generator:<br>更改如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">path: &#x27;&#x27;</span><br><span class="line">per_page: 1</span><br><span class="line">order_by: -date</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-禁用归档分页"><a href="#1-禁用归档分页" class="headerlink" title="1. 禁用归档分页"></a><strong>1. 禁用归档分页</strong></h2><blockquote>
-<p>打开blog_config.yml，查找# Pagination<br>更改如下</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">per_page: 0</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>博客更新日志</category>
       </categories>
   </entry>
   <entry>
